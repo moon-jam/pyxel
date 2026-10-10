@@ -3,13 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; frame-src 'self'; script-src 'self' 'sha256-I5ldS9bAXEA4xVzZS0sOdt8lcqoJmR8FBos3QEIM5XA=' 'unsafe-eval' 'wasm-unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https://cdn.jsdelivr.net https://api.github.com https://gist.githubusercontent.com https://raw.githubusercontent.com; media-src 'self' blob:; worker-src 'self' blob:"
+    />
     <title>Pyxel Code Maker</title>
     <link rel="icon" href="../../wasm/images/pyxel_icon_64x64.ico" />
     <link rel="stylesheet" href="../styles.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.6/ace.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.32.6/ext-language_tools.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/kitao/pyxel/wasm/pyxel.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/ace-builds@1.32.6/src-min/ace.js"
+      integrity="sha384-UQGCAXcsO6/Iy8ya5X+Bh2DUQg4IZiN03mB9BVLWXOh8aFB2tofREEn4HspGK1ck"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/ace-builds@1.32.6/src-min/ext-language_tools.js"
+      integrity="sha384-36XLT/a34XGcCDk7M6PEgepHR1lOxr4rodErPAypz38mqxj539+ZqMVaP5wN6ROU"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="../../wasm/pyxel.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"
+      integrity="sha384-+mbV2IY1Zk/X1p/nWllGySJSUN8uMs+gUAN10Or95UBH0fpj6GfKgPmgC5EXieXG"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="../shared.js"></script>
     <style>
       #left-pane.res-mode {
@@ -83,13 +103,6 @@
                   data-action="load-github"
                 >
                   GitHub
-                </button>
-                <button
-                  class="dropdown-item"
-                  tabindex="-1"
-                  data-action="load-url"
-                >
-                  URL
                 </button>
               </div>
             </div>
@@ -261,27 +274,6 @@
             Cancel
           </button>
           <button id="btn-load-github" class="modal-btn modal-btn-primary">
-            Load
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Load from URL modal -->
-    <div id="modal-load-url" class="hidden modal-overlay">
-      <div class="modal">
-        <div class="modal-title">Load from URL</div>
-        <input
-          id="input-load-url"
-          type="text"
-          placeholder="https://example.com/PROJECT.zip"
-          class="modal-input"
-        />
-        <div class="flex justify-end gap-2 mt-3">
-          <button class="modal-btn modal-btn-secondary" data-modal-close>
-            Cancel
-          </button>
-          <button id="btn-load-url" class="modal-btn modal-btn-primary">
             Load
           </button>
         </div>
@@ -486,24 +478,6 @@
           "github",
           `${user}/${repo}/${ref}/${path.replace(/\.zip$/i, "")}`,
         );
-      }
-
-      async function loadFromUrl(input) {
-        const url = input.trim();
-        if (!/^https?:\/\/.+/i.test(url)) {
-          throw new Error("Invalid URL");
-        }
-        const name =
-          url
-            .split("/")
-            .pop()
-            .replace(/\.zip$/i, "") || "untitled";
-        const res = await fetch(url);
-        if (!res.ok) {
-          throw new Error("File not found");
-        }
-        await loadProjectFromZip(await res.arrayBuffer(), name);
-        updateShareUrl("url", url);
       }
 
       // Archive helpers
@@ -738,9 +712,6 @@
               case "load-github":
                 showModal("modal-load-github");
                 break;
-              case "load-url":
-                showModal("modal-load-url");
-                break;
               case "save-local":
                 saveToFile();
                 break;
@@ -805,7 +776,6 @@
           "input-load-github",
           loadFromGitHub,
         );
-        setupModalSubmit("btn-load-url", "input-load-url", loadFromUrl);
 
         // Enter key submits whichever modal input is active.
         document.querySelectorAll(".modal-input").forEach((input) => {
@@ -1242,7 +1212,6 @@
         const params = new URL(location.href).searchParams;
         const gistParam = params.get("gist");
         const githubParam = params.get("github");
-        const urlParam = params.get("url");
         try {
           if (gistParam) {
             await loadFromGist(gistParam);
@@ -1250,8 +1219,6 @@
             const parts = githubParam.split("/");
             const ghUrl = `https://github.com/${parts[0]}/${parts[1]}/blob/${parts.slice(2).join("/")}.zip`;
             await loadFromGitHub(ghUrl);
-          } else if (urlParam) {
-            await loadFromUrl(urlParam);
           }
         } catch (e) {
           alert(`Load failed: ${e.message}`);

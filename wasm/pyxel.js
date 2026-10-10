@@ -1,4 +1,6 @@
 const PYODIDE_URL = "https://cdn.jsdelivr.net/pyodide/v314.0.4/full/pyodide.js";
+const PYODIDE_INTEGRITY =
+  "sha384-Yu03TsjS+qEiVZINZd3uEuLuQINOxoKmO7cu0m1MfFMWXfwCj8Y+Db2Ypkh0NkRe";
 const PYXEL_WHEEL_PATH = "pyxel-2.9.9-cp311-abi3-emscripten_5_0_3_wasm32.whl";
 const PYXEL_LOGO_PATH = "images/pyxel_logo_76x32.png";
 const TOUCH_TO_START_PATH = "images/touch_to_start_114x14.png";
@@ -445,9 +447,14 @@ const _createScreenElements = async () => {
 
 // Pyodide loading
 
-const _loadScript = async (scriptSrc) => {
+const _loadScript = async (scriptSrc, integrity) => {
   const script = document.createElement("script");
   script.src = scriptSrc;
+  if (integrity) {
+    script.integrity = integrity;
+    script.crossOrigin = "anonymous";
+    script.referrerPolicy = "no-referrer";
+  }
   const firstScript = document.getElementsByTagName("script")[0];
   await new Promise((resolve, reject) => {
     script.addEventListener("load", resolve, { once: true });
@@ -482,7 +489,7 @@ const _loadPyodideAndPyxel = async (canvas) => {
     IMPORT_HOOK_PATH,
   );
 
-  await _loadScript(PYODIDE_URL);
+  await _loadScript(PYODIDE_URL, PYODIDE_INTEGRITY);
   const pyodide = await loadPyodide();
   // Keep Pyodide from treating Emscripten's main-loop unwind as a fatal error.
   pyodide._api._skip_unwind_fatal_error = true;
