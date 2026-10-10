@@ -1,6 +1,6 @@
 # Security notes for this fork
 
-This fork publishes only the Pyxel Code Maker static site.
+This fork publishes the Pyxel Code Maker and API Reference static pages.
 
 - The trusted upstream baseline is commit `5d8e7b4f37c106684c1e91692772569a32a5e3d4` (Pyxel 2.9.9, 2026-08-12).
 - Commits `57893a29`, `f5700728`, and `97670a55` are intentionally excluded.
@@ -10,3 +10,5 @@ This fork publishes only the Pyxel Code Maker static site.
 - Review any future upstream changes before merging them into this fork.
 
 The browser app still executes user-entered Python inside Pyodide. Treat imported projects as untrusted and use this personal instance only for projects you trust.
+
+Code Maker supports loading ZIP projects through `?url=` and the Load > URL menu. These requests accept only HTTPS URLs, omit cookies and other browser credentials, and send no referrer. The ZIP host must allow browser requests from this site's origin. Importing a project does not automatically run its Python code.

@@ -31,7 +31,10 @@ jobs:
           cp index.html .nojekyll site/
           mkdir -p site/web site/wasm
           cp -R web/code-maker site/web/
+          cp -R web/api-reference site/web/
           cp web/styles.css web/shared.js site/web/
+          mkdir -p site/wasm/api-reference
+          cp wasm/api-reference/index.html site/wasm/api-reference/
           cp wasm/pyxel.js wasm/pyxel.css wasm/import_hook.py site/wasm/
           cp wasm/pyxel-2.9.9-cp311-abi3-emscripten_5_0_3_wasm32.whl site/wasm/
           cp -R wasm/images site/wasm/

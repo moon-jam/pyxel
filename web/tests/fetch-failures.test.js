@@ -86,6 +86,46 @@ test("loadFromGist rejects a missing truncated file before reading its body", as
   assert.equal(loadCount, 0);
 });
 
+test("loadFromUrl imports an HTTPS ZIP without credentials and preserves its query", async () => {
+  const buffer = new ArrayBuffer(4);
+  let imported;
+  let shared;
+  const context = {
+    URL,
+    fetch: async (url, options) => {
+      assert.equal(url, "https://example.com/Lab%201.zip?version=2");
+      assert.equal(options.credentials, "omit");
+      assert.equal(options.referrerPolicy, "no-referrer");
+      return { ok: true, arrayBuffer: async () => buffer };
+    },
+    loadProjectFromZip: async (...args) => { imported = args; },
+    updateShareUrl: (...args) => { shared = args; },
+  };
+  const loadFromUrl = loadNamedFunction(codeMakerSource, "loadFromUrl", context);
+  await loadFromUrl(" https://example.com/Lab%201.zip?version=2 ");
+  assert.deepEqual(imported, [buffer, "Lab 1"]);
+  assert.deepEqual(shared, ["url", "https://example.com/Lab%201.zip?version=2"]);
+});
+
+test("loadFromUrl rejects unsafe URLs before fetching", async () => {
+  const context = { URL, fetch: () => assert.fail("Must not fetch invalid URLs") };
+  const loadFromUrl = loadNamedFunction(codeMakerSource, "loadFromUrl", context);
+  for (const url of ["invalid", "http://example.com/lab.zip", "javascript:alert(1)", "https://user:password@example.com/lab.zip"]) {
+    await assert.rejects(loadFromUrl(url), /Invalid URL|Use an HTTPS URL/);
+  }
+});
+
+test("loadFromUrl rejects a missing ZIP before reading its body", async () => {
+  const context = {
+    URL,
+    fetch: async () => ({ ok: false, arrayBuffer: () => assert.fail("Must not read error responses") }),
+    loadProjectFromZip: () => assert.fail("Must not import error responses"),
+    updateShareUrl: () => assert.fail("Must not share failed imports"),
+  };
+  const loadFromUrl = loadNamedFunction(codeMakerSource, "loadFromUrl", context);
+  await assert.rejects(loadFromUrl("https://example.com/missing.zip"), /File not found/);
+});
+
 test("loadInitialFiles rejects a missing starter project before reading it", async () => {
   let arrayBufferCount = 0;
   let loadCount = 0;
