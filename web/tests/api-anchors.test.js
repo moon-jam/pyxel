@@ -18,14 +18,14 @@ const reference = JSON.parse(
 function load(overrides = {}) {
   const context = { window: { addEventListener() {} }, ...overrides };
   vm.runInNewContext(
-    `${source}\n;globalThis.api = { itemAnchorId, revealAnchor, anchorTargets, setSearch: value => searchQuery = value, getState: () => ({ searchQuery, showAdvanced }) };`,
+    `${source}\n;globalThis.api = { itemAnchorId, labelAnchorId, constantGroupAnchorId, revealAnchor, anchorTargets, setSearch: value => searchQuery = value, getState: () => ({ searchQuery, showAdvanced }) };`,
     context,
   );
   return context;
 }
 
 test("all real categories, APIs, overloads and constants have unique stable anchors", () => {
-  const { itemAnchorId } = load().api;
+  const { itemAnchorId, labelAnchorId, constantGroupAnchorId } = load().api;
   const ids = [];
   for (const category of reference.categories) {
     ids.push(`category-${category.id}`);
@@ -33,7 +33,10 @@ test("all real categories, APIs, overloads and constants have unique stable anch
       ids.push(itemAnchorId(item, category.items));
     for (const name of category.constants || []) ids.push(`pyxel.${name}`);
     for (const group of category.constant_groups || []) {
+      const groupId = constantGroupAnchorId(category, group);
+      ids.push(groupId);
       for (const section of group.sections || []) {
+        if (section.label) ids.push(labelAnchorId(groupId, section.label));
         for (const name of section.constants) ids.push(`pyxel.${name}`);
       }
     }
@@ -46,8 +49,36 @@ test("all real categories, APIs, overloads and constants have unique stable anch
     "pyxel.clip",
     "pyxel.clip-no-args",
     "pyxel.KEY_SPACE",
+    "constants-input-key-constants",
+    "constants-input-key-constants-special-keys",
+    "constants-input-mouse-constants",
+    "constants-input-gamepad-constants",
+    "constants-graphics-color-constants",
+    "constants-audio-tone-effect-constants",
   ])
     assert.ok(ids.includes(id));
+});
+
+test("constant group links expand the group itself and its parent category", () => {
+  const category = { tagName: "DETAILS", open: false };
+  const group = {
+    tagName: "DETAILS",
+    open: false,
+    parentElement: category,
+    scrollIntoView() {},
+    focus() {},
+  };
+  const context = load({
+    location: { hash: "#constants-input-key-constants" },
+    document: { getElementById: () => ({ value: "" }) },
+  });
+  vm.runInNewContext("updateVisibility = () => {};", context);
+  context.api.anchorTargets.set("constants-input-key-constants", {
+    element: group,
+  });
+  context.api.revealAnchor();
+  assert.equal(group.open, true);
+  assert.equal(category.open, true);
 });
 
 test("a deep link clears search and reveals an advanced API inside closed sections", () => {

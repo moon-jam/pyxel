@@ -16,6 +16,19 @@ function itemAnchorId(item, items) {
   return `pyxel.${item.name.replace(/\s+/g, "-")}${suffix}`;
 }
 
+function labelAnchorId(prefix, label) {
+  // Use the source English label so changing the display language preserves URLs.
+  const slug = label.en
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+  return `${prefix}-${slug}`;
+}
+
+function constantGroupAnchorId(category, group) {
+  return labelAnchorId(`constants-${category.id}`, group.label);
+}
+
 function anchorText() {
   return lang === "cn"
     ? { jump: "快速跳轉", link: "連結至" }
@@ -286,8 +299,16 @@ function buildPage() {
       cat.title,
       "api-category-link",
     );
-    anchor.dataset.jumpCategory = cat.id;
     quickNav.appendChild(anchor);
+    for (const group of cat.constant_groups || []) {
+      quickNav.appendChild(
+        makeAnchorLink(
+          constantGroupAnchorId(cat, group),
+          group.label,
+          "api-category-link",
+        ),
+      );
+    }
   }
   app.appendChild(quickNav);
 
@@ -418,16 +439,18 @@ function buildPage() {
           : document.createElement("div");
         groupWrap.className = "mt-4";
         groupWrap.dataset.cgId = gid;
+        registerAnchor(groupWrap, constantGroupAnchorId(cat, group));
 
         const groupHeader = group.collapsed
           ? document.createElement("summary")
           : document.createElement("div");
         groupHeader.className =
-          "text-xs font-medium text-gray-400 uppercase tracking-wider mb-2";
+          "flex items-center gap-2 text-xs font-medium text-gray-400 uppercase tracking-wider mb-2";
         const labelSpan = document.createElement("span");
         labelSpan.dataset.cgLabel = gid;
         if (group.collapsed) labelSpan.className = "tri";
         groupHeader.appendChild(labelSpan);
+        groupHeader.appendChild(makeAnchorLink(groupWrap.id, group.label));
         groupWrap.appendChild(groupHeader);
 
         // Labeled subsections inside one constant group
@@ -442,10 +465,14 @@ function buildPage() {
             const secWrap = document.createElement("div");
 
             if (sec.label) {
+              registerAnchor(secWrap, labelAnchorId(groupWrap.id, sec.label));
               const label = document.createElement("div");
               label.className =
-                "text-[11px] font-medium text-gray-400 uppercase tracking-wider mb-1";
-              label.dataset.secLabel = sid;
+                "flex items-center gap-2 text-[11px] font-medium text-gray-400 uppercase tracking-wider mb-1";
+              const text = document.createElement("span");
+              text.dataset.secLabel = sid;
+              label.appendChild(text);
+              label.appendChild(makeAnchorLink(secWrap.id, sec.label));
               secWrap.appendChild(label);
             }
 
@@ -521,13 +548,9 @@ function updateTexts() {
   document
     .getElementById("api-quick-nav")
     .setAttribute("aria-label", anchorText().jump);
-  document.querySelectorAll("[data-jump-category]").forEach((anchor) => {
-    const category = data.categories.find(
-      (cat) => cat.id === anchor.dataset.jumpCategory,
-    );
-    anchor.textContent = t(category.title);
-  });
   for (const { anchor, label } of permalinkLabels) {
+    if (anchor.classList.contains("api-category-link"))
+      anchor.textContent = t(label);
     const title = `${anchorText().link} ${t(label)}`;
     anchor.title = title;
     anchor.setAttribute("aria-label", title);
