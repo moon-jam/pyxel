@@ -88,8 +88,24 @@ const esc = (s) =>
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&#39;");
 
-const link = (href, text) =>
-  `<a href="${esc(href)}" target="_blank" rel="noopener noreferrer" class="link">${esc(text)}</a>`;
+const link = (href, text) => {
+  // This personal site publishes Maker and documentation, not other tools.
+  if (
+    href.startsWith("../showcase/") ||
+    href.startsWith("../launcher/") ||
+    href === "../mml-studio/"
+  ) {
+    const language = typeof lang === "undefined" ? "en" : lang;
+    const note =
+      language === "cn"
+        ? "本站未提供"
+        : language === "ja"
+          ? "このサイトでは未提供"
+          : "Not hosted on this site";
+    return `<span>${esc(text)} <span class="unavailable-tool-note">(${note})</span></span>`;
+  }
+  return `<a href="${esc(href)}" target="_blank" rel="noopener noreferrer" class="link">${esc(text)}</a>`;
+};
 
 const chip = (s) => `<code class="chip">${esc(s)}</code>`;
 

@@ -3,15 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; script-src 'self' 'sha256-83WYX+whc76f3nZyOuhPwlV17J8phc3EyPq268Pgrrw=' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; img-src 'self' data:; font-src 'self' data:; connect-src 'self'"
+    />
     <title>Pyxel User Guide</title>
     <link rel="icon" href="../../wasm/images/pyxel_icon_64x64.ico" />
     <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../navigation.css" />
+    <script src="../navigation.js" defer></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/styles/github-dark.min.css"
+      integrity="sha384-wH75j6z1lH97ZOpMOInqhgKzFkAInZPPSPlZpYKYTOqsaizPvhQZmAtLcPKXpLyH"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <script src="../shared.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.9.0/build/highlight.min.js"
+      integrity="sha384-F/bZzf7p3Joyp5psL90p/p89AZJsndkSoGwRpXcZhleCWhd8SnRuoYo4d0yirjJp"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
 
   <body class="page min-h-full">
@@ -99,15 +114,16 @@
             <a href="https://kitao.github.io/pyxel-user-examples/" target="_blank" rel="noopener noreferrer" style="flex:553"><img src="../../docs/images/pyxel_thanks.png" alt="Pyxel User Examples" class="w-full" loading="lazy"></a>
             <a href="https://gihyo.jp/book/2025/978-4-297-14657-3" target="_blank" rel="noopener noreferrer" style="flex:190"><img src="../../docs/images/pyxel_book.png" alt="Pyxel book" class="w-full" loading="lazy"></a>
           </div>
+          <p class="body mt-3 unavailable-tool-note">${lang === "cn" ? "以下為上游遊戲與工具的示意圖；本站未提供遊戲展示、遊戲啟動器與音樂工具。" : lang === "ja" ? "以下は上流のゲームとツールの紹介画像です。このサイトでは Showcase、Web Launcher、MML Studio は提供していません。" : "These images illustrate upstream games and tools. Showcase, Web Launcher, and MML Studio are not hosted on this site."}</p>
           <div class="flex items-end gap-2 mt-4">
-            <a href="../showcase/examples/02-jump-game.html" target="_blank" rel="noopener noreferrer" style="flex:253"><img src="../../docs/images/02_jump_game.gif" alt="Jump Game" class="w-full rounded border border-gray-700" loading="lazy"></a>
-            <a href="../showcase/examples/10-platformer.html" target="_blank" rel="noopener noreferrer" style="flex:222"><img src="../../docs/images/10_platformer.gif" alt="Platformer" class="w-full rounded border border-gray-700" loading="lazy"></a>
-            <a href="../showcase/apps/30sec-of-daylight.html" target="_blank" rel="noopener noreferrer" style="flex:268"><img src="../../docs/images/30sec_of_daylight.gif" alt="30 Seconds of Daylight" class="w-full rounded border border-gray-700" loading="lazy"></a>
+            <div style="flex:253"><img src="../../docs/images/02_jump_game.gif" alt="Jump Game" class="w-full rounded border border-gray-700" loading="lazy"></div>
+            <div style="flex:222"><img src="../../docs/images/10_platformer.gif" alt="Platformer" class="w-full rounded border border-gray-700" loading="lazy"></div>
+            <div style="flex:268"><img src="../../docs/images/30sec_of_daylight.gif" alt="30 Seconds of Daylight" class="w-full rounded border border-gray-700" loading="lazy"></div>
           </div>
           <div class="flex items-end gap-2 mt-2">
-            <a href="../showcase/apps/megaball.html" target="_blank" rel="noopener noreferrer" style="flex:231"><img src="../../docs/images/megaball.gif" alt="Megaball" class="w-full rounded border border-gray-700" loading="lazy"></a>
-            <a href="../showcase/tools/image-editor.html" target="_blank" rel="noopener noreferrer" style="flex:256"><img src="../../docs/images/image_tilemap_editor.gif" alt="Image and Tilemap Editor" class="w-full rounded border border-gray-700" loading="lazy"></a>
-            <a href="../showcase/tools/sound-editor.html" target="_blank" rel="noopener noreferrer" style="flex:256"><img src="../../docs/images/sound_music_editor.gif" alt="Sound and Music Editor" class="w-full rounded border border-gray-700" loading="lazy"></a>
+            <div style="flex:231"><img src="../../docs/images/megaball.gif" alt="Megaball" class="w-full rounded border border-gray-700" loading="lazy"></div>
+            <div style="flex:256"><img src="../../docs/images/image_tilemap_editor.gif" alt="Image and Tilemap Editor" class="w-full rounded border border-gray-700" loading="lazy"></div>
+            <div style="flex:256"><img src="../../docs/images/sound_music_editor.gif" alt="Sound and Music Editor" class="w-full rounded border border-gray-700" loading="lazy"></div>
           </div>`;
 
         // Core specifications and palette links
@@ -331,15 +347,15 @@ pyxel.show()`,
         // Documentation, tools, and community links
         const faqUrl =
           lang === "ja"
-            ? "https://github.com/kitao/pyxel/blob/main/docs/faq-ja.md"
-            : "https://github.com/kitao/pyxel/blob/main/docs/faq.md";
+            ? "../../docs/faq-ja.md"
+            : "../../docs/faq.md";
         const docs = [
           ["../api-reference/", t("tool_api_reference")],
           ["../mml-studio/mml-commands.html", t("tool_mml_commands")],
           ["../editor-manual/", t("tool_editor_manual")],
           ["../web-usage/", t("other_web_usage")],
           [
-            "https://github.com/kitao/pyxel/blob/main/docs/pyxres-format.md",
+            "../../docs/pyxres-format.md",
             t("other_pyxres_format"),
           ],
           [faqUrl, t("other_faq")],

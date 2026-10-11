@@ -32,9 +32,18 @@ jobs:
           mkdir -p site/web site/wasm
           cp -R web/code-maker site/web/
           cp -R web/api-reference site/web/
-          cp web/styles.css web/shared.js site/web/
+          cp -R web/user-guide web/editor-manual web/web-usage site/web/
+          mkdir -p site/web/mml-studio site/docs
+          cp web/mml-studio/mml-commands.html web/mml-studio/mml-commands.json site/web/mml-studio/
+          cp web/styles.css web/shared.js web/navigation.js web/navigation.css site/web/
+          cp -R docs/images site/docs/
+          cp docs/pyxel.gpl site/docs/
+          cp docs/faq.md docs/faq-ja.md docs/pyxres-format.md site/docs/
           mkdir -p site/wasm/api-reference
           cp wasm/api-reference/index.html site/wasm/api-reference/
+          mkdir -p site/wasm/user-guide site/wasm/editor-manual
+          cp wasm/user-guide/index.html site/wasm/user-guide/
+          cp wasm/editor-manual/index.html site/wasm/editor-manual/
           cp wasm/pyxel.js wasm/pyxel.css wasm/import_hook.py site/wasm/
           cp wasm/pyxel-2.9.9-cp311-abi3-emscripten_5_0_3_wasm32.whl site/wasm/
           cp -R wasm/images site/wasm/

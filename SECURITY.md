@@ -1,6 +1,6 @@
 # Security notes for this fork
 
-This fork publishes the Pyxel Code Maker and API Reference static pages.
+This fork publishes Pyxel Code Maker and its static documentation: the Maker Manual, Resource Editor Manual, API Reference, User Guide, Web Publishing guide, and MML Commands reference. Other upstream tools are not hosted and are marked as unavailable in the guides.
 
 - The trusted upstream baseline is commit `5d8e7b4f37c106684c1e91692772569a32a5e3d4` (Pyxel 2.9.9, 2026-08-12).
 - Commits `57893a29`, `f5700728`, and `97670a55` are intentionally excluded.

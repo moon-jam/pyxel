@@ -18,7 +18,7 @@ const loadShared = (overrides = {}) => {
     ...overrides,
   };
   vm.runInNewContext(
-    `${source}\n;globalThis.__test = { initPage, resolveGitHubBlobUrl };`,
+    `${source}\n;globalThis.__test = { initPage, resolveGitHubBlobUrl, link };`,
     context,
   );
   return context;
@@ -27,6 +27,18 @@ const loadShared = (overrides = {}) => {
 const settlePromises = () => new Promise((resolve) => setImmediate(resolve));
 
 const { resolveGitHubBlobUrl } = loadShared().__test;
+
+test("documentation keeps hosted links and marks unavailable tools without broken links", () => {
+  const { link } = loadShared().__test;
+  for (const href of ["../showcase/", "../launcher/", "../mml-studio/"]) {
+    const html = link(href, "Tool");
+    assert.match(html, /Not hosted on this site/);
+    assert.doesNotMatch(html, /<a\b|href=/);
+  }
+  for (const href of ["../code-maker/", "../api-reference/", "../mml-studio/mml-commands.html"]) {
+    assert.match(link(href, "Document"), /<a\b/);
+  }
+});
 
 test("resolveGitHubBlobUrl finds the longest slash-containing ref", async () => {
   const requested = [];
