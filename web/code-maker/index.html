@@ -6,7 +6,7 @@
     <meta name="referrer" content="no-referrer" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; frame-src 'self'; script-src 'self' 'sha256-Jw3V+qBQVr5k/bZsRpSLiZHxHsG08PPoUfHuBNK5J2o=' 'unsafe-eval' 'wasm-unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https:; media-src 'self' blob:; worker-src 'self' blob:"
+      content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; frame-src 'self'; script-src 'self' 'sha256-1i++BWLviU+hVaUmqxRV2pIrWYRD5LL0iIaRatBRxsE=' 'unsafe-eval' 'wasm-unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https:; media-src 'self' blob:; worker-src 'self' blob:"
     />
     <title>Pyxel Code Maker</title>
     <link rel="icon" href="../../wasm/images/pyxel_icon_64x64.ico" />
@@ -23,6 +23,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/ace-builds@1.32.6/src-min/keybinding-vim.js"
+      integrity="sha384-ZXi8HguQuluCVN+GwqCuK2TQD31Rd6iPVHlhPWOxJpFZy23m7bcars6tuUCrS+mP"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="vim-mode.js?v=1"></script>
     <script src="../../wasm/pyxel.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"
@@ -176,6 +183,17 @@
               </button>
             </div>
           </div>
+          <label
+            class="flex items-center gap-1 text-xs text-gray-400 shrink-0 cursor-pointer"
+            title="Vim mode: i to insert, Esc for normal mode. Saved on this browser."
+          >
+            <input
+              id="vim-mode-toggle"
+              type="checkbox"
+              class="accent-indigo-500"
+            />
+            Vim
+          </label>
           <!-- Run -->
           <div class="flex items-center gap-2 shrink-0">
             <button
@@ -709,6 +727,7 @@
         document.head.appendChild(aceThemeStyle);
 
         window._codeEditor = codeEditor;
+        setupVimMode(codeEditor);
       }
 
       // Share URL helpers keep the current load source in the address bar.
