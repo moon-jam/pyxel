@@ -5,6 +5,80 @@ let lang = "en";
 let showAdvanced = false;
 let searchQuery = "";
 
+const anchorTargets = new Map();
+const permalinkLabels = [];
+
+function itemAnchorId(item, items) {
+  const overloaded = items.some(
+    (other) => other !== item && other.name === item.name,
+  );
+  const suffix = overloaded && item.signature.endsWith("()") ? "-no-args" : "";
+  return `pyxel.${item.name.replace(/\s+/g, "-")}${suffix}`;
+}
+
+function anchorText() {
+  return lang === "cn"
+    ? { jump: "快速跳轉", link: "連結至" }
+    : lang === "ja"
+      ? { jump: "クイック移動", link: "リンク先" }
+      : { jump: "Quick jump", link: "Link to" };
+}
+
+function makeAnchorLink(id, label, className = "api-anchor-link") {
+  const anchor = document.createElement("a");
+  anchor.href = `#${id}`;
+  anchor.className = className;
+  anchor.textContent = "#";
+  permalinkLabels.push({ anchor, label });
+  anchor.addEventListener("click", (event) => {
+    event.stopPropagation();
+    // A repeated click must also reveal a target that has since been collapsed.
+    if (location.hash === anchor.hash) requestAnimationFrame(revealAnchor);
+  });
+  return anchor;
+}
+
+function registerAnchor(element, id, item, category) {
+  element.id = id;
+  element.classList.add("api-anchor-target");
+  element.tabIndex = -1;
+  anchorTargets.set(id, { element, item, category });
+}
+
+function revealAnchor() {
+  let id;
+  try {
+    id = decodeURIComponent(location.hash.slice(1));
+  } catch {
+    return;
+  }
+  const target = anchorTargets.get(id);
+  if (!target) return;
+
+  // A shared link should work regardless of the recipient's current filters.
+  searchQuery = "";
+  document.getElementById("search-input").value = "";
+  const advancedCategory =
+    target.category?.items?.length &&
+    target.category.items.every((item) => item.advanced);
+  if (target.item?.advanced || advancedCategory) {
+    showAdvanced = true;
+    document.getElementById("advanced-toggle").checked = true;
+  }
+  updateVisibility();
+  for (let node = target.element; node; node = node.parentElement) {
+    if (node.tagName === "DETAILS") node.open = true;
+  }
+  if (target.item) {
+    const details = target.element.querySelector("details");
+    if (details) details.open = true;
+  }
+  target.element.scrollIntoView({ block: "start" });
+  target.element.focus({ preventScroll: true });
+}
+
+window.addEventListener("hashchange", revealAnchor);
+
 // Element lookup maps built once after buildPage; per-keystroke
 // visibility updates must not scan the whole document per entry.
 const domCache = {};
@@ -150,6 +224,8 @@ function buildDetailContent(container, item) {
 function buildPage() {
   const app = document.getElementById("app");
   app.innerHTML = "";
+  anchorTargets.clear();
+  permalinkLabels.length = 0;
 
   app.appendChild(buildPageHeader(updateTexts));
 
@@ -179,6 +255,7 @@ function buildPage() {
   toggleWrap.className = "toggle-label text-gray-400 hover:text-gray-200";
   const toggleCheck = document.createElement("input");
   toggleCheck.type = "checkbox";
+  toggleCheck.id = "advanced-toggle";
   toggleCheck.className =
     "accent-indigo-500 w-4 h-4 rounded cursor-pointer outline-none focus-visible:ring-1 focus-visible:ring-indigo-300 focus-visible:ring-offset-1 focus-visible:ring-offset-gray-900";
   toggleCheck.checked = showAdvanced;
@@ -200,6 +277,20 @@ function buildPage() {
   if (hasAdvanced) toolbar.appendChild(toggleWrap);
   app.appendChild(toolbar);
 
+  const quickNav = document.createElement("nav");
+  quickNav.id = "api-quick-nav";
+  quickNav.className = "api-quick-nav";
+  for (const cat of data.categories) {
+    const anchor = makeAnchorLink(
+      `category-${cat.id}`,
+      cat.title,
+      "api-category-link",
+    );
+    anchor.dataset.jumpCategory = cat.id;
+    quickNav.appendChild(anchor);
+  }
+  app.appendChild(quickNav);
+
   // Empty-state message toggled by updateVisibility
   const noResults = document.createElement("div");
   noResults.id = "no-results";
@@ -212,6 +303,7 @@ function buildPage() {
     section.open = !cat.collapsed;
     section.className = "mt-6";
     section.dataset.catId = cat.id;
+    registerAnchor(section, `category-${cat.id}`, undefined, cat);
 
     const catHeader = document.createElement("summary");
     catHeader.className =
@@ -220,6 +312,7 @@ function buildPage() {
     catText.className = "tri";
     catText.dataset.catTitle = cat.id;
     catHeader.appendChild(catText);
+    catHeader.appendChild(makeAnchorLink(section.id, cat.title));
     const line = document.createElement("span");
     line.className = "flex-1 bg-gray-700 h-px";
     catHeader.appendChild(line);
@@ -241,6 +334,7 @@ function buildPage() {
         const row = document.createElement("div");
         row.className = "py-3";
         row.dataset.itemKey = `${cat.id}-${i}`;
+        registerAnchor(row, itemAnchorId(item, cat.items), item);
 
         // Signature line with API kind badge and optional advanced mark
         const sigLine = document.createElement("div");
@@ -265,6 +359,7 @@ function buildPage() {
           sigWrap.appendChild(adv);
         }
         sigLine.appendChild(sigWrap);
+        sigLine.appendChild(makeAnchorLink(row.id, `pyxel.${item.name}`));
 
         row.appendChild(sigLine);
 
@@ -305,7 +400,7 @@ function buildPage() {
       grid.dataset.constGrid = cat.id;
       let html = '<div class="flex flex-wrap gap-1.5">';
       for (let i = 0; i < cat.constants.length; i++) {
-        html += `<code class="const-chip" data-const-key="${cat.id}-${i}">${esc(cat.constants[i])}</code>`;
+        html += constantAnchorHtml(cat.constants[i], `${cat.id}-${i}`);
       }
       html += "</div>";
       grid.innerHTML = html;
@@ -356,7 +451,7 @@ function buildPage() {
 
             let html = '<div class="flex flex-wrap gap-1.5">';
             for (let i = 0; i < sec.constants.length; i++) {
-              html += `<code class="const-chip" data-const-key="${sid}-${i}">${esc(sec.constants[i])}</code>`;
+              html += constantAnchorHtml(sec.constants[i], `${sid}-${i}`);
             }
             html += "</div>";
             const chipDiv = document.createElement("div");
@@ -391,8 +486,22 @@ function buildPage() {
   }
 
   cacheDomRefs();
+  // Constant chips are inserted as HTML; register their live elements afterward.
+  for (const anchor of domCache["const-key"].values()) {
+    anchorTargets.set(anchor.id, { element: anchor });
+    permalinkLabels.push({ anchor, label: anchor.id });
+    anchor.addEventListener("click", () => {
+      if (location.hash === anchor.hash) requestAnimationFrame(revealAnchor);
+    });
+  }
   updateTexts();
   updateVisibility();
+  requestAnimationFrame(revealAnchor);
+}
+
+function constantAnchorHtml(name, key) {
+  const id = `pyxel.${name}`;
+  return `<a id="${esc(id)}" href="#${esc(id)}" class="api-constant-link api-anchor-target" data-const-key="${esc(key)}"><code class="const-chip">${esc(name)}</code></a>`;
 }
 
 // Apply localized labels to headers, controls, categories, and details.
@@ -409,6 +518,20 @@ function updateTexts() {
   const advLabel = document.getElementById("advanced-label");
   if (advLabel) advLabel.textContent = t("show_advanced");
   document.getElementById("no-results").textContent = t("no_results");
+  document
+    .getElementById("api-quick-nav")
+    .setAttribute("aria-label", anchorText().jump);
+  document.querySelectorAll("[data-jump-category]").forEach((anchor) => {
+    const category = data.categories.find(
+      (cat) => cat.id === anchor.dataset.jumpCategory,
+    );
+    anchor.textContent = t(category.title);
+  });
+  for (const { anchor, label } of permalinkLabels) {
+    const title = `${anchorText().link} ${t(label)}`;
+    anchor.title = title;
+    anchor.setAttribute("aria-label", title);
+  }
 
   // Static UI labels such as details toggles
   document.querySelectorAll("[data-ui-key]").forEach((el) => {
