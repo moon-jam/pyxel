@@ -6,7 +6,7 @@
     },
     {
       "code": "cn",
-      "name": "中文"
+      "name": "繁體中文"
     },
     {
       "code": "de",
@@ -52,7 +52,7 @@
   "ui": {
     "title": {
       "en": "Pyxel Code Maker Manual",
-      "cn": "Pyxel Code Maker 手册",
+      "cn": "Pyxel Code Maker 手冊",
       "de": "Pyxel Code Maker Handbuch",
       "es": "Manual de Pyxel Code Maker",
       "fr": "Manuel de Pyxel Code Maker",
@@ -66,7 +66,7 @@
     },
     "subtitle": {
       "en": "Manual for the {0} online development environment.",
-      "cn": "{0} 在线开发环境手册",
+      "cn": "{0} 線上開發環境手冊",
       "de": "Handbuch für die {0}-Online-Entwicklungsumgebung.",
       "es": "Manual del entorno de desarrollo en línea de {0}.",
       "fr": "Manuel de l'environnement de développement en ligne de {0}.",
@@ -94,7 +94,7 @@
     },
     "overview_body": {
       "en": "Pyxel Code Maker is a browser-based online development environment for Pyxel. You can write Python code, create game resources (images, tilemaps, sounds, music), and run your application in the browser without installing anything.",
-      "cn": "Pyxel Code Maker 是基于浏览器的 Pyxel 在线开发环境。无需安装，即可在浏览器中编写 Python 代码、创建游戏资源 (图像、瓦片地图、声音、音乐) 并运行应用程序。",
+      "cn": "Pyxel Code Maker 是基於瀏覽器的 Pyxel 線上開發環境。無需安裝，即可在瀏覽器中編寫 Python 程式碼、建立遊戲資源 (圖片、瓦片地圖、聲音、音樂) 並執行應用程式。",
       "de": "Pyxel Code Maker ist eine browserbasierte Online-Entwicklungsumgebung für Pyxel. Sie können Python-Code schreiben, Spielressourcen (Bilder, Tilemaps, Sounds, Musik) erstellen und Ihre Anwendung ausführen — alles im Browser ohne Installation.",
       "es": "Pyxel Code Maker es un entorno de desarrollo en línea basado en navegador para Pyxel. Permite escribir código Python, crear recursos de juego (imágenes, tilemaps, sonidos, música) y ejecutar su aplicación, todo en el navegador sin instalación.",
       "fr": "Pyxel Code Maker est un environnement de développement en ligne basé sur le navigateur pour Pyxel. Il vous permet d'écrire du code Python, de créer des ressources de jeu (images, tilemaps, sons, musique) et d'exécuter votre application, le tout dans le navigateur sans installation.",
@@ -108,7 +108,7 @@
     },
     "layout_title": {
       "en": "Screen Layout",
-      "cn": "屏幕布局",
+      "cn": "螢幕配置",
       "de": "Bildschirmlayout",
       "es": "Diseño de pantalla",
       "fr": "Disposition de l'écran",
@@ -122,7 +122,7 @@
     },
     "layout_body": {
       "en": "The screen consists of the toolbar at the top, the editing area on the left, and the runtime screen on the right.",
-      "cn": "屏幕由顶部的工具栏、左侧的编辑区域和右侧的运行画面组成。",
+      "cn": "螢幕由頂部的工具列、左側的編輯區域和右側的執行畫面組成。",
       "de": "Der Bildschirm besteht aus der Symbolleiste oben, dem Bearbeitungsbereich links und dem Ausführungsbildschirm rechts.",
       "es": "La pantalla consta de la barra de herramientas en la parte superior, el área de edición a la izquierda y la pantalla de ejecución a la derecha.",
       "fr": "L'écran se compose de la barre d'outils en haut, de la zone d'édition à gauche et de l'écran d'exécution à droite.",
@@ -136,7 +136,7 @@
     },
     "layout_toolbar": {
       "en": "Toolbar",
-      "cn": "工具栏",
+      "cn": "工具列",
       "de": "Symbolleiste",
       "es": "Barra de herramientas",
       "fr": "Barre d'outils",
@@ -150,7 +150,7 @@
     },
     "layout_toolbar_desc": {
       "en": "Contains buttons for project management and application control.",
-      "cn": "包含项目管理和应用程序控制的按钮。",
+      "cn": "包含專案管理和應用程式控制的按鈕。",
       "de": "Enthält Schaltflächen für Projektverwaltung und Anwendungssteuerung.",
       "es": "Contiene botones para la gestión de proyectos y el control de la aplicación.",
       "fr": "Contient des boutons pour la gestion de projet et le contrôle de l'application.",
@@ -164,7 +164,7 @@
     },
     "layout_focus_line": {
       "en": "Focus Line",
-      "cn": "焦点线",
+      "cn": "焦點線",
       "de": "Fokuszeile",
       "es": "Línea de enfoque",
       "fr": "Ligne de focus",
@@ -178,7 +178,7 @@
     },
     "layout_focus_line_desc": {
       "en": "A thin line below the toolbar indicating which pane is currently focused. The active segment turns cyan.",
-      "cn": "工具栏下方的细线，指示当前聚焦的面板。活动部分变为青色。",
+      "cn": "工具列下方的細線，指示目前聚焦的面板。活動部分變為青色。",
       "de": "Eine dünne Linie unter der Symbolleiste, die anzeigt, welcher Bereich aktuell fokussiert ist. Das aktive Segment wird cyan.",
       "es": "Una línea delgada debajo de la barra de herramientas que indica qué panel tiene el enfoque. El segmento activo se vuelve cian.",
       "fr": "Une fine ligne sous la barre d'outils indiquant quel panneau est actuellement actif. Le segment actif devient cyan.",
@@ -192,7 +192,7 @@
     },
     "layout_editing_area": {
       "en": "Editing Area",
-      "cn": "编辑区域",
+      "cn": "編輯區域",
       "de": "Bearbeitungsbereich",
       "es": "Área de edición",
       "fr": "Zone d'édition",
@@ -206,7 +206,7 @@
     },
     "layout_editing_area_desc": {
       "en": "Switches between the code editor and resource editor via the Code/Res toggle.",
-      "cn": "通过 Code/Res 切换按钮在代码编辑器和资源编辑器之间切换。",
+      "cn": "透過 Code/Res 切換按鈕在程式碼編輯器和資源編輯器之間切換。",
       "de": "Wechselt zwischen Code-Editor und Ressourcen-Editor über den Code/Res-Umschalter.",
       "es": "Alterna entre el editor de código y el editor de recursos mediante el selector Code/Res.",
       "fr": "Bascule entre l'éditeur de code et l'éditeur de ressources via le bouton Code/Res.",
@@ -220,7 +220,7 @@
     },
     "layout_editing_area_hint": {
       "en": "(Code / Resource)",
-      "cn": "(代码 / 资源)",
+      "cn": "(程式碼 / 資源)",
       "de": "(Code / Ressource)",
       "es": "(Código / Recurso)",
       "fr": "(Code / Ressource)",
@@ -234,7 +234,7 @@
     },
     "layout_splitter": {
       "en": "Splitter",
-      "cn": "分隔条",
+      "cn": "分隔條",
       "de": "Trennleiste",
       "es": "Divisor",
       "fr": "Séparateur",
@@ -248,7 +248,7 @@
     },
     "layout_splitter_desc": {
       "en": "The boundary between the editing area and runtime screen. Drag to adjust the proportions.",
-      "cn": "编辑区域和运行画面之间的边界。拖动以调整比例。",
+      "cn": "編輯區域和執行畫面之間的邊界。拖動以調整比例。",
       "de": "Die Grenze zwischen Bearbeitungsbereich und Ausführungsbildschirm. Ziehen, um die Proportionen anzupassen.",
       "es": "El límite entre el área de edición y la pantalla de ejecución. Arrastre para ajustar las proporciones.",
       "fr": "La frontière entre la zone d'édition et l'écran d'exécution. Faites glisser pour ajuster les proportions.",
@@ -262,7 +262,7 @@
     },
     "layout_runtime": {
       "en": "Runtime Screen",
-      "cn": "运行画面",
+      "cn": "執行畫面",
       "de": "Ausführungsbildschirm",
       "es": "Pantalla de ejecución",
       "fr": "Écran d'exécution",
@@ -276,7 +276,7 @@
     },
     "layout_runtime_desc": {
       "en": "Displays the running application.",
-      "cn": "显示正在运行的应用程序。",
+      "cn": "顯示正在執行的應用程式。",
       "de": "Zeigt die laufende Anwendung an.",
       "es": "Muestra la aplicación en ejecución.",
       "fr": "Affiche l'application en cours d'exécution.",
@@ -290,7 +290,7 @@
     },
     "toolbar_title": {
       "en": "Toolbar",
-      "cn": "工具栏",
+      "cn": "工具列",
       "de": "Symbolleiste",
       "es": "Barra de herramientas",
       "fr": "Barre d'outils",
@@ -304,7 +304,7 @@
     },
     "toolbar_body": {
       "en": "The toolbar provides the following buttons:",
-      "cn": "工具栏提供以下按钮：",
+      "cn": "工具列提供以下按鈕：",
       "de": "Die Symbolleiste bietet folgende Schaltflächen:",
       "es": "La barra de herramientas proporciona los siguientes botones:",
       "fr": "La barre d'outils fournit les boutons suivants :",
@@ -318,7 +318,7 @@
     },
     "code_title": {
       "en": "Code Editor",
-      "cn": "代码编辑器",
+      "cn": "程式碼編輯器",
       "de": "Code-Editor",
       "es": "Editor de código",
       "fr": "Éditeur de code",
@@ -332,7 +332,7 @@
     },
     "code_body": {
       "en": "The code editor provides Python syntax highlighting and auto-completion. Write your Pyxel application code here. The default entry point is {0}.",
-      "cn": "代码编辑器提供 Python 语法高亮和自动补全。在这里编写 Pyxel 应用程序代码。默认入口点是 {0}。",
+      "cn": "程式碼編輯器提供 Python 語法醒目標示和自動完成。在這裡編寫 Pyxel 應用程式的程式碼。預設入口點是 {0}。",
       "de": "Der Code-Editor bietet Python-Syntaxhervorhebung und Autovervollständigung. Schreiben Sie hier Ihren Pyxel-Anwendungscode. Der Standard-Einstiegspunkt ist {0}.",
       "es": "El editor de código proporciona resaltado de sintaxis Python y autocompletado. Escriba el código de su aplicación Pyxel aquí. El punto de entrada predeterminado es {0}.",
       "fr": "L'éditeur de code offre la coloration syntaxique Python et l'autocomplétion. Écrivez le code de votre application Pyxel ici. Le point d'entrée par défaut est {0}.",
@@ -346,7 +346,7 @@
     },
     "resource_title": {
       "en": "Resource Editor",
-      "cn": "资源编辑器",
+      "cn": "資源編輯器",
       "de": "Ressourcen-Editor",
       "es": "Editor de recursos",
       "fr": "Éditeur de ressources",
@@ -360,7 +360,7 @@
     },
     "resource_body": {
       "en": "The resource editor is the same as Pyxel's built-in editor. You can create and edit images, tilemaps, sounds, and music. The resource file name is fixed to {0}. The editor operates the same way as in a local Pyxel environment.",
-      "cn": "资源编辑器与 Pyxel 内置编辑器相同。可以创建和编辑图像、瓦片地图、声音和音乐。资源文件名固定为 {0}。操作方式与本地 Pyxel 环境相同。",
+      "cn": "資源編輯器與 Pyxel 內建編輯器相同。可以建立和編輯圖片、瓦片地圖、聲音和音樂。資源檔案名固定為 {0}。操作方式與本地 Pyxel 環境相同。",
       "de": "Der Ressourcen-Editor ist identisch mit Pyxels integriertem Editor. Er ermöglicht das Erstellen und Bearbeiten von Bildern, Tilemaps, Sounds und Musik. Der Ressourcen-Dateiname ist auf {0} festgelegt. Der Editor funktioniert wie in einer lokalen Pyxel-Umgebung.",
       "es": "El editor de recursos es el mismo que el editor integrado de Pyxel. Permite crear y editar imágenes, tilemaps, sonidos y música. El nombre del archivo de recursos es fijo: {0}. El editor funciona igual que en un entorno local de Pyxel.",
       "fr": "L'éditeur de ressources est identique à l'éditeur intégré de Pyxel. Il permet de créer et modifier des images, des tilemaps, des sons et de la musique. Le nom du fichier de ressources est fixé à {0}. L'éditeur fonctionne de la même manière que dans un environnement Pyxel local.",
@@ -374,7 +374,7 @@
     },
     "runtime_title": {
       "en": "Runtime Screen",
-      "cn": "运行画面",
+      "cn": "執行畫面",
       "de": "Ausführungsbildschirm",
       "es": "Pantalla de ejecución",
       "fr": "Écran d'exécution",
@@ -388,7 +388,7 @@
     },
     "runtime_body": {
       "en": "The right side of the screen displays the running application. Click the Run button or press {0} to execute your code. If an error occurs, the error message is displayed as an overlay on the runtime screen.",
-      "cn": "屏幕右侧显示运行中的应用程序。点击 Run 按钮或按 {0} 执行代码。如果发生错误，错误消息将以叠加层的形式显示在运行画面上。",
+      "cn": "螢幕右側顯示執行中的應用程式。點選 Run 按鈕或按 {0} 執行程式碼。如果發生錯誤，錯誤訊息將以疊加層的形式顯示在執行畫面上。",
       "de": "Die rechte Seite des Bildschirms zeigt die laufende Anwendung. Klicken Sie auf Run oder drücken Sie {0}, um den Code auszuführen. Bei einem Fehler wird die Fehlermeldung als Overlay auf dem Ausführungsbildschirm angezeigt.",
       "es": "El lado derecho de la pantalla muestra la aplicación en ejecución. Haga clic en Run o presione {0} para ejecutar el código. Si ocurre un error, el mensaje se muestra como una superposición en la pantalla de ejecución.",
       "fr": "Le côté droit de l'écran affiche l'application en cours d'exécution. Cliquez sur Run ou appuyez sur {0} pour exécuter le code. En cas d'erreur, le message s'affiche en superposition sur l'écran d'exécution.",
@@ -402,7 +402,7 @@
     },
     "shortcuts_title": {
       "en": "Keyboard Shortcuts",
-      "cn": "键盘快捷键",
+      "cn": "鍵盤快速鍵",
       "de": "Tastenkombinationen",
       "es": "Atajos de teclado",
       "fr": "Raccourcis clavier",
@@ -416,7 +416,7 @@
     },
     "shortcuts_body": {
       "en": "The following keyboard shortcuts are available. On macOS, use Cmd instead of Ctrl.",
-      "cn": "可以使用以下键盘快捷键。在 macOS 上，使用 Cmd 代替 Ctrl。",
+      "cn": "可以使用以下鍵盤快速鍵。在 macOS 上，使用 Cmd 代替 Ctrl。",
       "de": "Die folgenden Tastenkombinationen sind verfügbar. Unter macOS verwenden Sie Cmd statt Ctrl.",
       "es": "Los siguientes atajos de teclado están disponibles. En macOS, use Cmd en lugar de Ctrl.",
       "fr": "Les raccourcis clavier suivants sont disponibles. Sur macOS, utilisez Cmd au lieu de Ctrl.",
@@ -430,7 +430,7 @@
     },
     "th_shortcut": {
       "en": "Shortcut",
-      "cn": "快捷键",
+      "cn": "快速鍵",
       "de": "Tastenkombination",
       "es": "Atajo",
       "fr": "Raccourci",
@@ -472,7 +472,7 @@
     },
     "drag_drop_body": {
       "en": "You can import files by dragging and dropping them onto the page. Drop a {0} file to replace the code, or a {1} file to replace the resource. The file type is detected automatically by extension.",
-      "cn": "可以将文件拖放到页面上来导入。拖放 {0} 文件可替换代码，拖放 {1} 文件可替换资源。文件类型根据扩展名自动识别。",
+      "cn": "可以將檔案拖放到頁面上來匯入。拖放 {0} 檔案可替換程式碼，拖放 {1} 檔案可替換資源。檔案格式根據副檔名自動識別。",
       "de": "Sie können Dateien importieren, indem Sie sie auf die Seite ziehen und ablegen. Eine {0}-Datei ersetzt den Code, eine {1}-Datei ersetzt die Ressource. Der Dateityp wird automatisch anhand der Erweiterung erkannt.",
       "es": "Puede importar archivos arrastrándolos y soltándolos en la página. Suelte un archivo {0} para reemplazar el código, o un archivo {1} para reemplazar el recurso. El tipo de archivo se detecta automáticamente por la extensión.",
       "fr": "Vous pouvez importer des fichiers en les glissant-déposant sur la page. Déposez un fichier {0} pour remplacer le code, ou un fichier {1} pour remplacer la ressource. Le type de fichier est détecté automatiquement par l'extension.",
@@ -486,7 +486,7 @@
     },
     "project_title": {
       "en": "Project Files",
-      "cn": "项目文件",
+      "cn": "專案檔案",
       "de": "Projektdateien",
       "es": "Archivos de proyecto",
       "fr": "Fichiers de projet",
@@ -500,7 +500,7 @@
     },
     "project_body_1": {
       "en": "Projects are saved as ZIP files containing {0} and {1}. You can load a previously saved project using the Load button.",
-      "cn": "项目保存为包含 {0} 和 {1} 的 ZIP 文件。可以使用 Load 按钮加载之前保存的项目。",
+      "cn": "專案儲存為包含 {0} 和 {1} 的 ZIP 檔案。可以使用 Load 按鈕載入之前儲存的專案。",
       "de": "Projekte werden als ZIP-Dateien mit {0} und {1} gespeichert. Über die Schaltfläche Load können Sie ein zuvor gespeichertes Projekt laden.",
       "es": "Los proyectos se guardan como archivos ZIP que contienen {0} y {1}. Puede cargar un proyecto guardado previamente usando el botón Load.",
       "fr": "Les projets sont enregistrés sous forme de fichiers ZIP contenant {0} et {1}. Vous pouvez charger un projet précédemment enregistré avec le bouton Load.",
@@ -514,7 +514,7 @@
     },
     "project_body_2": {
       "en": "The ZIP format is compatible with Pyxel's {0} format. Saved projects can also be run in a local Pyxel environment:",
-      "cn": "该 ZIP 格式与 Pyxel 的 {0} 格式兼容。保存的项目也可以在本地 Pyxel 环境中运行：",
+      "cn": "該 ZIP 格式與 Pyxel 的 {0} 格式相容。儲存的專案也可以在本地 Pyxel 環境中執行：",
       "de": "Das ZIP-Format ist kompatibel mit Pyxels {0}-Format. Gespeicherte Projekte können auch in einer lokalen Pyxel-Umgebung ausgeführt werden:",
       "es": "El formato ZIP es compatible con el formato {0} de Pyxel. Los proyectos guardados también se pueden ejecutar en un entorno local de Pyxel:",
       "fr": "Le format ZIP est compatible avec le format {0} de Pyxel. Les projets enregistrés peuvent également être exécutés dans un environnement Pyxel local :",
@@ -528,7 +528,7 @@
     },
     "sharing_title": {
       "en": "Sharing via URL",
-      "cn": "通过 URL 分享",
+      "cn": "透過 URL 分享",
       "de": "Teilen über URL",
       "es": "Compartir vía URL",
       "fr": "Partage via URL",
@@ -542,7 +542,7 @@
     },
     "sharing_body": {
       "en": "When you load a project from Gist, GitHub, or URL, the browser address bar is updated with a shareable link. You can share this URL with others to let them open the same project directly in Pyxel Code Maker.",
-      "cn": "当您从 Gist、GitHub 或 URL 加载项目时，浏览器地址栏会更新为可分享的链接。您可以将此 URL 分享给他人，让他们直接在 Pyxel Code Maker 中打开同一项目。",
+      "cn": "當您從 Gist、GitHub 或 URL 載入專案時，瀏覽器位址列會更新為可分享的連結。您可以將此 URL 分享給他人，讓他們直接在 Pyxel Code Maker 中開啟同一專案。",
       "de": "Wenn Sie ein Projekt von Gist, GitHub oder URL laden, wird die Adresszeile des Browsers mit einem teilbaren Link aktualisiert. Sie können diese URL mit anderen teilen, damit sie dasselbe Projekt direkt in Pyxel Code Maker öffnen können.",
       "es": "Cuando carga un proyecto desde Gist, GitHub o URL, la barra de direcciones del navegador se actualiza con un enlace compartible. Puede compartir esta URL con otros para que abran el mismo proyecto directamente en Pyxel Code Maker.",
       "fr": "Lorsque vous chargez un projet depuis Gist, GitHub ou URL, la barre d'adresse du navigateur est mise à jour avec un lien partageable. Vous pouvez partager cette URL avec d'autres pour qu'ils ouvrent le même projet directement dans Pyxel Code Maker.",
@@ -560,7 +560,7 @@
       "label": "Load ▼",
       "desc": {
         "en": "Open a menu to load a project.",
-        "cn": "打开菜单以加载项目。",
+        "cn": "開啟選單以載入專案。",
         "de": "Menü zum Laden eines Projekts öffnen.",
         "es": "Abrir un menú para cargar un proyecto.",
         "fr": "Ouvrir un menu pour charger un projet.",
@@ -577,7 +577,7 @@
           "label": "File",
           "desc": {
             "en": "Load a project ZIP file from your computer.",
-            "cn": "从计算机加载项目 ZIP 文件。",
+            "cn": "從電腦載入專案 ZIP 檔案。",
             "de": "Eine Projekt-ZIP-Datei vom Computer laden.",
             "es": "Cargar un archivo ZIP de proyecto desde su computadora.",
             "fr": "Charger un fichier ZIP de projet depuis votre ordinateur.",
@@ -594,7 +594,7 @@
           "label": "Gist",
           "desc": {
             "en": "Load from a GitHub Gist. Enter a Gist URL.",
-            "cn": "从 GitHub Gist 加载。输入 Gist URL。",
+            "cn": "從 GitHub Gist 載入。輸入 Gist URL。",
             "de": "Aus einem GitHub Gist laden. Gist-URL eingeben.",
             "es": "Cargar desde un GitHub Gist. Ingrese una URL de Gist.",
             "fr": "Charger depuis un GitHub Gist. Entrez une URL de Gist.",
@@ -611,7 +611,7 @@
           "label": "GitHub",
           "desc": {
             "en": "Load a ZIP file from a GitHub repository. Enter a GitHub file URL.",
-            "cn": "从 GitHub 仓库加载 ZIP 文件。输入 GitHub 文件 URL。",
+            "cn": "從 GitHub 儲存庫載入 ZIP 檔案。輸入 GitHub 檔案 URL。",
             "de": "Eine ZIP-Datei aus einem GitHub-Repository laden. GitHub-Datei-URL eingeben.",
             "es": "Cargar un archivo ZIP desde un repositorio de GitHub. Ingrese una URL de archivo de GitHub.",
             "fr": "Charger un fichier ZIP depuis un dépôt GitHub. Entrez une URL de fichier GitHub.",
@@ -628,7 +628,7 @@
           "label": "URL",
           "desc": {
             "en": "Load a ZIP file from any URL. Enter the full URL.",
-            "cn": "从任意 URL 加载 ZIP 文件。输入完整的 URL。",
+            "cn": "從任意 URL 載入 ZIP 檔案。輸入完整的 URL。",
             "de": "Eine ZIP-Datei von einer beliebigen URL laden. Vollständige URL eingeben.",
             "es": "Cargar un archivo ZIP desde cualquier URL. Ingrese la URL completa.",
             "fr": "Charger un fichier ZIP depuis n'importe quelle URL. Entrez l'URL complète.",
@@ -647,7 +647,7 @@
       "label": "Save ▼",
       "desc": {
         "en": "Open a menu to save the project.",
-        "cn": "打开菜单以保存项目。",
+        "cn": "開啟選單以儲存專案。",
         "de": "Menü zum Speichern des Projekts öffnen.",
         "es": "Abrir un menú para guardar el proyecto.",
         "fr": "Ouvrir un menu pour enregistrer le projet.",
@@ -664,7 +664,7 @@
           "label": "File",
           "desc": {
             "en": "Save the project as a ZIP file to your computer.",
-            "cn": "将项目保存为 ZIP 文件到计算机。",
+            "cn": "將專案儲存為 ZIP 檔案到電腦。",
             "de": "Das Projekt als ZIP-Datei auf dem Computer speichern.",
             "es": "Guardar el proyecto como archivo ZIP en su computadora.",
             "fr": "Enregistrer le projet comme fichier ZIP sur votre ordinateur.",
@@ -681,7 +681,7 @@
           "label": "Gist",
           "desc": {
             "en": "Copy the project data to the clipboard for sharing via GitHub Gist.",
-            "cn": "将项目数据复制到剪贴板，用于通过 GitHub Gist 分享。",
+            "cn": "將專案資料複製到剪貼簿，用於透過 GitHub Gist 分享。",
             "de": "Projektdaten zum Teilen über GitHub Gist in die Zwischenablage kopieren.",
             "es": "Copiar los datos del proyecto al portapapeles para compartir vía GitHub Gist.",
             "fr": "Copier les données du projet dans le presse-papiers pour les partager via GitHub Gist.",
@@ -700,7 +700,7 @@
       "label": "Code / Res",
       "desc": {
         "en": "Toggle the left pane between the code editor and resource editor.",
-        "cn": "在代码编辑器和资源编辑器之间切换左侧面板。",
+        "cn": "在程式碼編輯器和資源編輯器之間切換左側面板。",
         "de": "Den linken Bereich zwischen Code-Editor und Ressourcen-Editor umschalten.",
         "es": "Alternar el panel izquierdo entre el editor de código y el editor de recursos.",
         "fr": "Basculer le panneau gauche entre l'éditeur de code et l'éditeur de ressources.",
@@ -717,7 +717,7 @@
       "label": "Run",
       "desc": {
         "en": "Run the application. The current code and resources are applied, and the result is displayed on the runtime screen.",
-        "cn": "运行应用程序。当前代码和资源将被应用，结果显示在运行画面上。",
+        "cn": "執行應用程式。目前程式碼和資源將被應用，結果顯示在執行畫面上。",
         "de": "Die Anwendung ausführen. Der aktuelle Code und die Ressourcen werden angewendet und das Ergebnis auf dem Ausführungsbildschirm angezeigt.",
         "es": "Ejecutar la aplicación. Se aplican el código y los recursos actuales, y el resultado se muestra en la pantalla de ejecución.",
         "fr": "Exécuter l'application. Le code et les ressources actuels sont appliqués et le résultat s'affiche sur l'écran d'exécution.",
@@ -736,7 +736,7 @@
       "key": "Ctrl(Cmd)+L",
       "action": {
         "en": "Load file",
-        "cn": "加载文件",
+        "cn": "載入檔案",
         "de": "Datei laden",
         "es": "Cargar archivo",
         "fr": "Charger le fichier",
@@ -753,7 +753,7 @@
       "key": "Ctrl(Cmd)+S",
       "action": {
         "en": "Save file",
-        "cn": "保存文件",
+        "cn": "儲存檔案",
         "de": "Datei speichern",
         "es": "Guardar archivo",
         "fr": "Enregistrer le fichier",
@@ -770,7 +770,7 @@
       "key": "Ctrl(Cmd)+,",
       "action": {
         "en": "Toggle Code/Res editor",
-        "cn": "切换 Code/Res 编辑器",
+        "cn": "切換 Code/Res 編輯器",
         "de": "Code/Res-Editor umschalten",
         "es": "Alternar editor Code/Res",
         "fr": "Basculer l'éditeur Code/Res",
@@ -787,7 +787,7 @@
       "key": "Ctrl(Cmd)+Enter",
       "action": {
         "en": "Run application",
-        "cn": "运行应用程序",
+        "cn": "執行應用程式",
         "de": "Anwendung ausführen",
         "es": "Ejecutar aplicación",
         "fr": "Exécuter l'application",
@@ -804,7 +804,7 @@
       "key": "Ctrl(Cmd)+.",
       "action": {
         "en": "Toggle left/right focus",
-        "cn": "切换左/右焦点",
+        "cn": "切換左/右焦點",
         "de": "Linken/rechten Fokus umschalten",
         "es": "Alternar enfoque izquierda/derecha",
         "fr": "Basculer le focus gauche/droite",

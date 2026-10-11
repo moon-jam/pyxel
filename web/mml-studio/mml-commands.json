@@ -6,7 +6,7 @@
     },
     {
       "code": "cn",
-      "name": "中文"
+      "name": "繁體中文"
     },
     {
       "code": "de",
@@ -66,7 +66,7 @@
     },
     "subtitle": {
       "en": "Command reference for {0} MML.",
-      "cn": "{0} MML 命令参考",
+      "cn": "{0} MML 命令參考",
       "de": "Befehlsreferenz für {0} MML.",
       "es": "Referencia de comandos MML de {0}.",
       "fr": "Référence des commandes MML de {0}.",
@@ -94,7 +94,7 @@
     },
     "th_description": {
       "en": "Description",
-      "cn": "说明",
+      "cn": "說明",
       "de": "Beschreibung",
       "es": "Descripción",
       "fr": "Description",
@@ -112,7 +112,7 @@
       "cmd": "T <bpm>",
       "desc": {
         "en": "Sets the tempo (BPM). Range: 1-. Default is 120.",
-        "cn": "设置速度 (BPM)。范围：1-。默认值为 120。",
+        "cn": "設定速度 (BPM)。範圍：1-。預設值為 120。",
         "de": "Setzt das Tempo (BPM). Bereich: 1-. Standard ist 120.",
         "es": "Establece el tempo (BPM). Rango: 1-. Por defecto es 120.",
         "fr": "Définit le tempo (BPM). Plage : 1-. Par défaut : 120.",
@@ -129,7 +129,7 @@
       "cmd": "Q <gate_percent>",
       "desc": {
         "en": "Sets the gate time as a percentage. Range: 0-100. 100 means the note is played with no gap, 0 means it is not played at all. Default is 80.",
-        "cn": "以百分比设置门限时间。范围：0-100。100 表示音符之间无间隔，0 表示完全不发声。默认值为 80。",
+        "cn": "以百分比設定門限時間。範圍：0-100。100 表示音符之間無間隔，0 表示完全不發聲。預設值為 80。",
         "de": "Setzt die Gate-Zeit als Prozentsatz. Bereich: 0-100. 100 bedeutet, die Note wird ohne Lücke gespielt; 0 bedeutet, sie wird nicht gespielt. Standard ist 80.",
         "es": "Establece el tiempo de gate como porcentaje. Rango: 0-100. 100 significa que la nota se reproduce sin espacio; 0 significa que no se reproduce. Por defecto es 80.",
         "fr": "Définit le temps de gate en pourcentage. Plage : 0-100. 100 signifie que la note est jouée sans coupure ; 0 signifie qu'elle n'est pas jouée. Par défaut : 80.",
@@ -146,7 +146,7 @@
       "cmd": "@ <tone>",
       "desc": {
         "en": "Sets the tone. Range: 0-3 (by default: 0:Triangle / 1:Square / 2:Pulse / 3:Noise). Default is 0.",
-        "cn": "设置音色。范围：0-3 (默认：0:Triangle / 1:Square / 2:Pulse / 3:Noise)。默认值为 0。",
+        "cn": "設定音色。範圍：0-3 (預設：0:Triangle / 1:Square / 2:Pulse / 3:Noise)。預設值為 0。",
         "de": "Setzt den Klang. Bereich: 0-3 (Standard: 0:Triangle / 1:Square / 2:Pulse / 3:Noise). Standard ist 0.",
         "es": "Establece el tono. Rango: 0-3 (por defecto: 0:Triangle / 1:Square / 2:Pulse / 3:Noise). Por defecto es 0.",
         "fr": "Définit le timbre. Plage : 0-3 (par défaut : 0:Triangle / 1:Square / 2:Pulse / 3:Noise). Par défaut : 0.",
@@ -163,7 +163,7 @@
       "cmd": "V <vol>",
       "desc": {
         "en": "Sets the volume. Range: 0-127. Default is 100.",
-        "cn": "设置音量。范围：0-127。默认值为 100。",
+        "cn": "設定音量。範圍：0-127。預設值為 100。",
         "de": "Setzt die Lautstärke. Bereich: 0-127. Standard ist 100.",
         "es": "Establece el volumen. Rango: 0-127. Por defecto es 100.",
         "fr": "Définit le volume. Plage : 0-127. Par défaut : 100.",
@@ -180,7 +180,7 @@
       "cmd": "K <key_offset>",
       "desc": {
         "en": "Sets the transpose amount in semitones. 12 raises the pitch by one octave. Default is 0.",
-        "cn": "以半音为单位设置移调量。12 将音高提高一个八度。默认值为 0。",
+        "cn": "以半音為單位設定移調量。12 將音高提高一個八度。預設值為 0。",
         "de": "Setzt die Transponierung in Halbtönen. 12 erhöht die Tonhöhe um eine Oktave. Standard ist 0.",
         "es": "Establece la transposición en semitonos. 12 sube el tono una octava. Por defecto es 0.",
         "fr": "Définit la transposition en demi-tons. 12 monte la hauteur d'une octave. Par défaut : 0.",
@@ -197,7 +197,7 @@
       "cmd": "Y <offset_cents>",
       "desc": {
         "en": "Sets detune in cents. 100 raises by a semitone, -100 lowers by a semitone. Default is 0.",
-        "cn": "以 cent 为单位设置失谐。100 升高半音，-100 降低半音。默认值为 0。",
+        "cn": "以 cent 為單位設定失諧。100 升高半音，-100 降低半音。預設值為 0。",
         "de": "Setzt die Verstimmung in Cent. 100 erhöht um einen Halbton, -100 verringert um einen Halbton. Standard ist 0.",
         "es": "Establece el desfase en cents. 100 sube un semitono, -100 baja un semitono. Por defecto es 0.",
         "fr": "Définit le désaccordage en cents. 100 monte d'un demi-ton, -100 descend d'un demi-ton. Par défaut : 0.",
@@ -214,7 +214,7 @@
       "cmd": "@ENV <slot>",
       "desc": {
         "en": "Switches the envelope (volume curve) slot. Range: 0-. 0 turns it off.",
-        "cn": "切换包络 (音量曲线) 插槽。范围：0-。0 为关闭。",
+        "cn": "切換包絡 (音量曲線) 插槽。範圍：0-。0 為關閉。",
         "de": "Wechselt den Hüllkurven-Slot (Lautstärkekurve). Bereich: 0-. 0 deaktiviert ihn.",
         "es": "Cambia la ranura de envolvente (curva de volumen). Rango: 0-. 0 lo desactiva.",
         "fr": "Change le slot d'enveloppe (courbe de volume). Plage : 0-. 0 le désactive.",
@@ -231,7 +231,7 @@
       "cmd": "@ENV <slot> { init_vol, dur_ticks1, vol1, dur_ticks2, vol2, ... }",
       "desc": {
         "en": "Slot range: 1-. Sets and switches to the specified envelope slot. Slot 0 cannot be specified.\\nInside `{ }`, specify \"initial volume (once)\", then repeat \"duration (tick), volume (vol)\". 1 tick is 1/48 of a quarter note.",
-        "cn": "插槽范围：1-。设置并切换到指定的包络插槽。不能指定插槽 0。\\n在 `{ }` 内，先指定「初始音量 (仅一次)」，然后重复指定「持续时间 (tick)、音量 (vol)」。1 tick 为四分音符的 1/48。",
+        "cn": "插槽範圍：1-。設定並切換到指定的包絡插槽。不能指定插槽 0。\\n 在 `{ }` 內，先指定「初始音量 (僅一次）」，然後重複指定「持續時間 (tick)、音量 (vol)」。1 tick 為四分音符的 1/48。",
         "de": "Slot-Bereich: 1-. Setzt und wechselt zum angegebenen Hüllkurven-Slot. Slot 0 kann nicht angegeben werden.\\nIn `{ }` erst \"Anfangslautstärke (einmal)\" angeben, dann \"Dauer (Tick), Lautstärke (Vol)\" wiederholen. 1 Tick ist 1/48 einer Viertelnote.",
         "es": "Rango de ranura: 1-. Configura y cambia a la ranura de envolvente especificada. No se puede especificar la ranura 0.\\nDentro de `{ }`, especificar \"volumen inicial (una vez)\", luego repetir \"duración (tick), volumen (vol)\". 1 tick es 1/48 de una negra.",
         "fr": "Plage de slot : 1-. Définit et active le slot d'enveloppe spécifié. Le slot 0 ne peut pas être spécifié.\\nDans `{ }`, spécifier « volume initial (une fois) », puis répéter « durée (tick), volume (vol) ». 1 tick vaut 1/48 d'une noire.",
@@ -249,7 +249,7 @@
       "cmd": "@VIB <slot>",
       "desc": {
         "en": "Switches the vibrato (pitch modulation) slot. Range: 0-. 0 turns it off.",
-        "cn": "切换颤音 (音高调制) 插槽。范围：0-。0 为关闭。",
+        "cn": "切換顫音 (音高調變) 插槽。範圍：0-。0 為關閉。",
         "de": "Wechselt den Vibrato-Slot (Tonhöhenmodulation). Bereich: 0-. 0 deaktiviert ihn.",
         "es": "Cambia la ranura de vibrato (modulación de tono). Rango: 0-. 0 lo desactiva.",
         "fr": "Change le slot de vibrato (modulation de hauteur). Plage : 0-. 0 le désactive.",
@@ -266,7 +266,7 @@
       "cmd": "@VIB <slot> { delay_ticks, period_ticks, depth_cents }",
       "desc": {
         "en": "Slot range: 1-. Sets and switches to the specified vibrato slot. Slot 0 cannot be specified.\\nInside `{ }`, specify \"delay (tick), period (tick), depth (cent)\". 1 tick is 1/48 of a quarter note.",
-        "cn": "插槽范围：1-。设置并切换到指定的颤音插槽。不能指定插槽 0。\\n在 `{ }` 内指定「延迟 (tick)、周期 (tick)、深度 (cent)」。1 tick 为四分音符的 1/48。",
+        "cn": "插槽範圍：1-。設定並切換到指定的顫音插槽。不能指定插槽 0。\\n 在 `{ }` 內指定「延遲 (tick)、週期 (tick)、深度 (cent)」。1 tick 為四分音符的 1/48。",
         "de": "Slot-Bereich: 1-. Setzt und wechselt zum angegebenen Vibrato-Slot. Slot 0 kann nicht angegeben werden.\\nIn `{ }` \"Verzögerung (Tick), Periode (Tick), Tiefe (Cent)\" angeben. 1 Tick ist 1/48 einer Viertelnote.",
         "es": "Rango de ranura: 1-. Configura y cambia a la ranura de vibrato especificada. No se puede especificar la ranura 0.\\nDentro de `{ }`, especificar \"retardo (tick), período (tick), profundidad (cent)\". 1 tick es 1/48 de una negra.",
         "fr": "Plage de slot : 1-. Définit et active le slot de vibrato spécifié. Le slot 0 ne peut pas être spécifié.\\nDans `{ }`, spécifier « délai (tick), période (tick), profondeur (cent) ». 1 tick vaut 1/48 d'une noire.",
@@ -284,7 +284,7 @@
       "cmd": "@GLI <slot>",
       "desc": {
         "en": "Switches the glide (pitch slide) slot. Range: 0-. 0 turns it off.",
-        "cn": "切换滑音 (音高滑动) 插槽。范围：0-。0 为关闭。",
+        "cn": "切換滑音 (音高滑動) 插槽。範圍：0-。0 為關閉。",
         "de": "Wechselt den Glide-Slot (Tonhöhengleiten). Bereich: 0-. 0 deaktiviert ihn.",
         "es": "Cambia la ranura de glide (deslizamiento de tono). Rango: 0-. 0 lo desactiva.",
         "fr": "Change le slot de glide (glissement de hauteur). Plage : 0-. 0 le désactive.",
@@ -301,7 +301,7 @@
       "cmd": "@GLI <slot> { offset_cents, dur_ticks }",
       "desc": {
         "en": "Slot range: 1-. Sets and switches to the specified glide (pitch slide) slot. Slot 0 cannot be specified.\\nInside `{ }`, specify \"initial pitch offset (cent), time to return to 0 (tick)\". 1 tick is 1/48 of a quarter note.\\nSpecifying `*` for each parameter automatically applies the pitch offset as the difference from the previous note and the return time as the playback duration of each note, respectively.",
-        "cn": "插槽范围：1-。设置并切换到指定的滑音 (音高滑动) 插槽。不能指定插槽 0。\\n在 `{ }` 内指定「初始音高偏移 (cent)、归零时间 (tick)」。1 tick 为四分音符的 1/48。\\n各参数指定 `*` 时，音高偏移自动使用与前一个音符的差值，归零时间自动使用各音符的播放时长。",
+        "cn": "插槽範圍：1-。設定並切換到指定的滑音 (音高滑動) 插槽。不能指定插槽 0。\\n 在 `{ }` 內指定「初始音高偏移 (cent)、歸零時間 (tick)」。1 tick 為四分音符的 1/48。\\n各參數指定 `*` 時，音高偏移自動使用與前一個音符的差值，歸零時間自動使用各音符的播放時長。",
         "de": "Slot-Bereich: 1-. Setzt und wechselt zum angegebenen Glide-Slot (Tonhöhengleiten). Slot 0 kann nicht angegeben werden.\\nIn `{ }` \"Anfangs-Tonhöhenversatz (Cent), Zeit bis Rückkehr auf 0 (Tick)\" angeben. 1 Tick ist 1/48 einer Viertelnote.\\nBei `*` für einen Parameter wird der Tonhöhenversatz automatisch als Differenz zur vorherigen Note und die Rückkehrzeit als Wiedergabedauer jeder Note angewendet.",
         "es": "Rango de ranura: 1-. Configura y cambia a la ranura de glide (deslizamiento de tono) especificada. No se puede especificar la ranura 0.\\nDentro de `{ }`, especificar \"desplazamiento de tono inicial (cent), tiempo de retorno a 0 (tick)\". 1 tick es 1/48 de una negra.\\nAl especificar `*` para cada parámetro, el desplazamiento se aplica como la diferencia con la nota anterior y el tiempo de retorno como la duración de cada nota.",
         "fr": "Plage de slot : 1-. Définit et active le slot de glide (glissement de hauteur) spécifié. Le slot 0 ne peut pas être spécifié.\\nDans `{ }`, spécifier « décalage de hauteur initial (cent), temps de retour à 0 (tick) ». 1 tick vaut 1/48 d'une noire.\\nEn spécifiant `*` pour chaque paramètre, le décalage est automatiquement la différence avec la note précédente et le temps de retour est la durée de chaque note.",
@@ -319,7 +319,7 @@
       "cmd": "O <oct>",
       "desc": {
         "en": "Sets the octave. Range: -1-9. `O4`'s A is 440 Hz. Default is 4.",
-        "cn": "设置八度。范围：-1-9。`O4` 的 A 音为 440 Hz。默认值为 4。",
+        "cn": "設定八度。範圍：-1-9。`O4` 的 A 音為 440 Hz。預設值為 4。",
         "de": "Setzt die Oktave. Bereich: -1-9. Das A von `O4` ist 440 Hz. Standard ist 4.",
         "es": "Establece la octava. Rango: -1-9. El La de `O4` es 440 Hz. Por defecto es 4.",
         "fr": "Définit l'octave. Plage : -1-9. Le La de `O4` est à 440 Hz. Par défaut : 4.",
@@ -336,7 +336,7 @@
       "cmd": ">",
       "desc": {
         "en": "Raises the octave by 1 (max 9).",
-        "cn": "将八度提高 1 (最大 9)。",
+        "cn": "將八度提高 1 (最大 9)。",
         "de": "Erhöht die Oktave um 1 (max. 9).",
         "es": "Sube la octava en 1 (máx. 9).",
         "fr": "Monte l'octave de 1 (max. 9).",
@@ -353,7 +353,7 @@
       "cmd": "<",
       "desc": {
         "en": "Lowers the octave by 1 (min -1).",
-        "cn": "将八度降低 1 (最小 -1)。",
+        "cn": "將八度降低 1 (最小 -1)。",
         "de": "Senkt die Oktave um 1 (min. -1).",
         "es": "Baja la octava en 1 (mín. -1).",
         "fr": "Baisse l'octave de 1 (min. -1).",
@@ -370,7 +370,7 @@
       "cmd": "L <len>",
       "desc": {
         "en": "Sets the default note/rest length. Range: 1-192. `L4` is a quarter note, `L8` is an eighth note, and `L12` is an eighth note triplet. Default is 4.",
-        "cn": "设置音符和休止符的默认长度。范围：1-192。`L4` 为四分音符、`L8` 为八分音符、`L12` 为八分音符三连音。默认值为 4。",
+        "cn": "設定音符和休止符的預設長度。範圍：1-192。`L4` 為四分音符、`L8` 為八分音符、`L12` 為八分音符三連音。預設值為 4。",
         "de": "Setzt die Standard-Noten-/Pausenlänge. Bereich: 1-192. `L4` ist eine Viertelnote, `L8` eine Achtelnote, `L12` eine Achteltriole. Standard ist 4.",
         "es": "Establece la duración predeterminada de notas/silencios. Rango: 1-192. `L4` es una negra, `L8` es una corchea, `L12` es un tresillo de corcheas. Por defecto es 4.",
         "fr": "Définit la longueur par défaut des notes/silences. Plage : 1-192. `L4` est une noire, `L8` une croche, `L12` un triolet de croches. Par défaut : 4.",
@@ -387,7 +387,7 @@
       "cmd": "C/D/E/F/G/A/B",
       "desc": {
         "en": "Plays the specified note. You can specify the length after the note, e.g., `F16`.",
-        "cn": "播放指定的音符。可以在音符后指定长度，如 `F16`。",
+        "cn": "播放指定的音符。可以在音符後指定長度，如 `F16`。",
         "de": "Spielt die angegebene Note. Die Länge kann nach der Note angegeben werden, z. B. `F16`.",
         "es": "Reproduce la nota especificada. Se puede especificar la duración después de la nota, p. ej., `F16`.",
         "fr": "Joue la note spécifiée. La longueur peut être indiquée après la note, par ex. `F16`.",
@@ -404,7 +404,7 @@
       "cmd": "R",
       "desc": {
         "en": "Rest. Range: 1-192. You can specify the length after the rest, e.g., `R8`.",
-        "cn": "休止符。范围：1-192。可以在休止符后指定长度，如 `R8`。",
+        "cn": "休止符。範圍：1-192。可以在休止符後指定長度，如 `R8`。",
         "de": "Pause. Bereich: 1-192. Die Länge kann nach der Pause angegeben werden, z. B. `R8`.",
         "es": "Silencio. Rango: 1-192. Se puede especificar la duración después del silencio, p. ej., `R8`.",
         "fr": "Silence. Plage : 1-192. La longueur peut être indiquée après le silence, par ex. `R8`.",
@@ -421,7 +421,7 @@
       "cmd": "#",
       "desc": {
         "en": "Raises the note by a semitone.",
-        "cn": "将音符升高半音。",
+        "cn": "將音符升高半音。",
         "de": "Erhöht die Note um einen Halbton.",
         "es": "Sube la nota un semitono.",
         "fr": "Monte la note d'un demi-ton.",
@@ -438,7 +438,7 @@
       "cmd": "+",
       "desc": {
         "en": "Raises the note by a semitone.",
-        "cn": "将音符升高半音。",
+        "cn": "將音符升高半音。",
         "de": "Erhöht die Note um einen Halbton.",
         "es": "Sube la nota un semitono.",
         "fr": "Monte la note d'un demi-ton.",
@@ -455,7 +455,7 @@
       "cmd": "-",
       "desc": {
         "en": "Lowers the note by a semitone.",
-        "cn": "将音符降低半音。",
+        "cn": "將音符降低半音。",
         "de": "Senkt die Note um einen Halbton.",
         "es": "Baja la nota un semitono.",
         "fr": "Baisse la note d'un demi-ton.",
@@ -472,7 +472,7 @@
       "cmd": ".",
       "desc": {
         "en": "Dotted note/rest. Extends the length by half. Can be repeated for multiple dots.",
-        "cn": "附点。将音符或休止符的长度延长一半。可以多次指定。",
+        "cn": "附點。將音符或休止符的長度延長一半。可以多次指定。",
         "de": "Punktierte Note/Pause. Verlängert die Dauer um die Hälfte. Kann für mehrfache Punktierung wiederholt werden.",
         "es": "Nota/silencio con puntillo. Extiende la duración en la mitad de su valor. Se puede repetir para múltiples puntillos.",
         "fr": "Note/silence pointé(e). Prolonge la durée de moitié. Peut être répété pour plusieurs points.",
@@ -489,7 +489,7 @@
       "cmd": "&",
       "desc": {
         "en": "Tie/Slur. When connecting the same pitch, it ties the notes into one. When connecting different pitches, it plays them legato (no gap). You can also specify only the length, e.g., `C4&16`.",
-        "cn": "延音/圆滑线。连接相同音高时为延音 (合并为一个音)，连接不同音高时为圆滑奏 (无间隔)。也可以只指定长度，如 `C4&16`。",
+        "cn": "延音/圓滑線。連接相同音高時為延音 (合併為一個音），連線不同音高時為圓滑奏 (無間隔）。也可以只指定長度，如 `C4&16`。",
         "de": "Haltebogen/Bindebogen. Bei gleicher Tonhöhe werden die Noten gebunden. Bei verschiedenen Tonhöhen werden sie legato gespielt (ohne Lücke). Es kann auch nur die Länge angegeben werden, z. B. `C4&16`.",
         "es": "Ligadura. Al conectar la misma altura, une las notas en una. Al conectar alturas diferentes, las toca legato (sin espacio). También se puede especificar solo la duración, p. ej., `C4&16`.",
         "fr": "Liaison. Quand elle relie la même hauteur, elle lie les notes en une. Quand elle relie des hauteurs différentes, elle les joue legato (sans coupure). On peut aussi ne spécifier que la longueur, par ex. `C4&16`.",
@@ -506,7 +506,7 @@
       "cmd": "[",
       "desc": {
         "en": "Start of repeat section.",
-        "cn": "重复段开始。",
+        "cn": "重複段開始。",
         "de": "Beginn des Wiederholungsabschnitts.",
         "es": "Inicio de la sección de repetición.",
         "fr": "Début de la section de répétition.",
@@ -523,7 +523,7 @@
       "cmd": "] <count>",
       "desc": {
         "en": "End of repeat section. Count range: 1-. Repeats the section between `[` and `]` the specified number of times. If omitted, repeats infinitely. Nested repeats are supported.",
-        "cn": "重复段结束。次数范围：1-。将 `[` 和 `]` 之间的片段重复指定次数。省略时无限重复。支持嵌套。",
+        "cn": "重複段結束。次數範圍：1-。將 `[` 和 `]` 之間的片段重複指定次數。省略時無限重複。支持巢狀。",
         "de": "Ende des Wiederholungsabschnitts. Anzahl: 1-. Wiederholt den Abschnitt zwischen `[` und `]` so oft wie angegeben. Bei Auslassung wird endlos wiederholt. Verschachtelung wird unterstützt.",
         "es": "Fin de la sección de repetición. Rango de veces: 1-. Repite la sección entre `[` y `]` el número de veces especificado. Si se omite, repite infinitamente. Se admiten repeticiones anidadas.",
         "fr": "Fin de la section de répétition. Plage : 1-. Répète la section entre `[` et `]` le nombre de fois spécifié. Si omis, répète indéfiniment. Les répétitions imbriquées sont prises en charge.",

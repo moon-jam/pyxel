@@ -6,7 +6,7 @@
     },
     {
       "code": "cn",
-      "name": "中文"
+      "name": "繁體中文"
     },
     {
       "code": "de",
@@ -66,7 +66,7 @@
     },
     "subtitle": {
       "en": "A collection of demos for {0}, a retro game engine for Python.",
-      "cn": "Python 复古游戏引擎 {0} 的示例集",
+      "cn": "Python 復古遊戲引擎 {0} 的示例集",
       "de": "Eine Sammlung von Demos für {0}, eine Retro-Spielengine für Python.",
       "es": "Una colección de demos de {0}, un motor de juegos retro para Python.",
       "fr": "Une collection de démos pour {0}, un moteur de jeux rétro pour Python.",
@@ -80,7 +80,7 @@
     },
     "demo": {
       "en": "Run",
-      "cn": "运行",
+      "cn": "執行",
       "de": "Start",
       "es": "Ejecutar",
       "fr": "Lancer",
@@ -94,7 +94,7 @@
     },
     "code": {
       "en": "Code",
-      "cn": "代码",
+      "cn": "程式碼",
       "de": "Code",
       "es": "Código",
       "fr": "Code",
@@ -108,7 +108,7 @@
     },
     "details": {
       "en": "Details",
-      "cn": "详情",
+      "cn": "詳情",
       "de": "Details",
       "es": "Detalles",
       "fr": "Détails",
@@ -122,7 +122,7 @@
     },
     "footer": {
       "en": "Web version HTML files are available {0}. For detailed usage instructions, see {1}.",
-      "cn": "Web 版 HTML 文件可在 {0} 查看，详细使用方法请参考 {1}。",
+      "cn": "Web 版 HTML 檔案可在 {0} 檢視，詳細使用方法請參考 {1}。",
       "de": "HTML-Dateien der Web-Version sind {0} verfügbar. Detaillierte Anleitungen finden Sie {1}.",
       "es": "Los archivos HTML de la versión web están disponibles {0}. Para instrucciones detalladas, consulte {1}.",
       "fr": "Les fichiers HTML de la version web sont disponibles {0}. Pour les instructions détaillées, consultez {1}.",
@@ -136,7 +136,7 @@
     },
     "footer_link": {
       "en": "here",
-      "cn": "这里",
+      "cn": "這裡",
       "de": "hier",
       "es": "aquí",
       "fr": "ici",
@@ -173,7 +173,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/01_hello_pyxel.py",
           "description": {
             "en": "Simplest application",
-            "cn": "最简单的应用",
+            "cn": "最簡單的應用",
             "de": "Die einfachste Anwendung",
             "es": "La aplicación más simple",
             "fr": "L'application la plus simple",
@@ -187,7 +187,7 @@
           },
           "details": {
             "en": "A basic sample showing how to use Pyxel. Learn the fundamental structure of a Pyxel app: initializing a window with the init function, and handling per-frame logic and rendering with the update and draw functions.",
-            "cn": "展示 Pyxel 基本用法的示例。通过 init 函数初始化窗口，用 update 函数和 draw 函数处理每帧的逻辑和绘制，学习 Pyxel 应用的基本结构。",
+            "cn": "展示 Pyxel 基本用法的示例。透過 init 函式初始化視窗，用 update 函式和 draw 函式處理每影格的邏輯和繪製，學習 Pyxel 應用的基本結構。",
             "de": "Ein Beispiel für die grundlegende Verwendung von Pyxel. Lernen Sie die Grundstruktur einer Pyxel-App: Fensterinitialisierung mit der init-Funktion sowie Logik und Rendering pro Frame mit den update- und draw-Funktionen.",
             "es": "Ejemplo que muestra el uso básico de Pyxel. Aprende la estructura fundamental de una app Pyxel: inicialización de la ventana con la función init, y lógica y renderizado por fotograma con las funciones update y draw.",
             "fr": "Exemple montrant l'utilisation de base de Pyxel. Découvrez la structure fondamentale d'une application Pyxel : initialisation de la fenêtre avec la fonction init, logique et rendu par image avec les fonctions update et draw.",
@@ -206,7 +206,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/02_jump_game.py",
           "description": {
             "en": "Jump game with Pyxel resource file",
-            "cn": "使用 Pyxel 资源文件的跳跃游戏",
+            "cn": "使用 Pyxel 資源檔案的跳躍遊戲",
             "de": "Sprungspiel mit Pyxel-Ressourcendatei",
             "es": "Juego de saltos con archivo de recursos de Pyxel",
             "fr": "Jeu de saut avec fichier de ressources Pyxel",
@@ -220,7 +220,7 @@
           },
           "details": {
             "en": "A jump game that loads graphics and sound data from Pyxel resource files (.pyxres). Covers essential game development elements such as sprite rendering, key input, collision detection, and score management.",
-            "cn": "从 Pyxel 资源文件 (.pyxres) 加载图像和音效数据的跳跃游戏。涵盖精灵绘制、键盘输入、碰撞检测、分数管理等游戏开发基本要素。",
+            "cn": "從 Pyxel 資源檔案 (.pyxres) 載入圖片和音效資料的跳躍遊戲。涵蓋精靈繪製、鍵盤輸入、碰撞偵測、分數管理等遊戲開發基本要素。",
             "de": "Ein Sprungspiel, das Grafik- und Sounddaten aus Pyxel-Ressourcendateien (.pyxres) lädt. Behandelt grundlegende Spieleentwicklungselemente wie Sprite-Rendering, Tastatureingabe, Kollisionserkennung und Punkteverwaltung.",
             "es": "Juego de saltos que carga gráficos y datos de sonido desde archivos de recursos Pyxel (.pyxres). Cubre elementos esenciales del desarrollo de juegos como renderizado de sprites, entrada de teclado, detección de colisiones y gestión de puntuación.",
             "fr": "Jeu de saut chargeant les graphismes et sons depuis des fichiers de ressources Pyxel (.pyxres). Couvre les éléments essentiels du développement de jeux : rendu de sprites, saisie clavier, détection de collisions et gestion du score.",
@@ -239,7 +239,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/03_draw_api.py",
           "description": {
             "en": "Demonstration of drawing APIs",
-            "cn": "绘图 API 的演示",
+            "cn": "繪圖 API 的示範",
             "de": "Demonstration der Zeichen-APIs",
             "es": "Demostración de las API de dibujo",
             "fr": "Démo des API de dessin",
@@ -253,7 +253,7 @@
           },
           "details": {
             "en": "A demo of the drawing APIs provided by Pyxel, including rect, circ, line, and text. Shows the usage and output of each function at a glance, serving as a handy reference for graphics rendering.",
-            "cn": "展示 Pyxel 提供的 rect、circ、line、text 等绘图 API 的演示。一览各函数的用法和绘制结果，可作为图形绘制的参考。",
+            "cn": "展示 Pyxel 提供的 rect、circ、line、text 等繪圖 API 的示範。一覽各函式的用法和繪製結果，可作為圖形繪製的參考。",
             "de": "Demo der von Pyxel bereitgestellten Zeichen-APIs wie rect, circ, line und text. Zeigt Verwendung und Ergebnis jeder Funktion auf einen Blick als praktische Referenz für Grafikrendering.",
             "es": "Demo de las API de dibujo de Pyxel, incluyendo rect, circ, line y text. Muestra el uso y resultado de cada función de un vistazo, sirviendo como referencia práctica para el renderizado gráfico.",
             "fr": "Démo des API de dessin fournies par Pyxel, dont rect, circ, line et text. Présente l'utilisation et le résultat de chaque fonction d'un coup d'œil, servant de référence pratique pour le rendu graphique.",
@@ -272,7 +272,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/04_sound_api.py",
           "description": {
             "en": "Demonstration of sound APIs",
-            "cn": "音频 API 的演示",
+            "cn": "音訊 API 的示範",
             "de": "Demonstration der Audio-APIs",
             "es": "Demostración de las API de sonido",
             "fr": "Démo des API de son",
@@ -286,7 +286,7 @@
           },
           "details": {
             "en": "A demo of creating, editing, and playing sound effects using Pyxel's sound APIs. Experiment with tone, volume, and effect settings interactively.",
-            "cn": "使用 Pyxel 的声音 API 创建、编辑和播放音效的演示。可以交互式地试验音色、音量和效果设置。",
+            "cn": "使用 Pyxel 的聲音 API 建立、編輯和播放音效的示範。可以互動式地試驗音色、音量和效果設定。",
             "de": "Demo zum Erstellen, Bearbeiten und Abspielen von Soundeffekten mit den Sound-APIs von Pyxel. Experimentieren Sie interaktiv mit Klangfarbe, Lautstärke und Effekteinstellungen.",
             "es": "Demo de creación, edición y reproducción de efectos de sonido usando las API de sonido de Pyxel. Experimenta con los ajustes de tono, volumen y efectos de forma interactiva.",
             "fr": "Démo de création, édition et lecture d'effets sonores avec les API audio de Pyxel. Expérimentez de manière interactive les réglages de timbre, volume et effets.",
@@ -305,7 +305,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/05_color_palette.py",
           "description": {
             "en": "Color palette list",
-            "cn": "颜色调色板列表",
+            "cn": "顏色調色盤清單",
             "de": "Farbpalettenliste",
             "es": "Lista de paletas de colores",
             "fr": "Liste de palettes de couleurs",
@@ -319,7 +319,7 @@
           },
           "details": {
             "en": "Displays Pyxel's built-in 16-color palette with color codes. Check each color's index and RGB value for reference when choosing colors for your games.",
-            "cn": "显示 Pyxel 内置的 16 色调色板及颜色代码。可以查看每种颜色的编号和 RGB 值，为游戏配色提供参考。",
+            "cn": "顯示 Pyxel 內建的 16 色調色盤及顏色程式碼。可以檢視每種顏色的編號和 RGB 值，為遊戲配色提供參考。",
             "de": "Zeigt die in Pyxel integrierte 16-Farben-Palette mit Farbcodes. Überprüfen Sie Index und RGB-Wert jeder Farbe als Referenz für die Farbauswahl Ihrer Spiele.",
             "es": "Muestra la paleta de 16 colores integrada de Pyxel con códigos de color. Consulta el índice y valor RGB de cada color como referencia al elegir colores para tus juegos.",
             "fr": "Affiche la palette de 16 couleurs intégrée de Pyxel avec les codes couleur. Consultez l'index et la valeur RGB de chaque couleur comme référence pour le choix des couleurs de vos jeux.",
@@ -338,7 +338,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/06_click_game.py",
           "description": {
             "en": "Mouse click game",
-            "cn": "鼠标点击游戏",
+            "cn": "滑鼠點選遊戲",
             "de": "Mausklickspiel",
             "es": "Juego de clic con el ratón",
             "fr": "Jeu de clic avec la souris",
@@ -352,7 +352,7 @@
           },
           "details": {
             "en": "A simple game demonstrating mouse cursor position tracking and click detection. Useful as a reference for building interactive applications with mouse input.",
-            "cn": "演示鼠标光标坐标获取和点击检测的简单游戏。为使用鼠标输入构建交互式应用提供参考。",
+            "cn": "示範滑鼠游標座標獲取和點選偵測的簡單遊戲。為使用滑鼠輸入建構互動式應用提供參考。",
             "de": "Ein einfaches Spiel, das Mausposition-Tracking und Klickerkennung demonstriert. Nützlich als Referenz zum Erstellen interaktiver Anwendungen mit Mauseingabe.",
             "es": "Juego simple que demuestra el seguimiento de la posición del cursor y la detección de clics. Útil como referencia para crear aplicaciones interactivas con entrada de ratón.",
             "fr": "Jeu simple démontrant le suivi de position du curseur et la détection de clics. Utile comme référence pour créer des applications interactives avec la souris.",
@@ -371,7 +371,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/07_snake.py",
           "description": {
             "en": "Snake game with BGM",
-            "cn": "带有背景音乐的贪吃蛇游戏",
+            "cn": "帶有背景音樂的貪吃蛇遊戲",
             "de": "Schlangenspiel mit BGM",
             "es": "Juego de la serpiente con BGM",
             "fr": "Jeu de serpent avec BGM",
@@ -385,7 +385,7 @@
           },
           "details": {
             "en": "A classic snake game with background music composed in Pyxel MML. A useful reference for game logic such as grid-based movement and managing the snake body with a list.",
-            "cn": "使用 Pyxel MML 创作 BGM 的经典贪吃蛇游戏。网格移动处理和列表管理蛇身等游戏逻辑的实用参考。",
+            "cn": "使用 Pyxel MML 創作 BGM 的經典貪吃蛇遊戲。網格移動處理和串列管理蛇身等遊戲邏輯的實用參考。",
             "de": "Klassisches Schlangenspiel mit in Pyxel MML komponierter Hintergrundmusik. Nützliche Referenz für Spiellogik wie rasterbasierte Bewegung und Verwaltung des Schlangenkörpers mit einer Liste.",
             "es": "Juego clásico de la serpiente con música de fondo compuesta en Pyxel MML. Referencia útil para lógica de juego como movimiento basado en cuadrícula y gestión del cuerpo de la serpiente con una lista.",
             "fr": "Jeu de serpent classique avec musique de fond composée en Pyxel MML. Référence utile pour la logique de jeu comme le déplacement sur grille et la gestion du corps du serpent avec une liste.",
@@ -404,7 +404,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/08_triangle_api.py",
           "description": {
             "en": "Demonstration of triangle drawing APIs",
-            "cn": "三角形绘图 API 的演示",
+            "cn": "三角形繪圖 API 的示範",
             "de": "Demonstration der Dreiecks-Zeichen-APIs",
             "es": "Demostración de las API de dibujo de triángulos",
             "fr": "Démo des API de dessin de triangles",
@@ -418,7 +418,7 @@
           },
           "details": {
             "en": "A demo of the tri function (filled triangles) and trib function (triangle outlines). Demonstrates triangle drawing APIs through recursive generation of a Sierpinski triangle.",
-            "cn": "tri 函数 (填充三角形) 和 trib 函数 (三角形轮廓) 的绘制演示。通过递归生成谢尔宾斯基三角形展示三角形绘图 API 的用法。",
+            "cn": "tri 函式 (填充三角形) 和 trib 函式 (三角形輪廓) 的繪製示範。透過遞迴生成謝爾賓斯基三角形展示三角形繪圖 API 的用法。",
             "de": "Demo der tri-Funktion (gefüllte Dreiecke) und trib-Funktion (Dreiecksumrisse). Demonstriert die Dreiecks-Zeichen-APIs durch rekursive Erzeugung eines Sierpinski-Dreiecks.",
             "es": "Demo de la función tri (triángulos rellenos) y la función trib (contornos de triángulos). Presenta las API de dibujo de triángulos mediante la generación recursiva de un triángulo de Sierpinski.",
             "fr": "Démo de la fonction tri (triangles pleins) et de la fonction trib (contours de triangles). Présente les API de dessin de triangles par la génération récursive d'un triangle de Sierpinski.",
@@ -437,7 +437,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/09_shooter.py",
           "description": {
             "en": "Shoot'em up game with screen transitions and MML",
-            "cn": "使用画面切换和 MML 的射击游戏",
+            "cn": "使用畫面切換和 MML 的射擊遊戲",
             "de": "Shoot'em-up-Spiel mit Bildschirmübergängen und MML",
             "es": "Shoot'em up con transiciones de pantalla y MML",
             "fr": "Shoot'em up avec transitions d'écran et MML",
@@ -451,7 +451,7 @@
           },
           "details": {
             "en": "A full-featured shoot'em up with title/gameplay/game-over screen transitions, varied enemy patterns, and MML background music. Learn practical game development techniques.",
-            "cn": "具备标题、游戏、游戏结束画面切换、多样化的敌人模式和 MML 背景音乐的完整射击游戏。学习实用的游戏开发技巧。",
+            "cn": "具備標題、遊戲、遊戲結束畫面切換、多樣化的敵人模式和 MML 背景音樂的完整射擊遊戲。學習實用的遊戲開發技巧。",
             "de": "Ein vollwertiges Shoot'em up mit Titel-/Spiel-/Game-Over-Bildschirmübergängen, verschiedenen Feindmustern und MML-Hintergrundmusik. Lernen Sie praktische Spieleentwicklungstechniken.",
             "es": "Shoot'em up completo con transiciones de pantalla título/juego/game over, variados patrones de enemigos y música de fondo MML. Aprende técnicas prácticas de desarrollo de juegos.",
             "fr": "Shoot'em up complet avec transitions d'écran titre/jeu/game over, motifs d'ennemis variés et musique de fond MML. Apprenez des techniques pratiques de développement de jeux.",
@@ -470,7 +470,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/10_platformer.py",
           "description": {
             "en": "Side-scrolling platform game with map",
-            "cn": "带有地图的横向卷轴平台游戏",
+            "cn": "帶有地圖的橫向卷軸平臺遊戲",
             "de": "Seitwärts scrollendes Plattformspiel mit Karte",
             "es": "Juego de plataformas de desplazamiento lateral con mapa",
             "fr": "Jeu de plateforme défilant horizontalement avec carte",
@@ -484,7 +484,7 @@
           },
           "details": {
             "en": "A side-scrolling action game with level design using tilemaps. Implements map scrolling, tile-based collision detection, and character movement control.",
-            "cn": "使用瓦片地图进行关卡设计的横向卷轴动作游戏。实现了地图滚动处理、瓦片碰撞检测和角色移动控制。",
+            "cn": "使用瓦片地圖進行關卡設計的橫向卷軸動作遊戲。實現了地圖滾動處理、瓦片碰撞偵測和角色移動控制。",
             "de": "Seitwärts scrollendes Actionspiel mit Level-Design über Tilemaps. Implementiert Karten-Scrolling, kachelbasierte Kollisionserkennung und Charaktersteuerung.",
             "es": "Juego de acción de desplazamiento lateral con diseño de niveles usando tilemaps. Implementa desplazamiento del mapa, detección de colisiones basada en tiles y control de movimiento del personaje.",
             "fr": "Jeu d'action à défilement latéral avec conception de niveaux par tilemaps. Implémente le défilement de la carte, la détection de collisions par tuiles et le contrôle du mouvement du personnage.",
@@ -503,7 +503,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/11_offscreen.py",
           "description": {
             "en": "Offscreen rendering with Image class",
-            "cn": "使用 Image 类进行离屏渲染",
+            "cn": "使用 Image 類進行離屏渲染",
             "de": "Offscreen-Rendering mit der Image-Klasse",
             "es": "Renderizado fuera de pantalla con la clase Image",
             "fr": "Rendu hors écran avec la classe Image",
@@ -517,7 +517,7 @@
           },
           "details": {
             "en": "A demo of using the Image class as an offscreen buffer, pre-rendering graphics and transferring them to the screen. Also includes visual diagrams of blt and bltm function parameters.",
-            "cn": "将 Image 类用作离屏缓冲区，预先绘制图像再传输到屏幕的技术演示。还包含 blt 和 bltm 函数参数的可视化说明图。",
+            "cn": "將 Image 類用作離屏緩衝區，預先繪製圖片再傳輸到螢幕的技術示範。還包含 blt 和 bltm 函式參數的視覺化說明圖。",
             "de": "Demo der Verwendung der Image-Klasse als Offscreen-Puffer: Grafiken vorab rendern und auf den Bildschirm übertragen. Enthält auch visuelle Diagramme der Parameter der blt- und bltm-Funktionen.",
             "es": "Demo del uso de la clase Image como búfer fuera de pantalla, pre-renderizando gráficos y transfiriéndolos a la pantalla. También incluye diagramas visuales de los parámetros de las funciones blt y bltm.",
             "fr": "Démo de l'utilisation de la classe Image comme tampon hors écran : pré-rendu des graphismes puis transfert à l'écran. Inclut aussi des diagrammes visuels des paramètres des fonctions blt et bltm.",
@@ -536,7 +536,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/12_perlin_noise.py",
           "description": {
             "en": "Perlin noise animation",
-            "cn": "Perlin 噪声动画",
+            "cn": "Perlin 雜訊動畫",
             "de": "Perlin-Rausch-Animation",
             "es": "Animación de ruido de Perlin",
             "fr": "Animation de bruit de Perlin",
@@ -550,7 +550,7 @@
           },
           "details": {
             "en": "Real-time animation of Perlin noise using Pyxel's noise function. Demonstrates procedural pattern generation for creating natural textures like terrain and clouds.",
-            "cn": "使用 Pyxel 的 noise 函数进行 Perlin 噪声的实时动画。介绍通过程序化模式生成来表现地形和云彩等自然纹理的技法。",
+            "cn": "使用 Pyxel 的 noise 函式進行 Perlin 雜訊的即時動畫。介紹透過程序化模式生成來表現地形和雲彩等自然紋理的技法。",
             "de": "Echtzeit-Animation von Perlin-Rauschen mit der noise-Funktion von Pyxel. Zeigt prozedurale Mustergenerierung zur Erzeugung natürlicher Texturen wie Gelände und Wolken.",
             "es": "Animación en tiempo real de ruido Perlin usando la función noise de Pyxel. Demuestra la generación procedural de patrones para crear texturas naturales como terreno y nubes.",
             "fr": "Animation en temps réel du bruit de Perlin avec la fonction noise de Pyxel. Présente la génération procédurale de motifs pour créer des textures naturelles comme le terrain et les nuages.",
@@ -569,7 +569,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/13_custom_font.py",
           "description": {
             "en": "Drawing a custom font",
-            "cn": "绘制自定义字体",
+            "cn": "繪製自訂字體",
             "de": "Zeichnen einer benutzerdefinierten Schriftart",
             "es": "Dibujo de una fuente personalizada",
             "fr": "Dessin d'une police personnalisée",
@@ -583,7 +583,7 @@
           },
           "details": {
             "en": "Shows how to load BDF and TTF fonts and render text with Pyxel's custom font feature. Learn how to use multilingual fonts including Japanese.",
-            "cn": "介绍如何加载 BDF 和 TTF 字体，使用 Pyxel 的自定义字体功能绘制文本。学习包括日语在内的多语言字体使用方法。",
+            "cn": "介紹如何載入 BDF 和 TTF 字體，使用 Pyxel 的自訂字體功能繪製文字。學習包括日語在內的多語言字體使用方法。",
             "de": "Zeigt, wie BDF- und TTF-Schriften geladen und Text mit Pyxels benutzerdefinierter Schriftfunktion gerendert wird. Lernen Sie die Verwendung mehrsprachiger Schriften einschließlich Japanisch.",
             "es": "Muestra cómo cargar fuentes BDF y TTF y renderizar texto con la función de fuentes personalizadas de Pyxel. Aprende a usar fuentes multilingües incluyendo japonés.",
             "fr": "Montre comment charger des polices BDF et TTF et afficher du texte avec la fonction de polices personnalisées de Pyxel. Apprenez à utiliser des polices multilingues, y compris le japonais.",
@@ -602,7 +602,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/14_synthesizer.py",
           "description": {
             "en": "Synthesizer using audio expansion features",
-            "cn": "使用音频扩展功能的合成器",
+            "cn": "使用音訊擴充功能的合成器",
             "de": "Synthesizer unter Verwendung von Audioerweiterungsfunktionen",
             "es": "Sintetizador utilizando características de expansión de audio",
             "fr": "Synthétiseur utilisant des fonctions d'extension audio",
@@ -616,7 +616,7 @@
           },
           "details": {
             "en": "An interactive synthesizer using Pyxel's expanded audio features. Define custom waveforms and manipulate effects like envelope and vibrato in real time.",
-            "cn": "使用 Pyxel 音频扩展功能的互动合成器。可以实时定义自定义波形、操控包络和颤音等效果。",
+            "cn": "使用 Pyxel 音訊擴充功能的互動合成器。可以即時定義自訂波形、操控包絡和顫音等效果。",
             "de": "Ein interaktiver Synthesizer mit den erweiterten Audiofunktionen von Pyxel. Definieren Sie benutzerdefinierte Wellenformen und steuern Sie Effekte wie Hüllkurve und Vibrato in Echtzeit.",
             "es": "Sintetizador interactivo usando las funciones de audio expandidas de Pyxel. Define formas de onda personalizadas y manipula efectos como envolvente y vibrato en tiempo real.",
             "fr": "Synthétiseur interactif utilisant les fonctions audio étendues de Pyxel. Définissez des formes d'onde personnalisées et manipulez des effets comme l'enveloppe et le vibrato en temps réel.",
@@ -635,7 +635,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/15_tiled_map_file.py",
           "description": {
             "en": "Drawing a Tiled Map File (.tmx) and auto-generating BGM",
-            "cn": "绘制 Tiled Map File (.tmx) 并自动生成 BGM",
+            "cn": "繪製 Tiled Map File (.tmx) 並自動生成 BGM",
             "de": "Zeichnen einer Tiled-Map-Datei (.tmx) und automatische BGM-Erzeugung",
             "es": "Dibujo de Tiled Map File (.tmx) y generación automática de BGM",
             "fr": "Dessin d'un Tiled Map File (.tmx) et génération automatique de BGM",
@@ -649,7 +649,7 @@
           },
           "details": {
             "en": "Loads a .tmx file created with Tiled Map Editor to render a map. Also demonstrates automatic BGM generation using Pyxel's gen_bgm function.",
-            "cn": "加载 Tiled Map Editor 创建的 .tmx 文件来绘制地图的示例。同时演示了 Pyxel 的 gen_bgm 函数自动生成 BGM 的功能。",
+            "cn": "載入 Tiled Map Editor 建立的 .tmx 檔案來繪製地圖的示例。同時示範了 Pyxel 的 gen_bgm 函式自動生成 BGM 的功能。",
             "de": "Lädt eine mit dem Tiled Map Editor erstellte .tmx-Datei zum Rendern einer Karte. Demonstriert auch die automatische BGM-Generierung mit Pyxels gen_bgm-Funktion.",
             "es": "Carga un archivo .tmx creado con Tiled Map Editor para renderizar un mapa. También demuestra la generación automática de BGM con la función gen_bgm de Pyxel.",
             "fr": "Charge un fichier .tmx créé avec Tiled Map Editor pour afficher une carte. Démontre également la génération automatique de BGM avec la fonction gen_bgm de Pyxel.",
@@ -668,7 +668,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/16_transform.py",
           "description": {
             "en": "Image rotation and scaling",
-            "cn": "图像旋转和缩放",
+            "cn": "圖片旋轉和縮放",
             "de": "Bildrotation und -skalierung",
             "es": "Rotación y escalado de imágenes",
             "fr": "Rotation et mise à l'échelle d'images",
@@ -682,7 +682,7 @@
           },
           "details": {
             "en": "A demo of image rotation and scaling using the rotate and scale parameters of the blt and bltm functions. See real-time affine transformations in action.",
-            "cn": "使用 blt 和 bltm 函数的 rotate、scale 参数进行图像旋转和缩放的演示。可以实时查看仿射变换的效果。",
+            "cn": "使用 blt 和 bltm 函式的 rotate、scale 參數進行圖片旋轉和縮放的示範。可以即時檢視仿射變換的效果。",
             "de": "Demo der Bildrotation und -skalierung mit den rotate- und scale-Parametern der blt- und bltm-Funktionen. Sehen Sie affine Transformationen in Echtzeit.",
             "es": "Demo de rotación y escalado de imágenes usando los parámetros rotate y scale de las funciones blt y bltm. Observa transformaciones afines en tiempo real.",
             "fr": "Démo de rotation et mise à l'échelle d'images avec les paramètres rotate et scale des fonctions blt et bltm. Observez les transformations affines en temps réel.",
@@ -701,7 +701,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/17_app_launcher.py",
           "description": {
             "en": "Pyxel app launcher",
-            "cn": "Pyxel 应用启动器",
+            "cn": "Pyxel 應用啟動器",
             "de": "Pyxel-App-Launcher",
             "es": "Launcher de aplicaciones Pyxel",
             "fr": "Lanceur d'applications Pyxel",
@@ -715,7 +715,7 @@
           },
           "details": {
             "en": "A launcher for selecting and running various Pyxel sample applications from a menu. Also serves as a reference for subprocess-based app execution and list-style UI implementation.",
-            "cn": "可以从菜单选择并启动各种 Pyxel 示例应用的启动器。也可作为子进程应用执行和列表式 UI 实现的参考。",
+            "cn": "可以從選單選擇並啟動各種 Pyxel 示例應用的啟動器。也可作為子行程應用執行和清單式 UI 實現的參考。",
             "de": "Ein Launcher zum Auswählen und Starten verschiedener Pyxel-Beispielanwendungen aus einem Menü. Dient auch als Referenz für Subprozess-basierte App-Ausführung und Listen-UI-Implementierung.",
             "es": "Launcher para seleccionar y ejecutar varias aplicaciones de ejemplo de Pyxel desde un menú. También sirve como referencia para ejecución de apps mediante subprocesos e implementación de UI tipo lista.",
             "fr": "Lanceur permettant de sélectionner et d'exécuter diverses applications d'exemple Pyxel depuis un menu. Sert aussi de référence pour l'exécution d'applications par sous-processus et l'implémentation d'une interface utilisateur sous forme de liste.",
@@ -734,7 +734,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/18_audio_playback.py",
           "description": {
             "en": "Audio playback",
-            "cn": "音频播放",
+            "cn": "音訊播放",
             "de": "Audio-Wiedergabe",
             "es": "Reproducción de audio",
             "fr": "Lecture audio",
@@ -748,7 +748,7 @@
           },
           "details": {
             "en": "Loads and plays OGG PCM audio files. Learn audio playback features including channel gain settings and BGM switching.",
-            "cn": "加载和播放 OGG 格式 PCM 音频文件的示例。学习通道增益设置和 BGM 切换等音频播放功能的使用方法。",
+            "cn": "載入和播放 OGG 格式 PCM 音訊檔案的示例。學習通道增益設定和 BGM 切換等音訊播放功能的使用方法。",
             "de": "Lädt und spielt OGG-PCM-Audiodateien ab. Lernen Sie Audiowiedergabefunktionen wie Kanalverstärkung und BGM-Umschaltung.",
             "es": "Carga y reproduce archivos de audio OGG PCM. Aprende funciones de reproducción de audio como ajuste de ganancia de canal y cambio de BGM.",
             "fr": "Charge et lit des fichiers audio OGG PCM. Apprenez les fonctions de lecture audio comme le réglage du gain par canal et le changement de BGM.",
@@ -767,7 +767,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/19_perspective.py",
           "description": {
             "en": "3D perspective rendering",
-            "cn": "3D 透视渲染",
+            "cn": "3D 透視算繪",
             "de": "3D-Perspektivdarstellung",
             "es": "Renderizado en perspectiva 3D",
             "fr": "Rendu en perspective 3D",
@@ -781,7 +781,7 @@
           },
           "details": {
             "en": "A demo of pseudo-3D perspective rendering using blt3d and bltm3d functions. Control camera movement, rotation, altitude, tilt, and field of view with keyboard.",
-            "cn": "使用 blt3d 和 bltm3d 函数进行伪 3D 透视渲染的演示。通过键盘操作相机的移动、旋转、高度、倾斜和视野角。",
+            "cn": "使用 blt3d 和 bltm3d 函式進行偽 3D 透視算繪的示範。透過鍵盤操作相機的移動、旋轉、高度、傾斜和視野角。",
             "de": "Demo der Pseudo-3D-Perspektivdarstellung mit den Funktionen blt3d und bltm3d. Kamerabewegung, Drehung, Höhe, Neigung und Sichtfeld per Tastatur steuern.",
             "es": "Demo de renderizado en perspectiva pseudo-3D con las funciones blt3d y bltm3d. Controla el movimiento, rotación, altitud, inclinación y campo de visión de la cámara con el teclado.",
             "fr": "Démo de rendu en perspective pseudo-3D avec les fonctions blt3d et bltm3d. Contrôlez le mouvement, la rotation, l'altitude, l'inclinaison et le champ de vision de la caméra au clavier.",
@@ -800,7 +800,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/examples/99_flip_animation.py",
           "description": {
             "en": "Animation with flip function (non-web platforms only)",
-            "cn": "使用 flip 函数的动画 (仅限非 Web 平台)",
+            "cn": "使用 flip 函式的動畫 (僅限非 Web 平臺)",
             "de": "Animation mit der flip-Funktion (nur für Nicht-Web-Plattformen)",
             "es": "Animación con la función flip (solo para plataformas que no son web)",
             "fr": "Animation avec la fonction flip (uniquement pour les plateformes non web)",
@@ -814,7 +814,7 @@
           },
           "details": {
             "en": "An animation with manual frame-by-frame control using the flip function instead of run. A sequential coding approach to game loops. Does not work on the web version.",
-            "cn": "不使用 run 函数，而用 flip 函数逐帧手动控制的动画。以顺序处理方式编写游戏循环，不支持 Web 版。",
+            "cn": "不使用 run 函式，而用 flip 函式逐影格手動控制的動畫。以順序處理方式編寫遊戲循環，不支援 Web 版。",
             "de": "Eine Animation mit manueller Einzelbild-Steuerung über die flip-Funktion statt run. Ein sequentieller Programmieransatz für Game-Loops. Funktioniert nicht in der Web-Version.",
             "es": "Animación con control manual fotograma a fotograma usando la función flip en lugar de run. Un enfoque de programación secuencial para bucles de juego. No funciona en la versión web.",
             "fr": "Animation avec contrôle manuel image par image via la fonction flip au lieu de run. Une approche de programmation séquentielle pour les boucles de jeu. Ne fonctionne pas sur la version web.",
@@ -833,7 +833,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/web/showcase/examples/script-test.html",
           "description": {
             "en": "Script execution with pyxel-run tag",
-            "cn": "通过 pyxel-run 标签执行脚本",
+            "cn": "透過 pyxel-run 標籤執行腳本",
             "de": "Skriptausführung mit dem pyxel-run-Tag",
             "es": "Ejecución de script con la etiqueta pyxel-run",
             "fr": "Exécution de script avec la balise pyxel-run",
@@ -847,7 +847,7 @@
           },
           "details": {
             "en": "Demonstrates writing Pyxel code directly in the HTML script attribute using the pyxel-run tag.",
-            "cn": "展示使用 pyxel-run 标签在 HTML 的 script 属性中直接编写 Pyxel 代码的方法。",
+            "cn": "展示使用 pyxel-run 標籤在 HTML 的 script 屬性中直接編寫 Pyxel 程式碼的方法。",
             "de": "Zeigt, wie Pyxel-Code direkt im HTML-script-Attribut mithilfe des pyxel-run-Tags geschrieben wird.",
             "es": "Demuestra cómo escribir código Pyxel directamente en el atributo script del HTML usando la etiqueta pyxel-run.",
             "fr": "Montre comment écrire du code Pyxel directement dans l'attribut script du HTML à l'aide de la balise pyxel-run.",
@@ -866,7 +866,7 @@
       "id": "apps",
       "title": {
         "en": "Apps",
-        "cn": "应用",
+        "cn": "應用",
         "de": "Apps",
         "es": "Aplicaciones",
         "fr": "Applications",
@@ -885,7 +885,7 @@
           "code": "https://github.com/helpcomputer/30SecondsOfDaylight",
           "description": {
             "en": "Pyxel Jam-winning roguelike game by Adam",
-            "cn": "Adam 制作的 Pyxel Jam 获奖 roguelike 游戏",
+            "cn": "Adam 製作的 Pyxel Jam 獲獎 roguelike 遊戲",
             "de": "Pyxel Jam-Gewinner-Roguelike-Spiel von Adam",
             "es": "Roguelike ganador del Pyxel Jam por Adam",
             "fr": "Roguelike gagnant du Pyxel Jam par Adam",
@@ -899,7 +899,7 @@
           },
           "details": {
             "en": "Winner of the 1st Pyxel Jam game competition, created by Adam (@helpcomputer). A roguelike dungeon explorer where you navigate procedurally generated maps within a time limit.",
-            "cn": "Adam (@helpcomputer) 制作的第 1 届 Pyxel Jam 游戏竞赛获奖作品。在限定时间内探索随机生成地图的 roguelike 地牢游戏。",
+            "cn": "Adam (@helpcomputer) 製作的第 1 屆 Pyxel Jam 遊戲競賽獲獎作品。在限定時間內探索隨機生成地圖的 roguelike 地牢遊戲。",
             "de": "Gewinner des 1. Pyxel-Jam-Spielwettbewerbs, erstellt von Adam (@helpcomputer). Ein Roguelike-Dungeon-Spiel, bei dem man prozedural generierte Karten innerhalb eines Zeitlimits erkundet.",
             "es": "Ganador de la 1ª competición Pyxel Jam, creado por Adam (@helpcomputer). Un roguelike de exploración de mazmorras con mapas generados proceduralmente dentro de un límite de tiempo.",
             "fr": "Gagnant de la 1ère compétition Pyxel Jam, créé par Adam (@helpcomputer). Un roguelike d'exploration de donjons avec des cartes générées de manière procédurale et un temps limité.",
@@ -918,7 +918,7 @@
           "code": "https://github.com/helpcomputer/megaball",
           "description": {
             "en": "Arcade ball physics game by Adam",
-            "cn": "Adam 制作的街机弹球物理游戏",
+            "cn": "Adam 製作的街機彈球物理遊戲",
             "de": "Arcade-Ballphysik-Spiel von Adam",
             "es": "Juego arcade de física de bolas por Adam",
             "fr": "Jeu d'arcade de physique de balle par Adam",
@@ -932,7 +932,7 @@
           },
           "details": {
             "en": "An arcade ball physics game inspired by Taito's Xyzolog, created by Adam (@helpcomputer).",
-            "cn": "Adam (@helpcomputer) 制作的街机风格弹球物理游戏，灵感来自 Taito 的 Xyzolog。",
+            "cn": "Adam (@helpcomputer) 製作的街機風格彈球物理遊戲，靈感來自 Taito 的 Xyzolog。",
             "de": "Ein Arcade-Ballphysik-Spiel inspiriert von Taitos Xyzolog, erstellt von Adam (@helpcomputer).",
             "es": "Juego arcade de física de bolas inspirado en Xyzolog de Taito, creado por Adam (@helpcomputer).",
             "fr": "Jeu d'arcade de physique de balle inspiré par Xyzolog de Taito, créé par Adam (@helpcomputer).",
@@ -951,7 +951,7 @@
           "code": "https://github.com/helpcomputer/vortexion",
           "description": {
             "en": "MSX/SG-1000 inspired shoot'em up by Adam",
-            "cn": "Adam 制作的受 MSX/SG-1000 启发的射击游戏",
+            "cn": "Adam 製作的受 MSX/SG-1000 啟發的射擊遊戲",
             "de": "MSX/SG-1000-inspiriertes Shoot'em up von Adam",
             "es": "Shoot'em up inspirado en MSX/SG-1000 por Adam",
             "fr": "Shoot'em up inspiré des MSX/SG-1000 par Adam",
@@ -965,7 +965,7 @@
           },
           "details": {
             "en": "A shooting game inspired by retro consoles like MSX and SG-1000, created by Adam (@helpcomputer). Evokes the spirit of 1980s arcade shooters.",
-            "cn": "Adam (@helpcomputer) 制作的受 MSX 和 SG-1000 等复古游戏机启发的射击游戏。令人回想起 1980 年代的街机射击游戏。",
+            "cn": "Adam (@helpcomputer) 製作的受 MSX 和 SG-1000 等復古遊戲機啟發的射擊遊戲。令人回想起 1980 年代的街機射擊遊戲。",
             "de": "Ein von Retro-Konsolen wie MSX und SG-1000 inspiriertes Schießspiel von Adam (@helpcomputer). Erinnert an die Arcade-Shooter der 1980er Jahre.",
             "es": "Juego de disparos inspirado en consolas retro como MSX y SG-1000, creado por Adam (@helpcomputer). Evoca el espíritu de los shooters arcade de los años 80.",
             "fr": "Jeu de tir inspiré des consoles rétro comme MSX et SG-1000, créé par Adam (@helpcomputer). Évoque l'esprit des shooters arcade des années 1980.",
@@ -984,7 +984,7 @@
           "code": "https://github.com/helpcomputer/laser-jetman",
           "description": {
             "en": "Defender-inspired arcade shooter by Adam",
-            "cn": "Adam 制作的受 Defender 启发的街机射击游戏",
+            "cn": "Adam 製作的受 Defender 啟發的街機射擊遊戲",
             "de": "Defender-inspirierter Arcade-Shooter von Adam",
             "es": "Shooter arcade inspirado en Defender por Adam",
             "fr": "Shooter arcade inspiré de Defender par Adam",
@@ -998,7 +998,7 @@
           },
           "details": {
             "en": "A Defender-inspired arcade shooter with procedurally generated terrain, created by Adam (@helpcomputer). Fly over the landscape and shoot down enemies.",
-            "cn": "Adam (@helpcomputer) 制作的受 Defender 启发的街机射击游戏。在程序生成的地形上空飞行，击败敌人。",
+            "cn": "Adam (@helpcomputer) 製作的受 Defender 啟發的街機射擊遊戲。在程序式生成的地形上空飛行，擊敗敵人。",
             "de": "Ein von Defender inspirierter Arcade-Shooter mit prozedural generiertem Gelände von Adam (@helpcomputer). Fliegen Sie über die Landschaft und schießen Sie Feinde ab.",
             "es": "Shooter arcade inspirado en Defender con terreno generado proceduralmente, creado por Adam (@helpcomputer). Vuela sobre el paisaje y derriba enemigos.",
             "fr": "Shooter arcade inspiré de Defender avec terrain généré de manière procédurale, créé par Adam (@helpcomputer). Survolez le paysage et abattez les ennemis.",
@@ -1017,7 +1017,7 @@
           "code": "https://gihyo.jp/book/2025/978-4-297-14657-3",
           "description": {
             "en": "One-key astronaut rescue game (Pyxel Official Book sample)",
-            "cn": "单键宇航员救援游戏 (Pyxel 官方书籍示例)",
+            "cn": "單鍵太空人救援遊戲 (Pyxel 官方書籍示例)",
             "de": "Astronauten-Rettungsspiel mit einer Taste (Beispiel aus dem offiziellen Pyxel-Buch)",
             "es": "Juego de rescate de astronautas con una tecla (ejemplo del Libro Oficial de Pyxel)",
             "fr": "Jeu de sauvetage d'astronautes à une touche (exemple du Livre Officiel Pyxel)",
@@ -1031,7 +1031,7 @@
           },
           "details": {
             "en": "A sample game from the Pyxel Official Book (Gijutsu-Hyoron Publishing). A simple yet deep one-button game where you rescue astronauts, covering the basics of game development.",
-            "cn": "收录于 Pyxel 官方书籍 (技术评论社出版) 的示例游戏。通过单键操作救出宇航员的简单而有深度的游戏，学习游戏开发基础。",
+            "cn": "收錄於 Pyxel 官方書籍 (技術評論社出版) 的示例遊戲。透過單鍵操作救出太空人的簡單而有深度的遊戲，學習遊戲開發基礎。",
             "de": "Ein Beispielspiel aus dem offiziellen Pyxel-Buch (Gijutsu-Hyoron-Verlag). Ein einfaches, aber tiefgründiges Ein-Tasten-Spiel zur Rettung von Astronauten, das die Grundlagen der Spieleentwicklung vermittelt.",
             "es": "Juego de ejemplo del Libro Oficial de Pyxel (editorial Gijutsu-Hyoron). Un juego simple pero profundo de un solo botón donde rescatas astronautas, cubriendo los fundamentos del desarrollo de juegos.",
             "fr": "Jeu exemple du Livre Officiel Pyxel (éditions Gijutsu-Hyoron). Un jeu à un seul bouton, simple mais profond, où vous sauvez des astronautes, couvrant les bases du développement de jeux.",
@@ -1050,7 +1050,7 @@
           "code": "https://gihyo.jp/book/2025/978-4-297-14657-3",
           "description": {
             "en": "Bullet-heavy shoot'em up (Pyxel Official Book sample)",
-            "cn": "弹幕射击游戏 (Pyxel 官方书籍示例)",
+            "cn": "彈幕射擊遊戲 (Pyxel 官方書籍示例)",
             "de": "Schussreiches Shoot'em up (Beispiel aus dem offiziellen Pyxel-Buch)",
             "es": "Shoot'em up con lluvia de balas (ejemplo del Libro Oficial de Pyxel)",
             "fr": "Shoot'em up à pluie de balles (exemple du Livre Officiel Pyxel)",
@@ -1064,7 +1064,7 @@
           },
           "details": {
             "en": "A sample game from the Pyxel Official Book (Gijutsu-Hyoron Publishing). A full-fledged bullet-heavy shooter for learning enemy pattern and score system implementation.",
-            "cn": "收录于 Pyxel 官方书籍 (技术评论社出版) 的示例游戏。弹幕飞舞的正统射击游戏，学习敌人模式和分数系统的实现。",
+            "cn": "收錄於 Pyxel 官方書籍 (技術評論社出版) 的示例遊戲。彈幕飛舞的正統射擊遊戲，學習敵人模式和分數系統的實現。",
             "de": "Ein Beispielspiel aus dem offiziellen Pyxel-Buch (Gijutsu-Hyoron-Verlag). Ein vollwertiger Bullet-Hell-Shooter zum Erlernen der Implementierung von Feindmustern und Punktesystemen.",
             "es": "Juego de ejemplo del Libro Oficial de Pyxel (editorial Gijutsu-Hyoron). Un shooter completo con lluvia de balas para aprender la implementación de patrones de enemigos y sistemas de puntuación.",
             "fr": "Jeu exemple du Livre Officiel Pyxel (éditions Gijutsu-Hyoron). Un shooter complet à pluie de balles pour apprendre l'implémentation de patterns d'ennemis et de systèmes de score.",
@@ -1083,7 +1083,7 @@
           "code": "https://gihyo.jp/book/2025/978-4-297-14657-3",
           "description": {
             "en": "Trap-dodging gem-collecting platformer (Pyxel Official Book sample)",
-            "cn": "躲避陷阱收集宝石的平台游戏 (Pyxel 官方书籍示例)",
+            "cn": "躲避陷阱收集寶石的平臺遊戲 (Pyxel 官方書籍示例)",
             "de": "Fallen-ausweichendes Edelstein-Plattformspiel (Beispiel aus dem offiziellen Pyxel-Buch)",
             "es": "Plataformas de esquivar trampas y recoger gemas (ejemplo del Libro Oficial de Pyxel)",
             "fr": "Platformer d'esquive de pièges et collecte de gemmes (exemple du Livre Officiel Pyxel)",
@@ -1097,7 +1097,7 @@
           },
           "details": {
             "en": "A sample game from the Pyxel Official Book (Gijutsu-Hyoron Publishing). A platformer where you collect gems in caves while dodging traps, covering map design and collision detection.",
-            "cn": "收录于 Pyxel 官方书籍 (技术评论社出版) 的示例游戏。在洞窟中避开陷阱收集宝石的平台游戏，学习地图设计和碰撞检测。",
+            "cn": "收錄於 Pyxel 官方書籍 (技術評論社出版) 的示例遊戲。在洞窟中避開陷阱收集寶石的平臺遊戲，學習地圖設計和碰撞偵測。",
             "de": "Ein Beispielspiel aus dem offiziellen Pyxel-Buch (Gijutsu-Hyoron-Verlag). Ein Plattformspiel, in dem man Edelsteine in Höhlen sammelt und Fallen ausweicht – mit Fokus auf Kartendesign und Kollisionserkennung.",
             "es": "Juego de ejemplo del Libro Oficial de Pyxel (editorial Gijutsu-Hyoron). Un plataformas donde recoges gemas en cuevas esquivando trampas, cubriendo diseño de mapas y detección de colisiones.",
             "fr": "Jeu exemple du Livre Officiel Pyxel (éditions Gijutsu-Hyoron). Un platformer où vous collectez des gemmes dans des grottes en évitant les pièges, couvrant le design de cartes et la détection de collisions.",
@@ -1135,7 +1135,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/editor/image_editor.py",
           "description": {
             "en": "Pyxel Editor image editing mode (bundled with Pyxel)",
-            "cn": "Pyxel Editor 图像编辑模式 (Pyxel 同捆工具)",
+            "cn": "Pyxel Editor 圖片編輯模式 (Pyxel 同捆工具)",
             "de": "Pyxel Editor Bildbearbeitungsmodus (in Pyxel enthalten)",
             "es": "Modo de edición de imágenes de Pyxel Editor (incluido en Pyxel)",
             "fr": "Mode d'édition d'images de Pyxel Editor (inclus dans Pyxel)",
@@ -1149,7 +1149,7 @@
           },
           "details": {
             "en": "Pyxel's built-in pixel art image editor. Create and edit sprite and character graphics, with support for switching between image banks.",
-            "cn": "Pyxel 内置的像素画图像编辑器。可以创建和编辑精灵和角色图像，支持切换图像库进行管理。",
+            "cn": "Pyxel 內建的畫素畫圖片編輯器。可以建立和編輯精靈和角色圖片，支持切換圖片庫進行管理。",
             "de": "Pyxels integrierter Pixelart-Bildeditor. Erstellen und bearbeiten Sie Sprite- und Charaktergrafiken mit Unterstützung für den Wechsel zwischen Bildbanken.",
             "es": "Editor de imágenes pixel art integrado en Pyxel. Crea y edita gráficos de sprites y personajes, con soporte para cambiar entre bancos de imágenes.",
             "fr": "Éditeur d'images pixel art intégré à Pyxel. Créez et modifiez des graphismes de sprites et personnages, avec prise en charge du changement entre les banques d'images.",
@@ -1168,7 +1168,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/editor/tilemap_editor.py",
           "description": {
             "en": "Pyxel Editor tilemap editing mode (bundled with Pyxel)",
-            "cn": "Pyxel Editor 瓦片地图编辑模式 (Pyxel 同捆工具)",
+            "cn": "Pyxel Editor 瓦片地圖編輯模式 (Pyxel 同捆工具)",
             "de": "Pyxel Editor Tilemap-Bearbeitungsmodus (in Pyxel enthalten)",
             "es": "Modo de edición de tilemap de Pyxel Editor (incluido en Pyxel)",
             "fr": "Mode d'édition de tilemap de Pyxel Editor (inclus dans Pyxel)",
@@ -1182,7 +1182,7 @@
           },
           "details": {
             "en": "Pyxel's built-in tilemap editor. Arrange tiles from image banks to create game maps, with support for switching between multiple tilemaps.",
-            "cn": "Pyxel 内置的瓦片地图编辑器。排列图像库中的瓦片来创建游戏地图，支持切换和管理多个瓦片地图。",
+            "cn": "Pyxel 內建的瓦片地圖編輯器。排列圖片庫中的瓦片來建立遊戲地圖，支持切換和管理多個瓦片地圖。",
             "de": "Pyxels integrierter Tilemap-Editor. Ordnen Sie Kacheln aus Bildbanken an, um Spielkarten zu erstellen, mit Unterstützung für den Wechsel zwischen mehreren Tilemaps.",
             "es": "Editor de tilemaps integrado en Pyxel. Organiza tiles de los bancos de imágenes para crear mapas de juego, con soporte para cambiar entre múltiples tilemaps.",
             "fr": "Éditeur de tilemaps intégré à Pyxel. Arrangez les tuiles des banques d'images pour créer des cartes de jeu, avec prise en charge du changement entre plusieurs tilemaps.",
@@ -1201,7 +1201,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/editor/sound_editor.py",
           "description": {
             "en": "Pyxel Editor sound editing mode (bundled with Pyxel)",
-            "cn": "Pyxel Editor 音效编辑模式 (Pyxel 同捆工具)",
+            "cn": "Pyxel Editor 音效編輯模式 (Pyxel 同捆工具)",
             "de": "Pyxel Editor Soundbearbeitungsmodus (in Pyxel enthalten)",
             "es": "Modo de edición de sonido de Pyxel Editor (incluido en Pyxel)",
             "fr": "Mode d'édition de sons de Pyxel Editor (inclus dans Pyxel)",
@@ -1215,7 +1215,7 @@
           },
           "details": {
             "en": "Pyxel's built-in sound editor. Graphically edit tone, volume, and effects to create sound effects and melody phrases for your games.",
-            "cn": "Pyxel 内置的音效编辑器。以图形化方式编辑音色、音量和效果，创建游戏用的音效和旋律片段。",
+            "cn": "Pyxel 內建的音效編輯器。以圖形化方式編輯音色、音量和效果，建立遊戲用的音效和旋律片段。",
             "de": "Pyxels integrierter Soundeditor. Bearbeiten Sie Klangfarbe, Lautstärke und Effekte grafisch, um Soundeffekte und Melodiephrasen für Ihre Spiele zu erstellen.",
             "es": "Editor de sonido integrado en Pyxel. Edita gráficamente tono, volumen y efectos para crear efectos de sonido y frases melódicas para tus juegos.",
             "fr": "Éditeur de sons intégré à Pyxel. Éditez graphiquement le timbre, le volume et les effets pour créer des effets sonores et des phrases mélodiques pour vos jeux.",
@@ -1234,7 +1234,7 @@
           "code": "https://github.com/kitao/pyxel/blob/main/python/pyxel/editor/music_editor.py",
           "description": {
             "en": "Pyxel Editor music editing mode (bundled with Pyxel)",
-            "cn": "Pyxel Editor 音乐编辑模式 (Pyxel 同捆工具)",
+            "cn": "Pyxel Editor 音樂編輯模式 (Pyxel 同捆工具)",
             "de": "Pyxel Editor Musikbearbeitungsmodus (in Pyxel enthalten)",
             "es": "Modo de edición de música de Pyxel Editor (incluido en Pyxel)",
             "fr": "Mode d'édition de musique de Pyxel Editor (inclus dans Pyxel)",
@@ -1248,7 +1248,7 @@
           },
           "details": {
             "en": "Pyxel's built-in music editor. Combine phrases created in the Sound Editor to compose BGM with up to 4 channels.",
-            "cn": "Pyxel 内置的音乐编辑器。组合音效编辑器中创建的乐句，构成最多 4 个通道的 BGM。",
+            "cn": "Pyxel 內建的音樂編輯器。組合音效編輯器中建立的樂句，構成最多 4 個通道的 BGM。",
             "de": "Pyxels integrierter Musikeditor. Kombinieren Sie im Soundeditor erstellte Phrasen zu BGM mit bis zu 4 Kanälen.",
             "es": "Editor de música integrado en Pyxel. Combina frases creadas en el Editor de Sonido para componer BGM con hasta 4 canales.",
             "fr": "Éditeur de musique intégré à Pyxel. Combinez les phrases créées dans l'éditeur de sons pour composer des BGM jusqu'à 4 canaux.",
@@ -1267,7 +1267,7 @@
           "code": "https://github.com/kitao/pyxel/tree/main/web/launcher",
           "description": {
             "en": "URL-driven launcher for Pyxel apps on GitHub",
-            "cn": "通过 URL 启动 GitHub 上 Pyxel 应用的启动器",
+            "cn": "透過 URL 啟動 GitHub 上 Pyxel 應用的啟動器",
             "de": "URL-gesteuerter Launcher für Pyxel-Apps auf GitHub",
             "es": "Launcher por URL para aplicaciones Pyxel en GitHub",
             "fr": "Lanceur par URL pour applications Pyxel sur GitHub",
@@ -1281,7 +1281,7 @@
           },
           "details": {
             "en": "Runs Pyxel apps hosted on GitHub from URL parameters. Launch URLs can be composed interactively in the browser.",
-            "cn": "通过 URL 参数启动托管在 GitHub 上的 Pyxel 应用。启动 URL 可在浏览器中以交互方式构建。",
+            "cn": "透過 URL 參數啟動託管在 GitHub 上的 Pyxel 應用。啟動 URL 可在瀏覽器中以交互方式建構。",
             "de": "Startet auf GitHub gehostete Pyxel-Apps über URL-Parameter. Start-URLs lassen sich interaktiv im Browser erstellen.",
             "es": "Lanza aplicaciones Pyxel alojadas en GitHub desde parámetros URL. Las URL de lanzamiento se pueden construir interactivamente en el navegador.",
             "fr": "Lance des applications Pyxel hébergées sur GitHub via des paramètres URL. Les URL de lancement peuvent être construites de manière interactive dans le navigateur.",
@@ -1300,7 +1300,7 @@
           "code": "https://github.com/kitao/pyxel/tree/main/web/code-maker",
           "description": {
             "en": "Zero-setup online Pyxel development environment",
-            "cn": "零配置在线 Pyxel 开发环境",
+            "cn": "零配置線上 Pyxel 開發環境",
             "de": "Einrichtungsfreie Online-Pyxel-Entwicklungsumgebung",
             "es": "Entorno de desarrollo Pyxel en línea sin configuración",
             "fr": "Environnement de développement Pyxel en ligne sans configuration",
@@ -1314,7 +1314,7 @@
           },
           "details": {
             "en": "A browser-based development environment for creating and running Pyxel applications without installing Pyxel. Includes a built-in code editor and resource editor to start developing right away.",
-            "cn": "无需安装 Pyxel 即可创建和运行应用的浏览器开发环境。内置代码编辑器和资源编辑器，可以立即开始 Pyxel 开发。",
+            "cn": "無需安裝 Pyxel 即可建立和執行應用的瀏覽器開發環境。內建程式碼編輯器和資源編輯器，可以立即開始 Pyxel 開發。",
             "de": "Eine browserbasierte Entwicklungsumgebung zum Erstellen und Ausführen von Pyxel-Anwendungen ohne Installation. Mit integriertem Code-Editor und Ressourcen-Editor sofort loslegen.",
             "es": "Entorno de desarrollo en el navegador para crear y ejecutar aplicaciones Pyxel sin instalar Pyxel. Incluye editor de código y editor de recursos integrados para empezar a desarrollar de inmediato.",
             "fr": "Environnement de développement dans le navigateur pour créer et exécuter des applications Pyxel sans installation. Inclut un éditeur de code et un éditeur de ressources intégrés pour commencer immédiatement.",
@@ -1333,7 +1333,7 @@
           "code": "https://github.com/kitao/pyxel/tree/main/web/mml-studio",
           "description": {
             "en": "Browser-based chiptune creation environment",
-            "cn": "基于浏览器的芯片音乐创作环境",
+            "cn": "基於瀏覽器的晶片音樂創作環境",
             "de": "Browserbasierte Chiptune-Erstellungsumgebung",
             "es": "Entorno de creación de chiptune en el navegador",
             "fr": "Environnement de création de chiptune dans le navigateur",
@@ -1347,7 +1347,7 @@
           },
           "details": {
             "en": "A browser-based editor for composing chiptune music using Pyxel MML. Supports 4-channel editing, real-time preview, and song sharing via URL or QR code.",
-            "cn": "在浏览器中使用 Pyxel MML 制作芯片音乐的编辑器。支持 4 通道编辑、实时预览以及通过 URL 或二维码分享乐曲。",
+            "cn": "在瀏覽器中使用 Pyxel MML 製作晶片音樂的編輯器。支援 4 通道編輯、即時預覽以及透過 URL 或二維條碼分享樂曲。",
             "de": "Ein browserbasierter Editor zum Komponieren von Chiptune-Musik mit Pyxel MML. Unterstützt 4-Kanal-Bearbeitung, Echtzeitvorschau und Songfreigabe per URL oder QR-Code.",
             "es": "Editor en el navegador para componer música chiptune con Pyxel MML. Soporta edición de 4 canales, vista previa en tiempo real y compartir canciones por URL o código QR.",
             "fr": "Éditeur dans le navigateur pour composer de la musique chiptune avec Pyxel MML. Prend en charge l'édition 4 canaux, l'aperçu en temps réel et le partage de morceaux par URL ou code QR.",

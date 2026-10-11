@@ -14,7 +14,7 @@ const detectLang = (languages) => {
 };
 
 const setDocLang = (lang) => {
-  document.documentElement.lang = lang === "cn" ? "zh" : lang;
+  document.documentElement.lang = lang === "cn" ? "zh-TW" : lang;
 };
 
 const saveLang = (lang) => {
@@ -208,7 +208,8 @@ const waitForPyxelReady = (
 // Localized JSON loading, language selection, and page rendering
 
 const initPage = (jsonFile, buildFn) => {
-  fetch(jsonFile)
+  // Refresh translated documents even when an older copy remains cached.
+  fetch(`${jsonFile}?v=zh-tw-20261011`)
     .then((response) => {
       if (!response.ok) {
         throw new Error(`Failed to fetch ${jsonFile}: ${response.status}`);

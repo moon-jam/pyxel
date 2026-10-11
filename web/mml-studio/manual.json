@@ -6,7 +6,7 @@
     },
     {
       "code": "cn",
-      "name": "中文"
+      "name": "繁體中文"
     },
     {
       "code": "de",
@@ -52,7 +52,7 @@
   "ui": {
     "title": {
       "en": "Pyxel MML Studio Manual",
-      "cn": "Pyxel MML Studio 手册",
+      "cn": "Pyxel MML Studio 手冊",
       "de": "Pyxel MML Studio Handbuch",
       "es": "Manual de Pyxel MML Studio",
       "fr": "Manuel de Pyxel MML Studio",
@@ -66,7 +66,7 @@
     },
     "subtitle": {
       "en": "Manual for the {0} online MML creation tool.",
-      "cn": "{0} 在线 MML 制作工具手册",
+      "cn": "{0} 線上 MML 製作工具手冊",
       "de": "Handbuch für das {0}-Online-MML-Erstellungstool.",
       "es": "Manual de la herramienta de creación MML en línea de {0}.",
       "fr": "Manuel de l'outil de création MML en ligne de {0}.",
@@ -94,7 +94,7 @@
     },
     "overview_body": {
       "en": "Pyxel MML Studio is a browser-based chiptune music creation tool powered by Pyxel's NES-style sound engine. Enter melodies using MML (Music Macro Language) across up to 4 channels, and share your music via URL or QR code — all without installation.",
-      "cn": "Pyxel MML Studio 是基于 Pyxel 的 FC 风格音频引擎的浏览器芯片音乐制作工具。使用 MML (Music Macro Language) 在最多 4 个通道中输入旋律，并通过 URL 或二维码分享作品，无需安装。",
+      "cn": "Pyxel MML Studio 是基於 Pyxel 的 FC 風格音訊引擎的瀏覽器晶片音樂製作工具。使用 MML (Music Macro Language) 在最多 4 個通道中輸入旋律，並透過 URL 或二維條碼分享作品，無需安裝。",
       "de": "Pyxel MML Studio ist ein browserbasiertes Chiptune-Musikerstellungstool, das auf Pyxels NES-Soundengine basiert. Geben Sie Melodien mit MML (Music Macro Language) auf bis zu 4 Kanälen ein und teilen Sie Ihre Musik per URL oder QR-Code — ganz ohne Installation.",
       "es": "Pyxel MML Studio es una herramienta de creación de música chiptune basada en navegador, impulsada por el motor de sonido estilo NES de Pyxel. Ingresa melodías usando MML (Music Macro Language) en hasta 4 canales y comparte tu música mediante URL o código QR, todo sin instalación.",
       "fr": "Pyxel MML Studio est un outil de création musicale chiptune dans le navigateur, basé sur le moteur sonore style NES de Pyxel. Entrez des mélodies en MML (Music Macro Language) sur jusqu'à 4 canaux et partagez votre musique par URL ou code QR, le tout sans installation.",
@@ -108,7 +108,7 @@
     },
     "layout_title": {
       "en": "Screen Layout",
-      "cn": "屏幕布局",
+      "cn": "螢幕配置",
       "de": "Bildschirmlayout",
       "es": "Diseño de pantalla",
       "fr": "Disposition de l'écran",
@@ -122,7 +122,7 @@
     },
     "layout_body": {
       "en": "The screen consists of the control area at the top, channel input fields in the middle, and the URL/QR code output at the bottom.",
-      "cn": "屏幕由顶部的控制区域、中间的通道输入栏和底部的 URL/二维码输出组成。",
+      "cn": "螢幕由頂部的控制區域、中間的通道輸入欄和底部的 URL/二維碼輸出組成。",
       "de": "Der Bildschirm besteht aus dem Steuerungsbereich oben, den Kanaleingabefeldern in der Mitte und der URL-/QR-Code-Ausgabe unten.",
       "es": "La pantalla consta del área de control en la parte superior, los campos de entrada de canales en el medio y la salida de URL/código QR en la parte inferior.",
       "fr": "L'écran se compose de la zone de contrôle en haut, des champs de saisie des canaux au milieu et de la sortie URL/code QR en bas.",
@@ -136,7 +136,7 @@
     },
     "layout_controls": {
       "en": "Control Area",
-      "cn": "控制区域",
+      "cn": "控制區域",
       "de": "Steuerungsbereich",
       "es": "Área de control",
       "fr": "Zone de contrôle",
@@ -150,7 +150,7 @@
     },
     "layout_controls_desc": {
       "en": "Contains playback buttons, links, and the runtime screen.",
-      "cn": "包含播放按钮、链接和运行画面。",
+      "cn": "包含播放按鈕、連結和執行畫面。",
       "de": "Enthält Wiedergabe-Schaltflächen, Links und den Ausführungsbildschirm.",
       "es": "Contiene botones de reproducción, enlaces y la pantalla de ejecución.",
       "fr": "Contient les boutons de lecture, les liens et l'écran d'exécution.",
@@ -164,7 +164,7 @@
     },
     "layout_runtime": {
       "en": "Runtime Screen",
-      "cn": "运行画面",
+      "cn": "執行畫面",
       "de": "Ausführungsbildschirm",
       "es": "Pantalla de ejecución",
       "fr": "Écran d'exécution",
@@ -178,7 +178,7 @@
     },
     "layout_channels": {
       "en": "Channel Input",
-      "cn": "通道输入",
+      "cn": "通道輸入",
       "de": "Kanaleingabe",
       "es": "Entrada de canal",
       "fr": "Saisie des canaux",
@@ -192,7 +192,7 @@
     },
     "layout_channels_desc": {
       "en": "Four channels (CH1–CH4) for entering MML, each with SOLO and MUTE buttons.",
-      "cn": "四个通道 (CH1–CH4) 用于输入 MML，每个通道有 SOLO 和 MUTE 按钮。",
+      "cn": "四個通道 (CH1–CH4) 用於輸入 MML，每個通道有 SOLO 和 MUTE 按鈕。",
       "de": "Vier Kanäle (CH1–CH4) zur MML-Eingabe, jeweils mit SOLO- und MUTE-Schaltflächen.",
       "es": "Cuatro canales (CH1–CH4) para ingresar MML, cada uno con botones SOLO y MUTE.",
       "fr": "Quatre canaux (CH1–CH4) pour saisir le MML, chacun avec des boutons SOLO et MUTE.",
@@ -206,7 +206,7 @@
     },
     "layout_output": {
       "en": "URL / QR Code",
-      "cn": "URL / 二维码",
+      "cn": "URL / 二維條碼",
       "de": "URL / QR-Code",
       "es": "URL / Código QR",
       "fr": "URL / code QR",
@@ -220,7 +220,7 @@
     },
     "layout_output_desc": {
       "en": "Displays the shareable URL and its QR code.",
-      "cn": "显示可共享的 URL 及其二维码。",
+      "cn": "顯示可共享的 URL 及其二維條碼。",
       "de": "Zeigt die teilbare URL und ihren QR-Code an.",
       "es": "Muestra la URL compartible y su código QR.",
       "fr": "Affiche l'URL partageable et son code QR.",
@@ -248,7 +248,7 @@
     },
     "controls_body": {
       "en": "The control area provides the following buttons and links:",
-      "cn": "控制区域提供以下按钮和链接：",
+      "cn": "控制區域提供以下按鈕和連結：",
       "de": "Der Steuerungsbereich bietet folgende Schaltflächen und Links:",
       "es": "El área de control proporciona los siguientes botones y enlaces:",
       "fr": "La zone de contrôle fournit les boutons et liens suivants :",
@@ -262,7 +262,7 @@
     },
     "channels_title": {
       "en": "Channel Input",
-      "cn": "通道输入",
+      "cn": "通道輸入",
       "de": "Kanaleingabe",
       "es": "Entrada de canal",
       "fr": "Saisie des canaux",
@@ -276,7 +276,7 @@
     },
     "channels_body": {
       "en": "Enter MML notation into the CH1–CH4 text fields. For example, entering {0} plays the notes Do-Re-Mi. Both uppercase and lowercase letters are accepted. Each channel has SOLO and MUTE buttons:",
-      "cn": "在 CH1–CH4 文本框中输入 MML 记法。例如，输入 {0} 将播放 Do-Re-Mi 音符。大小写均可。每个通道有 SOLO 和 MUTE 按钮：",
+      "cn": "在 CH1–CH4 文字方塊中輸入 MML 記法。例如，輸入 {0} 將播放 Do-Re-Mi 音符。大小寫均可。每個通道有 SOLO 和 MUTE 按鈕：",
       "de": "Geben Sie MML-Notation in die Textfelder CH1–CH4 ein. Zum Beispiel spielt die Eingabe von {0} die Noten Do-Re-Mi. Groß- und Kleinschreibung werden akzeptiert. Jeder Kanal hat SOLO- und MUTE-Schaltflächen:",
       "es": "Ingresa notación MML en los campos de texto CH1–CH4. Por ejemplo, ingresar {0} reproduce las notas Do-Re-Mi. Se aceptan mayúsculas y minúsculas. Cada canal tiene botones SOLO y MUTE:",
       "fr": "Entrez la notation MML dans les champs texte CH1–CH4. Par exemple, saisir {0} joue les notes Do-Ré-Mi. Les majuscules et minuscules sont acceptées. Chaque canal a des boutons SOLO et MUTE :",
@@ -290,7 +290,7 @@
     },
     "sharing_title": {
       "en": "Sharing via URL and QR Code",
-      "cn": "通过 URL 和二维码分享",
+      "cn": "透過 URL 和二維條碼分享",
       "de": "Teilen über URL und QR-Code",
       "es": "Compartir mediante URL y código QR",
       "fr": "Partage par URL et code QR",
@@ -304,7 +304,7 @@
     },
     "sharing_body": {
       "en": "Pyxel MML Studio does not have save or load functionality. Instead, all MML data is compressed and embedded directly in the URL as a query parameter. Share the URL to publish your work. A QR code corresponding to the URL is also generated automatically.",
-      "cn": "Pyxel MML Studio 没有保存和加载功能。所有 MML 数据会被压缩后直接嵌入 URL 的查询参数中。分享 URL 即可发布作品。对应的二维码也会自动生成。",
+      "cn": "Pyxel MML Studio 沒有儲存和載入功能。所有 MML 資料會被壓縮後直接嵌入 URL 的查詢參數中。分享 URL 即可釋出作品。對應的二維條碼也會自動生成。",
       "de": "Pyxel MML Studio hat keine Speicher- oder Ladefunktion. Stattdessen werden alle MML-Daten komprimiert und direkt als Abfrageparameter in die URL eingebettet. Teilen Sie die URL, um Ihr Werk zu veröffentlichen. Ein QR-Code für die URL wird ebenfalls automatisch generiert.",
       "es": "Pyxel MML Studio no tiene función de guardar ni cargar. En su lugar, todos los datos MML se comprimen e integran directamente en la URL como parámetro de consulta. Comparte la URL para publicar tu obra. También se genera automáticamente un código QR correspondiente a la URL.",
       "fr": "Pyxel MML Studio n'a pas de fonction de sauvegarde ni de chargement. À la place, toutes les données MML sont compressées et intégrées directement dans l'URL comme paramètre de requête. Partagez l'URL pour publier votre œuvre. Un code QR correspondant à l'URL est également généré automatiquement.",
@@ -318,7 +318,7 @@
     },
     "shortcuts_title": {
       "en": "Keyboard Shortcuts",
-      "cn": "键盘快捷键",
+      "cn": "鍵盤快速鍵",
       "de": "Tastenkombinationen",
       "es": "Atajos de teclado",
       "fr": "Raccourcis clavier",
@@ -332,7 +332,7 @@
     },
     "shortcuts_body": {
       "en": "The following keyboard shortcuts are available. On macOS, use Cmd instead of Ctrl.",
-      "cn": "可以使用以下键盘快捷键。在 macOS 上，使用 Cmd 代替 Ctrl。",
+      "cn": "可以使用以下鍵盤快速鍵。在 macOS 上，使用 Cmd 代替 Ctrl。",
       "de": "Die folgenden Tastenkombinationen sind verfügbar. Unter macOS verwenden Sie Cmd statt Ctrl.",
       "es": "Los siguientes atajos de teclado están disponibles. En macOS, usa Cmd en lugar de Ctrl.",
       "fr": "Les raccourcis clavier suivants sont disponibles. Sur macOS, utilisez Cmd au lieu de Ctrl.",
@@ -346,7 +346,7 @@
     },
     "th_shortcut": {
       "en": "Shortcut",
-      "cn": "快捷键",
+      "cn": "快速鍵",
       "de": "Tastenkombination",
       "es": "Atajo",
       "fr": "Raccourci",
@@ -374,7 +374,7 @@
     },
     "mml_ref_title": {
       "en": "MML Command Reference",
-      "cn": "MML 命令参考",
+      "cn": "MML 命令參考",
       "de": "MML-Befehlsreferenz",
       "es": "Referencia de comandos MML",
       "fr": "Référence des commandes MML",
@@ -388,7 +388,7 @@
     },
     "mml_ref_body": {
       "en": "For the complete list of MML commands supported by Pyxel, see {0}.",
-      "cn": "有关 Pyxel 支持的完整 MML 命令列表，请参阅 {0}。",
+      "cn": "有關 Pyxel 支持的完整 MML 命令清單，請參閱 {0}。",
       "de": "Die vollständige Liste der von Pyxel unterstützten MML-Befehle finden Sie unter {0}.",
       "es": "Para la lista completa de comandos MML soportados por Pyxel, consulta {0}.",
       "fr": "Pour la liste complète des commandes MML prises en charge par Pyxel, consultez {0}.",
@@ -420,7 +420,7 @@
       "label": "PLAY",
       "desc": {
         "en": "Start playback of the MML entered in all channels.",
-        "cn": "开始播放所有通道中输入的 MML。",
+        "cn": "開始播放所有通道中輸入的 MML。",
         "de": "Wiedergabe der in allen Kanälen eingegebenen MML starten.",
         "es": "Iniciar la reproducción del MML ingresado en todos los canales.",
         "fr": "Démarrer la lecture du MML saisi dans tous les canaux.",
@@ -454,7 +454,7 @@
       "label": "LOOP",
       "desc": {
         "en": "Toggle loop playback on or off. Enabled by default.",
-        "cn": "切换循环播放的开关。默认开启。",
+        "cn": "切換循環播放的開關。預設開啟。",
         "de": "Schleifenwiedergabe ein- oder ausschalten. Standardmäßig aktiviert.",
         "es": "Activar o desactivar la reproducción en bucle. Activado por defecto.",
         "fr": "Activer ou désactiver la lecture en boucle. Activé par défaut.",
@@ -472,7 +472,7 @@
       "type": "link",
       "desc": {
         "en": "Open the MML command reference page.",
-        "cn": "打开 MML 命令参考页面。",
+        "cn": "開啟 MML 命令參考頁面。",
         "de": "Die MML-Befehlsreferenzseite öffnen.",
         "es": "Abrir la página de referencia de comandos MML.",
         "fr": "Ouvrir la page de référence des commandes MML.",
@@ -490,7 +490,7 @@
       "type": "link",
       "desc": {
         "en": "Load a sample tune to hear what Pyxel MML can produce.",
-        "cn": "加载示例曲目，试听 Pyxel MML 的效果。",
+        "cn": "載入示例曲目，試聽 Pyxel MML 的效果。",
         "de": "Ein Beispielstück laden, um zu hören, was Pyxel MML kann.",
         "es": "Cargar una melodía de ejemplo para escuchar lo que Pyxel MML puede producir.",
         "fr": "Charger un morceau d'exemple pour entendre ce que Pyxel MML peut produire.",
@@ -509,7 +509,7 @@
       "label": "SOLO",
       "desc": {
         "en": "Play only this channel, muting all others.",
-        "cn": "仅播放此通道，将其他通道静音。",
+        "cn": "僅播放此通道，將其他通道靜音。",
         "de": "Nur diesen Kanal abspielen, alle anderen stummschalten.",
         "es": "Reproducir solo este canal, silenciando todos los demás.",
         "fr": "Jouer uniquement ce canal, en coupant tous les autres.",
@@ -526,7 +526,7 @@
       "label": "MUTE",
       "desc": {
         "en": "Mute this channel during playback.",
-        "cn": "在播放时将此通道静音。",
+        "cn": "在播放時將此通道靜音。",
         "de": "Diesen Kanal während der Wiedergabe stummschalten.",
         "es": "Silenciar este canal durante la reproducción.",
         "fr": "Couper le son de ce canal pendant la lecture.",
@@ -545,7 +545,7 @@
       "key": "Ctrl(Cmd)+Enter",
       "action": {
         "en": "Start playback",
-        "cn": "开始播放",
+        "cn": "開始播放",
         "de": "Wiedergabe starten",
         "es": "Iniciar reproducción",
         "fr": "Démarrer la lecture",
@@ -579,7 +579,7 @@
       "key": "Ctrl(Cmd)+L",
       "action": {
         "en": "Toggle loop playback",
-        "cn": "切换循环播放",
+        "cn": "切換循環播放",
         "de": "Schleifenwiedergabe umschalten",
         "es": "Alternar reproducción en bucle",
         "fr": "Basculer la lecture en boucle",

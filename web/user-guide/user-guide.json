@@ -6,7 +6,7 @@
     },
     {
       "code": "cn",
-      "name": "中文"
+      "name": "繁體中文"
     },
     {
       "code": "de",
@@ -52,7 +52,7 @@
   "ui": {
     "title": {
       "en": "Pyxel User Guide",
-      "cn": "Pyxel 用户指南",
+      "cn": "Pyxel 使用者指南",
       "de": "Pyxel Benutzerhandbuch",
       "es": "Guía de usuario de Pyxel",
       "fr": "Guide utilisateur de Pyxel",
@@ -66,7 +66,7 @@
     },
     "subtitle": {
       "en": "User guide for {0}, a retro game engine for Python.",
-      "cn": "Python 复古游戏引擎 {0} 的用户指南",
+      "cn": "Python 復古遊戲引擎 {0} 的使用者指南",
       "de": "Benutzerhandbuch für {0}, eine Retro-Spielengine für Python.",
       "es": "Guía de usuario de {0}, un motor de juegos retro para Python.",
       "fr": "Guide utilisateur de {0}, un moteur de jeux rétro pour Python.",
@@ -80,7 +80,7 @@
     },
     "overview_body": {
       "en": "{0} (/ˈpɪksəl/) is a retro game engine for Python. With simple specifications inspired by retro gaming consoles, such as displaying only 16 colors and supporting 4 sound channels, you can easily enjoy making pixel-art-style games.",
-      "cn": "{0} (/ˈpɪksəl/) 是一个针对 Python 的复古游戏引擎。其规格受到复古游戏机的启发，例如仅支持 16 种颜色和 4 个通道，同时可以轻松享受制作像素艺术风格游戏的乐趣。",
+      "cn": "{0} (/ˈpɪksəl/) 是一個針對 Python 的復古遊戲引擎。其規格受到復古遊戲機的啟發，例如僅支持 16 種顏色和 4 個通道，同時可以輕鬆享受製作畫素藝術風格遊戲的樂趣。",
       "de": "{0} (/ˈpɪksəl/) ist eine Retro-Spielengine für Python. Die Spezifikationen sind von Retro-Spielkonsolen inspiriert – z. B. werden nur 16 Farben und 4 Sound-Kanäle unterstützt –, sodass Sie ganz einfach Spiele im Pixel-Art-Stil erstellen können.",
       "es": "{0} (/ˈpɪksəl/) es un motor de juegos retro para Python. Las especificaciones están inspiradas en las consolas de juegos retro, como el soporte para solo 16 colores y 4 canales de sonido, lo que te permite disfrutar fácilmente de la creación de juegos con estilo de arte en píxeles.",
       "fr": "{0} (/ˈpɪksəl/) est un moteur de jeux rétro pour Python. Les spécifications sont inspirées des consoles de jeux rétro, comme le fait de n'afficher que 16 couleurs et de prendre en charge 4 canaux audio, vous permettant ainsi de profiter facilement de la création de jeux au style pixel art.",
@@ -94,7 +94,7 @@
     },
     "overview_license": {
       "en": "{0} is open source under the {1} and free to use. Let's start making retro games with {0}!",
-      "cn": "{0} 在 {1} 下开源并免费使用。让我们开始使用 {0} 制作复古游戏吧！",
+      "cn": "{0} 在 {1} 下開放原始碼並免費使用。讓我們開始使用 {0} 製作復古遊戲吧！",
       "de": "{0} ist unter der {1} Open Source und kostenlos zu verwenden. Lassen Sie uns beginnen, Retro-Spiele mit {0} zu erstellen!",
       "es": "{0} es de código abierto bajo la {1} y es gratuito para usar. ¡Comencemos a crear juegos retro con {0}!",
       "fr": "{0} est open source sous la {1} et est gratuit à utiliser. Commençons à créer des jeux rétro avec {0} !",
@@ -108,7 +108,7 @@
     },
     "overview_star": {
       "en": "Also, this project is developed by one person, kept going by your {0} stars. If you enjoy it, please give it a star!",
-      "cn": "另外，这个项目由一人开发，{0} 上的星标是持续开发的动力。如果您喜欢，请给它一个星标！",
+      "cn": "另外，這個專案由一人開發，{0} 上的星標是持續開發的動力。如果您喜歡，請給它一個星標！",
       "de": "Außerdem wird dieses Projekt von einer einzelnen Person entwickelt und durch Ihre Sterne auf {0} am Leben erhalten. Wenn es Ihnen gefällt, geben Sie ihm bitte einen Stern!",
       "es": "Además, este proyecto es desarrollado por una sola persona, impulsado por tus estrellas en {0}. Si te gusta, ¡por favor dale una estrella!",
       "fr": "De plus, ce projet est développé par une seule personne, soutenu par vos étoiles sur {0}. Si vous l'aimez, n'hésitez pas à lui donner une étoile !",
@@ -122,7 +122,7 @@
     },
     "specs_title": {
       "en": "Specifications",
-      "cn": "规格",
+      "cn": "規格",
       "de": "Spezifikationen",
       "es": "Especificaciones",
       "fr": "Spécifications",
@@ -150,7 +150,7 @@
     },
     "specs_language": {
       "en": "Programming in Python",
-      "cn": "使用 Python 编程",
+      "cn": "使用 Python 程式設計",
       "de": "Programmierung in Python",
       "es": "Programación en Python",
       "fr": "Programmation en Python",
@@ -164,7 +164,7 @@
     },
     "specs_screen": {
       "en": "Customizable screen size",
-      "cn": "可自定义屏幕尺寸",
+      "cn": "可自訂螢幕尺寸",
       "de": "Anpassbare Bildschirmgröße",
       "es": "Tamaño de pantalla personalizable",
       "fr": "Taille d'écran personnalisable",
@@ -178,7 +178,7 @@
     },
     "specs_colors": {
       "en": "16-color palette",
-      "cn": "16 色调色板",
+      "cn": "16 色調色盤",
       "de": "16-Farben-Palette",
       "es": "Paleta de 16 colores",
       "fr": "Palette de 16 couleurs",
@@ -192,7 +192,7 @@
     },
     "specs_images": {
       "en": "3 256x256 image banks",
-      "cn": "3 个 256x256 图像库",
+      "cn": "3 個 256x256 圖片庫",
       "de": "3 256x256 Bildbanken",
       "es": "3 bancos de imágenes de 256x256",
       "fr": "3 banques d'images 256x256",
@@ -206,7 +206,7 @@
     },
     "specs_tilemaps": {
       "en": "8 256x256 tilemaps",
-      "cn": "8 个 256x256 瓦片地图",
+      "cn": "8 個 256x256 瓦片地圖",
       "de": "8 256x256 Tilemaps",
       "es": "8 tilemaps de 256x256",
       "fr": "8 tilemaps 256x256",
@@ -220,7 +220,7 @@
     },
     "specs_sounds": {
       "en": "4 channels with 64 definable sounds",
-      "cn": "4 个通道，支持 64 种可定义声音",
+      "cn": "4 個通道，支持 64 種可定義聲音",
       "de": "4 Kanäle mit 64 definierbaren Sounds",
       "es": "4 canales con 64 sonidos definibles",
       "fr": "4 canaux avec 64 sons définissables",
@@ -234,7 +234,7 @@
     },
     "specs_music": {
       "en": "8 music tracks that can combine any sounds",
-      "cn": "8 个音乐轨道可组合任意声音",
+      "cn": "8 個音樂軌道可組合任意聲音",
       "de": "8 Musiktracks, die beliebige Sounds kombinieren können",
       "es": "8 pistas de música que pueden combinar cualquier sonido",
       "fr": "8 pistes de musique capables de combiner n'importe quel son",
@@ -248,7 +248,7 @@
     },
     "specs_input": {
       "en": "Keyboard, mouse, and gamepad inputs",
-      "cn": "支持键盘、鼠标和游戏手柄输入",
+      "cn": "支持鍵盤、滑鼠和遊戲手柄輸入",
       "de": "Eingaben über Tastatur, Maus und Gamepad",
       "es": "Entradas de teclado, ratón y gamepad",
       "fr": "Entrées de clavier, de souris et de manette",
@@ -262,7 +262,7 @@
     },
     "specs_tools": {
       "en": "Image and sound editing tools",
-      "cn": "图像和声音编辑工具",
+      "cn": "圖片和聲音編輯工具",
       "de": "Werkzeuge zum Bearbeiten von Bildern und Sounds",
       "es": "Herramientas de edición de imágenes y sonidos",
       "fr": "Outils d'édition d'images et de sons",
@@ -276,7 +276,7 @@
     },
     "specs_extensible": {
       "en": "User-extensible colors, sound channels, and banks",
-      "cn": "用户可扩展的颜色、声音通道和库",
+      "cn": "使用者可擴充的顏色、聲音通道和庫",
       "de": "Benutzererweiterbare Farben, Sound-Kanäle und Banken",
       "es": "Colores, canales de sonido y bancos ampliables por el usuario",
       "fr": "Couleurs, canaux audio et banques extensibles par l'utilisateur",
@@ -290,7 +290,7 @@
     },
     "palette_title": {
       "en": "Color Palette",
-      "cn": "色彩调色板",
+      "cn": "色彩調色盤",
       "de": "Farbpalette",
       "es": "Paleta de colores",
       "fr": "Palette de couleurs",
@@ -304,7 +304,7 @@
     },
     "palette_gimp_palette_file": {
       "en": "GIMP palette file (.gpl)",
-      "cn": "GIMP 调色板文件 (.gpl)",
+      "cn": "GIMP 調色盤檔案 (.gpl)",
       "de": "GIMP-Palettendatei (.gpl)",
       "es": "Archivo de paleta de GIMP (.gpl)",
       "fr": "Fichier de palette GIMP (.gpl)",
@@ -318,7 +318,7 @@
     },
     "install_title": {
       "en": "How to Install",
-      "cn": "如何安装",
+      "cn": "如何安裝",
       "de": "Installation",
       "es": "Cómo instalar",
       "fr": "Comment installer",
@@ -346,7 +346,7 @@
     },
     "install_desktop_body": {
       "en": "After installing {0} (version 3.11 or higher), run the following command:",
-      "cn": "安装 {0} (版本 3.11 或更高) 后，运行以下命令：",
+      "cn": "安裝 {0} (版本 3.11 或更高) 後，執行以下命令：",
       "de": "Nachdem Sie {0} (Version 3.11 oder höher) installiert haben, führen Sie den folgenden Befehl aus:",
       "es": "Después de instalar {0} (versión 3.11 o superior), ejecuta el siguiente comando:",
       "fr": "Après avoir installé {0} (version 3.11 ou supérieure), exécutez la commande suivante :",
@@ -360,7 +360,7 @@
     },
     "install_desktop_note": {
       "en": "<strong>Note:</strong> On Windows, if installing Python using the installer from python.org, make sure to check {0} to enable the {1} command.",
-      "cn": "<strong>注意：</strong>在 Windows 上，如果使用 python.org 的安装程序安装 Python，请确保勾选 {0}，以启用 {1} 命令。",
+      "cn": "<strong>注意：</strong>在 Windows 上，如果使用 Python.org 的安裝程式安裝 Python，請確保勾選 {0}，以啟用 {1} 命令。",
       "de": "<strong>Hinweis:</strong> Wenn Sie Python unter Windows mit dem Installer von python.org installieren, aktivieren Sie die Option {0}, damit der Befehl {1} verfügbar ist.",
       "es": "<strong>Nota:</strong> En Windows, si instalas Python usando el instalador de python.org, asegúrate de marcar {0} para habilitar el comando {1}.",
       "fr": "<strong>Remarque :</strong> Sous Windows, si vous installez Python avec l'installateur de python.org, assurez-vous de cocher {0} pour activer la commande {1}.",
@@ -388,7 +388,7 @@
     },
     "install_web_body": {
       "en": "The web version of Pyxel can be used without installation on PCs, smartphones, tablets, and other devices with a compatible browser.",
-      "cn": "Web 版 Pyxel 可在 PC、智能手机、平板电脑等具有兼容浏览器的设备上使用，无需安装。",
+      "cn": "Web 版 Pyxel 可在 PC、智慧型手機、平板等具有相容瀏覽器的裝置上使用，無需安裝。",
       "de": "Die Webversion von Pyxel kann ohne Installation auf PCs, Smartphones, Tablets und anderen Geräten mit einem kompatiblen Browser verwendet werden.",
       "es": "La versión web de Pyxel puede usarse sin instalación en PCs, smartphones, tablets y otros dispositivos con un navegador compatible.",
       "fr": "La version web de Pyxel peut être utilisée sans installation sur les PC, smartphones, tablettes et autres appareils disposant d'un navigateur compatible.",
@@ -402,7 +402,7 @@
     },
     "install_web_codemaker": {
       "en": "The web-based development environment {0} is ready to use simply by opening it in your browser.",
-      "cn": "Web 版开发环境 {0} 只需在浏览器中打开即可使用。",
+      "cn": "Web 版開發環境 {0} 只需在瀏覽器中開啟即可使用。",
       "de": "Die webbasierte Entwicklungsumgebung {0} ist sofort einsatzbereit, indem Sie sie einfach im Browser öffnen.",
       "es": "El entorno de desarrollo web {0} está listo para usar simplemente abriéndolo en tu navegador.",
       "fr": "L'environnement de développement web {0} est prêt à l'emploi en l'ouvrant simplement dans votre navigateur.",
@@ -416,7 +416,7 @@
     },
     "install_web_other": {
       "en": "For other usage, such as embedding Pyxel apps on your own site, please refer to {0}.",
-      "cn": "如需在自己的网站中嵌入 Pyxel 应用等其他用法，请参考 {0}。",
+      "cn": "如需在自己的網站中嵌入 Pyxel 應用等其他用法，請參考 {0}。",
       "de": "Für weitere Nutzungsmöglichkeiten, wie das Einbetten von Pyxel-Apps auf Ihrer eigenen Website, lesen Sie bitte {0}.",
       "es": "Para otros usos, como incrustar aplicaciones Pyxel en tu propio sitio, consulta {0}.",
       "fr": "Pour d'autres utilisations, comme l'intégration d'applications Pyxel sur votre propre site, veuillez consulter {0}.",
@@ -444,7 +444,7 @@
     },
     "install_vscode_body": {
       "en": "By adding the Pyxel extension to {0} (VS Code), you can develop and run Pyxel apps without installing Python or Pyxel.",
-      "cn": "在 {0} (VS Code) 中添加 Pyxel 扩展后，无需安装 Python 或 Pyxel 即可开发和运行 Pyxel 应用。",
+      "cn": "在 {0} (VS Code) 中添加 Pyxel 擴充後，無需安裝 Python 或 Pyxel 即可開發和執行 Pyxel 應用。",
       "de": "Durch Hinzufügen der Pyxel-Erweiterung zu {0} (VS Code) können Sie Pyxel-Apps ohne Installation von Python oder Pyxel entwickeln und ausführen.",
       "es": "Al añadir la extensión Pyxel a {0} (VS Code), puedes desarrollar y ejecutar aplicaciones Pyxel sin instalar Python ni Pyxel.",
       "fr": "En ajoutant l'extension Pyxel à {0} (VS Code), vous pouvez développer et exécuter des applications Pyxel sans installer Python ni Pyxel.",
@@ -458,7 +458,7 @@
     },
     "install_vscode_howto": {
       "en": "To add the Pyxel extension, search for \"{0}\" in the VS Code Extensions view and click the install button.",
-      "cn": "添加 Pyxel 扩展的方法是，在 VS Code 的扩展视图中搜索“{0}”，然后点击安装按钮。",
+      "cn": "添加 Pyxel 擴充的方法是，在 VS Code 的擴充檢視中搜索「{0}」，然後點選安裝按鈕。",
       "de": "Um die Pyxel-Erweiterung hinzuzufügen, suchen Sie in der VS Code-Erweiterungsansicht nach „{0}“ und klicken Sie auf die Schaltfläche „Installieren“.",
       "es": "Para añadir la extensión Pyxel, busca \"{0}\" en la vista de extensiones de VS Code y haz clic en el botón de instalación.",
       "fr": "Pour ajouter l'extension Pyxel, recherchez « {0} » dans la vue Extensions de VS Code et cliquez sur le bouton d'installation.",
@@ -500,7 +500,7 @@
     },
     "usage_command_body": {
       "en": "Installing Pyxel adds the {0} command. Specify a command name after {0} to perform various operations.",
-      "cn": "安装 Pyxel 后即可使用 {0} 命令。在 {0} 后指定命令名称来执行各种操作。",
+      "cn": "安裝 Pyxel 後即可使用 {0} 命令。在 {0} 後指定命令名稱來執行各種操作。",
       "de": "Durch die Installation von Pyxel wird der Befehl {0} verfügbar. Geben Sie nach {0} einen Befehlsnamen an, um verschiedene Operationen auszuführen.",
       "es": "Al instalar Pyxel, se añade el comando {0}. Especifica un nombre de comando después de {0} para realizar diversas operaciones.",
       "fr": "L'installation de Pyxel ajoute la commande {0}. Spécifiez un nom de commande après {0} pour effectuer diverses opérations.",
@@ -514,7 +514,7 @@
     },
     "usage_command_noargs": {
       "en": "Run it without arguments to see the list of available commands:",
-      "cn": "不带参数运行可查看可用命令列表：",
+      "cn": "不帶參數執行可檢視可用命令清單：",
       "de": "Führen Sie ihn ohne Argumente aus, um die Liste der verfügbaren Befehle anzuzeigen:",
       "es": "Ejecútalo sin argumentos para ver la lista de comandos disponibles:",
       "fr": "Exécutez-la sans arguments pour afficher la liste des commandes disponibles :",
@@ -528,7 +528,7 @@
     },
     "usage_examples_title": {
       "en": "Try Examples",
-      "cn": "运行示例",
+      "cn": "執行示例",
       "de": "Beispiele ausführen",
       "es": "Ejecutar ejemplos",
       "fr": "Essayer les exemples",
@@ -542,7 +542,7 @@
     },
     "usage_examples_copy": {
       "en": "The following command copies Pyxel examples to the current directory:",
-      "cn": "使用以下命令可将 Pyxel 示例复制到当前目录：",
+      "cn": "使用以下命令可將 Pyxel 示例複製到目前目錄：",
       "de": "Mit dem folgenden Befehl können Sie die Beispiele in das aktuelle Verzeichnis kopieren:",
       "es": "El siguiente comando copia los ejemplos de Pyxel al directorio actual:",
       "fr": "La commande suivante copie les exemples Pyxel dans le répertoire actuel :",
@@ -556,7 +556,7 @@
     },
     "usage_examples_run": {
       "en": "You can run examples locally with the following commands:",
-      "cn": "在本地环境中，可以通过以下命令执行示例：",
+      "cn": "在本地環境中，可以透過以下命令執行示例：",
       "de": "In der lokalen Umgebung können die Beispiele mit den folgenden Befehlen ausgeführt werden:",
       "es": "En el entorno local, los ejemplos se pueden ejecutar con los siguientes comandos:",
       "fr": "En environnement local, les exemples peuvent être exécutés avec les commandes suivantes :",
@@ -570,7 +570,7 @@
     },
     "usage_examples_run_comment1": {
       "en": "Run example in examples directory",
-      "cn": "在 examples 目录运行示例",
+      "cn": "在 examples 目錄執行示例",
       "de": "Beispiel im examples-Verzeichnis ausführen",
       "es": "Ejecutar ejemplo en el directorio examples",
       "fr": "Exécuter l'exemple dans le répertoire examples",
@@ -584,7 +584,7 @@
     },
     "usage_examples_run_comment2": {
       "en": "Run app in examples/apps directory",
-      "cn": "在 examples/apps 目录运行应用",
+      "cn": "在 examples/apps 目錄執行應用",
       "de": "App im examples/apps-Verzeichnis ausführen",
       "es": "Ejecutar aplicación en el directorio examples/apps",
       "fr": "Exécuter l'application dans le répertoire examples/apps",
@@ -598,7 +598,7 @@
     },
     "usage_examples_showcase": {
       "en": "Examples can also be viewed and run in the browser from {0}.",
-      "cn": "示例也可以在 {0} 上通过浏览器查看和运行。",
+      "cn": "示例也可以在 {0} 上透過瀏覽器檢視和執行。",
       "de": "Die Beispiele können auch auf {0} im Browser angesehen und ausgeführt werden.",
       "es": "Los ejemplos también se pueden ver y ejecutar en el navegador desde {0}.",
       "fr": "Les exemples peuvent également être consultés et exécutés dans le navigateur depuis {0}.",
@@ -612,7 +612,7 @@
     },
     "creating_title": {
       "en": "Creating Applications",
-      "cn": "创建应用程序",
+      "cn": "建立應用程式",
       "de": "Anwendungen erstellen",
       "es": "Creación de aplicaciones",
       "fr": "Création d'applications",
@@ -626,7 +626,7 @@
     },
     "creating_program_title": {
       "en": "Create a Program",
-      "cn": "创建程序",
+      "cn": "建立程式",
       "de": "Programm erstellen",
       "es": "Crear un programa",
       "fr": "Créer un programme",
@@ -640,7 +640,7 @@
     },
     "creating_program_body": {
       "en": "In your Python script, import Pyxel, set the window size with {0}, and start the application with {1}.",
-      "cn": "在您的 Python 脚本中导入 Pyxel，通过 {0} 指定窗口大小，然后用 {1} 启动应用程序。",
+      "cn": "在您的 Python 腳本中匯入 Pyxel，透過 {0} 指定視窗大小，然後用 {1} 啟動應用程式。",
       "de": "Importieren Sie Pyxel in Ihr Python-Skript, geben Sie die Fenstergröße mit {0} an und starten Sie die Anwendung mit {1}.",
       "es": "En tu script de Python, importa Pyxel, especifica el tamaño de la ventana con {0} y luego inicia la aplicación con {1}.",
       "fr": "Dans votre script Python, importez Pyxel, spécifiez la taille de la fenêtre avec {0} et démarrez l'application avec {1}.",
@@ -654,7 +654,7 @@
     },
     "creating_program_run_desc": {
       "en": "The arguments of the {0} function are the {1} function, which processes frame updates, and the {2} function, which handles screen drawing.",
-      "cn": "{0} 函数的参数是处理帧更新的 {1} 函数和处理屏幕绘制的 {2} 函数。",
+      "cn": "{0} 函式的參數是處理影格更新的 {1} 函式和處理螢幕繪製的 {2} 函式。",
       "de": "Die Argumente der {0}-Funktion sind die {1}-Funktion, die die Frame-Aktualisierungen verarbeitet, und die {2}-Funktion, die das Zeichnen auf dem Bildschirm übernimmt.",
       "es": "Los argumentos de la función {0} son la función {1}, que procesa las actualizaciones de los fotogramas, y la función {2}, que maneja el dibujo en la pantalla.",
       "fr": "Les arguments de la fonction {0} sont la fonction {1}, qui traite les mises à jour de frames, et la fonction {2}, qui gère le dessin à l'écran.",
@@ -668,7 +668,7 @@
     },
     "creating_program_class": {
       "en": "In an actual application, it is recommended to wrap Pyxel code in a class, as shown below:",
-      "cn": "在实际应用中，建议将 Pyxel 代码封装在类中，如下所示：",
+      "cn": "在實際應用中，建議將 Pyxel 程式碼封裝在類別中，如下所示：",
       "de": "In einer tatsächlichen Anwendung wird empfohlen, den Pyxel-Code in einer Klasse zu kapseln, wie im Folgenden gezeigt:",
       "es": "En una aplicación real, se recomienda encapsular el código de Pyxel en una clase, como se muestra a continuación:",
       "fr": "Dans une application réelle, il est recommandé d'encapsuler le code Pyxel dans une classe, comme montré ci-dessous :",
@@ -682,7 +682,7 @@
     },
     "creating_program_show": {
       "en": "For creating simple graphics without animation, you can use the {0} function to simplify your code.",
-      "cn": "要创建没有动画的简单图形，您可以使用 {0} 函数来简化代码。",
+      "cn": "要建立沒有動畫的簡單圖形，您可以使用 {0} 函式來簡化程式碼。",
       "de": "Um einfache Grafiken ohne Animation zu erstellen, können Sie die {0}-Funktion verwenden, um Ihren Code zu vereinfachen.",
       "es": "Para crear gráficos simples sin animación, puedes usar la función {0} para simplificar tu código.",
       "fr": "Pour créer des graphiques simples sans animation, vous pouvez utiliser la fonction {0} pour simplifier votre code.",
@@ -696,7 +696,7 @@
     },
     "creating_run_title": {
       "en": "Run a Program",
-      "cn": "运行程序",
+      "cn": "執行程式",
       "de": "Programm ausführen",
       "es": "Ejecutar un programa",
       "fr": "Exécuter un programme",
@@ -710,7 +710,7 @@
     },
     "creating_run_python": {
       "en": "A created script can be executed using the {0} command:",
-      "cn": "创建的脚本可以使用 {0} 命令执行：",
+      "cn": "建立的腳本可以使用 {0} 命令執行：",
       "de": "Ein erstelltes Skript kann mit dem {0}-Befehl ausgeführt werden:",
       "es": "Un script creado se puede ejecutar utilizando el comando {0}:",
       "fr": "Un script créé peut être exécuté en utilisant la commande {0} :",
@@ -724,7 +724,7 @@
     },
     "creating_run_pyxel": {
       "en": "It can also be run with the {0} command:",
-      "cn": "它也可以使用 {0} 命令运行：",
+      "cn": "它也可以使用 {0} 命令執行：",
       "de": "Es kann auch mit dem {0}-Befehl ausgeführt werden:",
       "es": "También se puede ejecutar con el comando {0}:",
       "fr": "Il peut également être exécuté avec la commande {0} :",
@@ -738,7 +738,7 @@
     },
     "creating_run_watch": {
       "en": "Additionally, the {0} command monitors changes in a specified directory and automatically re-runs the program when changes are detected:",
-      "cn": "此外，{0} 命令监视指定目录中的更改，并在检测到更改时自动重新运行程序：",
+      "cn": "此外，{0} 命令監視指定目錄中的更改，並在偵測到更改時自動重新執行程式：",
       "de": "Darüber hinaus überwacht der Befehl {0} Änderungen in einem angegebenen Verzeichnis und führt das Programm automatisch erneut aus, wenn Änderungen erkannt werden:",
       "es": "Además, el comando {0} supervisa los cambios en un directorio especificado y vuelve a ejecutar automáticamente el programa cuando se detectan cambios:",
       "fr": "De plus, la commande {0} surveille les modifications dans un répertoire spécifié et relance automatiquement le programme lorsque des changements sont détectés :",
@@ -752,7 +752,7 @@
     },
     "creating_run_watch_stop": {
       "en": "Stop directory monitoring by pressing {0}.",
-      "cn": "按 {0} 停止目录监视。",
+      "cn": "按 {0} 停止目錄監視。",
       "de": "Beenden Sie die Verzeichnisüberwachung mit {0}.",
       "es": "Detén la supervisión del directorio presionando {0}.",
       "fr": "Interrompez la surveillance du répertoire en appuyant sur {0}.",
@@ -766,7 +766,7 @@
     },
     "creating_keys_title": {
       "en": "Special Key Controls",
-      "cn": "特殊键操作",
+      "cn": "特殊鍵操作",
       "de": "Spezielle Tastenkombinationen",
       "es": "Controles de teclas especiales",
       "fr": "Commandes spéciales",
@@ -780,7 +780,7 @@
     },
     "creating_keys_body": {
       "en": "The following special key actions are available while a Pyxel application is running:",
-      "cn": "在运行 Pyxel 应用程序时，可以执行以下特殊键操作：",
+      "cn": "在執行 Pyxel 應用程式時，可以執行以下特殊鍵操作：",
       "de": "Während eine Pyxel-Anwendung läuft, können die folgenden speziellen Tastenaktionen ausgeführt werden:",
       "es": "Durante la ejecución de una aplicación Pyxel, se pueden realizar las siguientes acciones de teclas especiales:",
       "fr": "Pendant l'exécution d'une application Pyxel, les opérations de touches spéciales suivantes peuvent être effectuées :",
@@ -794,7 +794,7 @@
     },
     "th_key": {
       "en": "Key",
-      "cn": "键",
+      "cn": "鍵",
       "de": "Taste",
       "es": "Tecla",
       "fr": "Touche",
@@ -822,7 +822,7 @@
     },
     "resources_title": {
       "en": "Creating Resources",
-      "cn": "创建资源",
+      "cn": "建立資源",
       "de": "Ressourcen erstellen",
       "es": "Creación de recursos",
       "fr": "Création de ressources",
@@ -850,7 +850,7 @@
     },
     "resources_editor_body": {
       "en": "Pyxel Editor creates images and sounds used in a Pyxel application.",
-      "cn": "Pyxel Editor 用于创建 Pyxel 应用程序使用的图像和声音。",
+      "cn": "Pyxel Editor 用於建立 Pyxel 應用程式使用的圖片和聲音。",
       "de": "Pyxel Editor erstellt Bilder und Sounds, die in einer Pyxel-Anwendung verwendet werden.",
       "es": "Pyxel Editor crea imágenes y sonidos utilizados en una aplicación Pyxel.",
       "fr": "Pyxel Editor crée des images et des sons utilisés dans une application Pyxel.",
@@ -864,7 +864,7 @@
     },
     "resources_editor_save": {
       "en": "The created data is saved as a Pyxel resource file (.pyxres).",
-      "cn": "创建的数据将保存为 Pyxel 资源文件 (.pyxres)。",
+      "cn": "建立的資料將儲存為 Pyxel 資源檔案 (.pyxres)。",
       "de": "Die erstellten Daten werden als Pyxel-Ressourcendatei (.pyxres) gespeichert.",
       "es": "Los datos creados se guardan como un archivo de recursos de Pyxel (.pyxres).",
       "fr": "Les données créées sont enregistrées sous forme de fichier de ressources Pyxel (.pyxres).",
@@ -878,7 +878,7 @@
     },
     "resources_editor_link": {
       "en": "For detailed usage instructions, see the {0}.",
-      "cn": "详细操作方法请参阅 {0}。",
+      "cn": "詳細操作方法請參閱 {0}。",
       "de": "Eine ausführliche Bedienungsanleitung finden Sie im {0}.",
       "es": "Para instrucciones detalladas, consulta el {0}.",
       "fr": "Pour des instructions détaillées, consultez le {0}.",
@@ -892,7 +892,7 @@
     },
     "resources_other_title": {
       "en": "Other Creation Methods",
-      "cn": "其他创建方法",
+      "cn": "其他建立方法",
       "de": "Andere Erstellungsmethoden",
       "es": "Otros métodos de creación",
       "fr": "Autres méthodes de création",
@@ -906,7 +906,7 @@
     },
     "resources_other_images": {
       "en": "Pyxel images and tilemaps can also be created using the following methods:",
-      "cn": "Pyxel 图像和瓦片地图还可以通过以下方法创建：",
+      "cn": "Pyxel 圖片和瓦片地圖還可以透過以下方法建立：",
       "de": "Pyxel-Bilder und Tilemaps können auch mit folgenden Methoden erstellt werden:",
       "es": "Las imágenes y los tilemaps de Pyxel también se pueden crear utilizando los siguientes métodos:",
       "fr": "Les images et les tilemaps Pyxel peuvent également être créées en utilisant les méthodes suivantes :",
@@ -920,7 +920,7 @@
     },
     "resources_other_image_set": {
       "en": "Create images or tilemaps from lists of strings with the {0} or {1} functions",
-      "cn": "使用 {0} 或 {1} 函数，从字符串列表创建图像或瓦片地图",
+      "cn": "使用 {0} 或 {1} 函式，從字串串列建立圖片或瓦片地圖",
       "de": "Erstellen Sie Bilder oder Tilemaps aus Listen von Zeichenfolgen mit den Funktionen {0} oder {1}",
       "es": "Crear imágenes o tilemaps a partir de listas de cadenas con las funciones {0} o {1}",
       "fr": "Créer des images ou des tilemaps à partir de listes de chaînes avec les fonctions {0} ou {1}",
@@ -934,7 +934,7 @@
     },
     "resources_other_image_load": {
       "en": "Load palette-ready image files (PNG/GIF/JPEG) with the {0} function",
-      "cn": "使用 {0} 函数加载适用于 Pyxel 调色板的图像文件 (PNG/GIF/JPEG)",
+      "cn": "使用 {0} 函式載入適用於 Pyxel 調色盤的圖片檔案 (PNG/GIF/JPEG)",
       "de": "Laden Sie eine zur Pyxel-Palette passende Bilddatei (PNG/GIF/JPEG) mit der Funktion {0}",
       "es": "Cargar archivos de imagen compatibles con la paleta de Pyxel (PNG/GIF/JPEG) con la función {0}",
       "fr": "Charger des fichiers image compatibles avec la palette Pyxel (PNG/GIF/JPEG) avec la fonction {0}",
@@ -948,7 +948,7 @@
     },
     "resources_other_sounds": {
       "en": "Pyxel sounds and music can also be created using the following method:",
-      "cn": "Pyxel 的声音和音乐也可以通过以下方法创建：",
+      "cn": "Pyxel 的聲音和音樂也可以透過以下方法建立：",
       "de": "Pyxel-Sounds und -Musik können ebenfalls mit der folgenden Methode erstellt werden:",
       "es": "Los sonidos y la música de Pyxel también se pueden crear utilizando el siguiente método:",
       "fr": "Les sons et la musique Pyxel peuvent également être créés en utilisant la méthode suivante :",
@@ -962,7 +962,7 @@
     },
     "resources_other_sound_set": {
       "en": "Create them from strings with the {0} or {1} functions",
-      "cn": "使用 {0} 或 {1} 函数从字符串创建",
+      "cn": "使用 {0} 或 {1} 函式從字串建立",
       "de": "Erstellen Sie sie aus Zeichenfolgen mit den Funktionen {0} oder {1}",
       "es": "Crearlos a partir de cadenas con las funciones {0} o {1}",
       "fr": "Les créer à partir de chaînes avec les fonctions {0} ou {1}",
@@ -976,7 +976,7 @@
     },
     "resources_other_refer": {
       "en": "Refer to the API reference for the use of these functions.",
-      "cn": "有关这些函数的用法，请参阅 API 参考。",
+      "cn": "有關這些函式的用法，請參閱 API 參考。",
       "de": "Bitte beachten Sie die API-Referenz für die Verwendung dieser Funktionen.",
       "es": "Consulta la referencia de la API para el uso de estas funciones.",
       "fr": "Référez-vous à la documentation de l'API pour l'utilisation de ces fonctions.",
@@ -990,7 +990,7 @@
     },
     "dist_title": {
       "en": "Distributing Applications",
-      "cn": "分发应用程序",
+      "cn": "分發應用程式",
       "de": "Anwendungen verteilen",
       "es": "Distribución de aplicaciones",
       "fr": "Distribution d'applications",
@@ -1004,7 +1004,7 @@
     },
     "dist_body": {
       "en": "Pyxel supports a cross-platform distribution format called a Pyxel application file.",
-      "cn": "Pyxel 支持一种跨平台分发格式：Pyxel 应用程序文件。",
+      "cn": "Pyxel 支援一種跨平臺分發格式：Pyxel 應用程式檔案。",
       "de": "Pyxel unterstützt ein plattformübergreifendes Distributionsformat namens Pyxel-Anwendungsdatei.",
       "es": "Pyxel admite un formato de distribución multiplataforma llamado archivo de aplicación Pyxel.",
       "fr": "Pyxel prend en charge un format de distribution multiplateforme appelé fichier d'application Pyxel.",
@@ -1018,7 +1018,7 @@
     },
     "dist_create": {
       "en": "Create a Pyxel application file (.pyxapp) with the {0} command:",
-      "cn": "使用 {0} 命令创建 Pyxel 应用程序文件 (.pyxapp)：",
+      "cn": "使用 {0} 命令建立 Pyxel 應用程式檔案 (.pyxapp)：",
       "de": "Erstellen Sie eine Pyxel-Anwendungsdatei (.pyxapp) mit dem Befehl {0}:",
       "es": "Crea un archivo de aplicación Pyxel (.pyxapp) con el comando {0}:",
       "fr": "Créez un fichier d'application Pyxel (.pyxapp) avec la commande {0} :",
@@ -1032,7 +1032,7 @@
     },
     "dist_include": {
       "en": "If you need to include resources or additional modules, place them in the application directory.",
-      "cn": "如果您需要包括资源或其他模块，请将它们放在应用程序目录中。",
+      "cn": "如果您需要包括資源或其他模組，請將它們放在應用程式目錄中。",
       "de": "Wenn Sie Ressourcen oder zusätzliche Module einfügen möchten, legen Sie diese im Anwendungsverzeichnis ab.",
       "es": "Si necesitas incluir recursos o módulos adicionales, colócalos en el directorio de la aplicación.",
       "fr": "Si vous avez besoin d'inclure des ressources ou des modules supplémentaires, placez-les dans le répertoire de l'application.",
@@ -1046,7 +1046,7 @@
     },
     "dist_metadata": {
       "en": "Metadata can be displayed at runtime by specifying it in the following format within the startup script. Fields other than {0} and {1} are optional.",
-      "cn": "通过在启动脚本中指定以下格式，可以在运行时显示元数据。除 {0} 和 {1} 外的字段都是可选的。",
+      "cn": "透過在啟動腳本中指定以下格式，可以在執行時顯示metadata。除 {0} 和 {1} 外的欄位都是可選的。",
       "de": "Metadaten können zur Laufzeit angezeigt werden, indem Sie sie im folgenden Format im Startskript angeben. Felder außer {0} und {1} sind optional.",
       "es": "Los metadatos se pueden mostrar en tiempo de ejecución especificándolos en el siguiente formato dentro del script de inicio. Los campos distintos de {0} y {1} son opcionales.",
       "fr": "Les métadonnées peuvent être affichées à l'exécution en les spécifiant dans le format suivant dans le script de démarrage. Les champs autres que {0} et {1} sont facultatifs.",
@@ -1060,7 +1060,7 @@
     },
     "dist_play": {
       "en": "The created application file can be run using the {0} command:",
-      "cn": "创建的应用程序文件可以使用 {0} 命令运行：",
+      "cn": "建立的應用程式檔案可以使用 {0} 命令執行：",
       "de": "Die erstellte Anwendungsdatei kann mit dem Befehl {0} ausgeführt werden:",
       "es": "El archivo de aplicación creado se puede ejecutar utilizando el comando {0}:",
       "fr": "Le fichier d'application créé peut être exécuté avec la commande {0} :",
@@ -1074,7 +1074,7 @@
     },
     "dist_convert": {
       "en": "A Pyxel application file can also be converted to an executable or an HTML file using the {0} or {1} commands.",
-      "cn": "Pyxel 应用程序文件还可以使用 {0} 或 {1} 命令转换为可执行文件或 HTML 文件。",
+      "cn": "Pyxel 應用程式檔案還可以使用 {0} 或 {1} 命令轉換為可執行檔案或 HTML 檔案。",
       "de": "Eine Pyxel-Anwendungsdatei kann auch mit den Befehlen {0} oder {1} in eine ausführbare Datei oder eine HTML-Datei umgewandelt werden.",
       "es": "Un archivo de aplicación Pyxel también se puede convertir en un archivo ejecutable o un archivo HTML utilizando los comandos {0} o {1}.",
       "fr": "Un fichier d'application Pyxel peut également être converti en un exécutable ou un fichier HTML avec les commandes {0} ou {1}.",
@@ -1088,7 +1088,7 @@
     },
     "apiref_title": {
       "en": "API Reference",
-      "cn": "API 参考",
+      "cn": "API 參考",
       "de": "API-Referenz",
       "es": "Referencia de la API",
       "fr": "Référence de l'API",
@@ -1102,7 +1102,7 @@
     },
     "apiref_body": {
       "en": "A complete list of Pyxel APIs is available at {0}.",
-      "cn": "Pyxel 的完整 API 列表请参阅 {0}。",
+      "cn": "Pyxel 的完整 API 清單請參閱 {0}。",
       "de": "Eine vollständige Liste der APIs von Pyxel finden Sie unter {0}.",
       "es": "La lista completa de las API de Pyxel está disponible en {0}.",
       "fr": "La liste complète des API Pyxel est disponible sur {0}.",
@@ -1116,7 +1116,7 @@
     },
     "apiref_advanced": {
       "en": "Pyxel also includes advanced APIs that require specialized knowledge. You can view them by checking the \"Advanced\" checkbox on the reference page.",
-      "cn": "Pyxel 还包含需要专业知识的高级 API。在参考页面勾选“高级”复选框即可查看。",
+      "cn": "Pyxel 還包含需要專業知識的高級 API。在參考頁面勾選「高級」核取方塊即可檢視。",
       "de": "Pyxel enthält auch erweiterte APIs, die Fachwissen erfordern. Sie können sie anzeigen, indem Sie auf der Referenzseite das Kontrollkästchen \"Fortgeschritten\" aktivieren.",
       "es": "Pyxel también incluye API avanzadas que requieren conocimientos especializados. Puedes verlas marcando la casilla \"Avanzado\" en la página de referencia.",
       "fr": "Pyxel comprend également des API avancées qui nécessitent des connaissances spécialisées. Vous pouvez les consulter en cochant la case « Avancé » sur la page de référence.",
@@ -1130,7 +1130,7 @@
     },
     "apiref_challenge": {
       "en": "If you're confident in your skills, try using the Advanced API to create truly amazing works!",
-      "cn": "如果您对自己的技术有信心，不妨尝试使用高级 API 来创作令人惊叹的作品！",
+      "cn": "如果您對自己的技術有信心，不妨嘗試使用高級 API 來創作令人驚歎的作品！",
       "de": "Wenn Sie Ihren Fähigkeiten vertrauen, versuchen Sie, mit der Advanced API beeindruckende Werke zu erstellen!",
       "es": "Si confías en tus habilidades, ¡intenta usar la API avanzada para crear obras verdaderamente sorprendentes!",
       "fr": "Si vous êtes confiant dans vos compétences, essayez d'utiliser l'API avancée pour créer des œuvres vraiment impressionnantes !",
@@ -1144,7 +1144,7 @@
     },
     "contrib_title": {
       "en": "How to Contribute",
-      "cn": "如何贡献",
+      "cn": "如何貢獻",
       "de": "Wie man beiträgt",
       "es": "Cómo contribuir",
       "fr": "Comment contribuer",
@@ -1158,7 +1158,7 @@
     },
     "contrib_issues_title": {
       "en": "Submitting Issues",
-      "cn": "提交问题",
+      "cn": "提交問題",
       "de": "Probleme melden",
       "es": "Informar problemas",
       "fr": "Soumettre des problèmes",
@@ -1172,7 +1172,7 @@
     },
     "contrib_issues_body": {
       "en": "Use the {0} to submit bug reports and feature or enhancement requests. Before submitting a new issue, make sure there are no similar open issues.",
-      "cn": "使用 {0} 提交 bug 报告和功能或增强请求。在提交新问题之前，请确保没有类似的开放问题。",
+      "cn": "使用 {0} 提交 bug 報告和功能或增強請求。在提交新問題之前，請確保沒有類似的開放問題。",
       "de": "Verwenden Sie den {0}, um Fehlerberichte und Funktions- oder Verbesserungsanfragen einzureichen. Stellen Sie sicher, dass es vor der Einreichung eines neuen Problems keine ähnlichen offenen Probleme gibt.",
       "es": "Utiliza el {0} para enviar informes de errores y solicitudes de funciones o mejoras. Antes de enviar un nuevo problema, asegúrate de que no haya problemas abiertos similares.",
       "fr": "Utilisez l'{0} pour soumettre des rapports de bugs et des demandes de fonctionnalités ou d'améliorations. Avant de soumettre un nouveau problème, assurez-vous qu'il n'y a pas de problèmes ouverts similaires.",
@@ -1186,7 +1186,7 @@
     },
     "contrib_testing_title": {
       "en": "Functional Testing",
-      "cn": "功能测试",
+      "cn": "功能測試",
       "de": "Funktionstest",
       "es": "Pruebas funcionales",
       "fr": "Tests fonctionnels",
@@ -1200,7 +1200,7 @@
     },
     "contrib_testing_body": {
       "en": "Anyone who manually tests the code and reports bugs or suggestions for enhancements in the {0} is very welcome!",
-      "cn": "任何手动测试代码并在 {0} 中报告 bug 或增强建议的人都非常欢迎！",
+      "cn": "任何手動測試程式碼並在 {0} 中報告 bug 或增強建議的人都非常歡迎！",
       "de": "Jeder, der den Code manuell testet und Fehler oder Verbesserungsvorschläge im {0} meldet, ist sehr willkommen!",
       "es": "¡Cualquier persona que pruebe manualmente el código y reporte errores o sugerencias de mejoras en el {0} es muy bienvenida!",
       "fr": "Toute personne qui teste manuellement le code et signale des bugs ou des suggestions d'améliorations dans l'{0} est la bienvenue !",
@@ -1214,7 +1214,7 @@
     },
     "contrib_pr_title": {
       "en": "Submitting Pull Requests",
-      "cn": "提交拉取请求",
+      "cn": "提交拉取請求",
       "de": "Pull-Requests einreichen",
       "es": "Enviar solicitudes de extracción",
       "fr": "Soumettre des pull requests",
@@ -1228,7 +1228,7 @@
     },
     "contrib_pr_body": {
       "en": "Patches and fixes are accepted in the form of pull requests (PRs). Make sure that the issue the pull request addresses is open in the Issue Tracker.",
-      "cn": "补丁和修复以拉取请求 (PR) 的形式接受。请确保拉取请求所针对的问题在问题跟踪器中是开放的。",
+      "cn": "修補程式與修正可透過合併請求 (PR) 提交。請確認合併請求對應的議題仍處於開啟狀態。",
       "de": "Patches und Fixes werden in Form von Pull-Requests (PRs) akzeptiert. Stellen Sie sicher, dass das Problem, das der Pull-Request behandelt, im Issue Tracker offen ist.",
       "es": "Los parches y correcciones se aceptan en forma de solicitudes de extracción (PRs). Asegúrate de que el problema que aborda la solicitud de extracción esté abierto en el Issue Tracker.",
       "fr": "Les correctifs et modifications sont acceptés sous forme de pull requests (PR). Assurez-vous que le problème que la pull request aborde est ouvert dans l'Issue Tracker.",
@@ -1242,7 +1242,7 @@
     },
     "contrib_pr_license": {
       "en": "Submitting a pull request implies that you agree to license your contribution under the {0}.",
-      "cn": "提交拉取请求意味着您同意根据 {0} 授权您的贡献。",
+      "cn": "提交拉取請求意味著您同意根據 {0} 授權您的貢獻。",
       "de": "Die Einreichung eines Pull-Requests impliziert, dass Sie zustimmen, Ihren Beitrag unter der {0} zu lizenzieren.",
       "es": "Enviar una solicitud de extracción implica que aceptas licenciar tu contribución bajo la {0}.",
       "fr": "Soumettre une pull request implique que vous acceptez de licencier votre contribution sous la {0}.",
@@ -1256,7 +1256,7 @@
     },
     "links_title": {
       "en": "Links",
-      "cn": "链接",
+      "cn": "連結",
       "de": "Links",
       "es": "Enlaces",
       "fr": "Liens",
@@ -1270,7 +1270,7 @@
     },
     "docs_title": {
       "en": "Documentation",
-      "cn": "文档",
+      "cn": "檔案",
       "de": "Dokumentation",
       "es": "Documentación",
       "fr": "Documentation",
@@ -1284,7 +1284,7 @@
     },
     "tools_title": {
       "en": "Examples & Tools",
-      "cn": "示例与工具",
+      "cn": "示例與工具",
       "de": "Beispiele & Tools",
       "es": "Ejemplos y herramientas",
       "fr": "Exemples et outils",
@@ -1298,7 +1298,7 @@
     },
     "tool_api_reference": {
       "en": "Pyxel API Reference",
-      "cn": "Pyxel API 参考",
+      "cn": "Pyxel API 參考",
       "de": "Pyxel API-Referenz",
       "es": "Referencia de API de Pyxel",
       "fr": "Référence API de Pyxel",
@@ -1326,7 +1326,7 @@
     },
     "tool_editor_manual": {
       "en": "Pyxel Editor Manual",
-      "cn": "Pyxel Editor 手册",
+      "cn": "Pyxel Editor 手冊",
       "de": "Pyxel Editor Handbuch",
       "es": "Manual de Pyxel Editor",
       "fr": "Manuel de Pyxel Editor",
@@ -1340,7 +1340,7 @@
     },
     "tool_vscode": {
       "en": "VS Code Extension",
-      "cn": "VS Code 扩展",
+      "cn": "VS Code 擴充",
       "de": "VS Code Erweiterung",
       "es": "Extensión de VS Code",
       "fr": "Extension VS Code",
@@ -1354,7 +1354,7 @@
     },
     "tool_mcp": {
       "en": "MCP Server",
-      "cn": "MCP 服务器",
+      "cn": "MCP 伺服器",
       "de": "MCP Server",
       "es": "MCP Server",
       "fr": "MCP Server",
@@ -1382,7 +1382,7 @@
     },
     "other_title": {
       "en": "Other Information",
-      "cn": "其他信息",
+      "cn": "其他資訊",
       "de": "Weitere Informationen",
       "es": "Otra información",
       "fr": "Autres informations",
@@ -1396,7 +1396,7 @@
     },
     "other_pyxres_format": {
       "en": "Pyxel Resource File Format",
-      "cn": "Pyxel 资源文件格式",
+      "cn": "Pyxel 資源檔案格式",
       "de": "Pyxel-Ressourcendateiformat",
       "es": "Formato de archivo de recursos de Pyxel",
       "fr": "Format de fichier de ressources Pyxel",
@@ -1410,7 +1410,7 @@
     },
     "other_faq": {
       "en": "FAQ",
-      "cn": "常见问题",
+      "cn": "常見問題",
       "de": "FAQ",
       "es": "FAQ",
       "fr": "FAQ",
@@ -1438,7 +1438,7 @@
     },
     "other_examples": {
       "en": "User Examples",
-      "cn": "用户示例",
+      "cn": "使用者示例",
       "de": "Benutzerbeispiele",
       "es": "Ejemplos de Usuarios",
       "fr": "Exemples d'utilisateurs",
@@ -1452,7 +1452,7 @@
     },
     "other_x": {
       "en": "Developer's X Account",
-      "cn": "开发者的 X 账号",
+      "cn": "開發者的 X 帳號",
       "de": "X-Konto des Entwicklers",
       "es": "Cuenta X del desarrollador",
       "fr": "Compte X du développeur",
@@ -1466,7 +1466,7 @@
     },
     "other_discord_en": {
       "en": "Discord Server (English)",
-      "cn": "Discord 服务器 (英文)",
+      "cn": "Discord 伺服器 (英文)",
       "de": "Discord-Server (Englisch)",
       "es": "Servidor de Discord (inglés)",
       "fr": "Serveur Discord (anglais)",
@@ -1480,7 +1480,7 @@
     },
     "other_book": {
       "en": "Official Guidebook (Japanese)",
-      "cn": "官方指南书 (日文)",
+      "cn": "官方指南書 (日文)",
       "de": "Offizielles Handbuch (Japanisch)",
       "es": "Guía oficial (japonés)",
       "fr": "Guide officiel (japonais)",
@@ -1494,7 +1494,7 @@
     },
     "other_discord_ja": {
       "en": "Discord Server (Japanese)",
-      "cn": "Discord 服务器 (日文)",
+      "cn": "Discord 伺服器 (日文)",
       "de": "Discord-Server (Japanisch)",
       "es": "Servidor de Discord (japonés)",
       "fr": "Serveur Discord (japonais)",
@@ -1508,7 +1508,7 @@
     },
     "license_title": {
       "en": "License",
-      "cn": "许可证",
+      "cn": "許可證",
       "de": "Lizenz",
       "es": "Licencia",
       "fr": "Licence",
@@ -1522,7 +1522,7 @@
     },
     "license_body": {
       "en": "Pyxel is licensed under the {0}. It can be reused in proprietary software, provided that all copies of the software or its substantial portions include a copy of the MIT License terms and a copyright notice.",
-      "cn": "Pyxel 采用 {0}。它可以在专有软件中重复使用，前提是所有软件或其重要部分的副本都包含 MIT 许可证条款和版权声明的副本。",
+      "cn": "Pyxel 採用 {0}。它可以在專有軟體中重複使用，前提是所有軟體或其重要部分的副本都包含 MIT 授權條款和版權聲明的副本。",
       "de": "Pyxel ist lizenziert unter der {0}. Es kann in proprietärer Software wiederverwendet werden, vorausgesetzt, dass alle Kopien der Software oder wesentliche Teile davon eine Kopie der MIT-Lizenzbedingungen und einen Copyright-Hinweis enthalten.",
       "es": "Pyxel está licenciado bajo la {0}. Se puede reutilizar en software propietario, siempre que todas las copias del software o sus partes sustanciales incluyan una copia de los términos de la Licencia MIT y un aviso de copyright.",
       "fr": "Pyxel est sous la {0}. Il peut être réutilisé dans des logiciels propriétaires, à condition que toutes les copies du logiciel ou de ses parties substantielles incluent une copie des termes de la Licence MIT et un avis de droit d'auteur.",
@@ -1536,7 +1536,7 @@
     },
     "sponsors_title": {
       "en": "Recruiting Sponsors",
-      "cn": "征募赞助者",
+      "cn": "徵募贊助者",
       "de": "Sponsoren suchen",
       "es": "Búsqueda de patrocinadores",
       "fr": "Recherche de sponsors",
@@ -1550,7 +1550,7 @@
     },
     "sponsors_body": {
       "en": "Pyxel is looking for sponsors on GitHub Sponsors. Please consider sponsoring Pyxel to support its continued maintenance and feature development. As a benefit, sponsors can consult directly with the Pyxel developer. For more details, please visit {0}.",
-      "cn": "Pyxel 在 GitHub Sponsors 上寻找赞助者。请考虑赞助 Pyxel，以支持其持续维护和功能开发。作为一种福利，赞助者可以直接咨询 Pyxel 开发者。有关更多详细信息，请访问 {0}。",
+      "cn": "Pyxel 在 GitHub Sponsors 上尋找贊助者。請考慮贊助 Pyxel，以支持其持續維護和功能開發。作為一種福利，贊助者可以直接諮詢 Pyxel 開發者。有關更多詳細資訊，請訪問 {0}。",
       "de": "Pyxel sucht Sponsoren auf GitHub Sponsors. Bitte ziehen Sie in Betracht, Pyxel zu sponsern, um dessen fortlaufende Wartung und Funktionsentwicklung zu unterstützen. Als Vorteil können sich Sponsoren direkt mit dem Pyxel-Entwickler beraten. Für weitere Details besuchen Sie bitte {0}.",
       "es": "Pyxel está buscando patrocinadores en GitHub Sponsors. Por favor, considera patrocinar a Pyxel para apoyar su mantenimiento continuo y desarrollo de funciones. Como beneficio, los patrocinadores pueden consultar directamente con el desarrollador de Pyxel. Para más detalles, visita {0}.",
       "fr": "Pyxel recherche des sponsors sur GitHub Sponsors. Veuillez envisager de soutenir Pyxel pour soutenir sa maintenance continue et le développement de fonctionnalités. En tant qu'avantage, les sponsors peuvent consulter directement le développeur de Pyxel. Pour plus de détails, veuillez visiter {0}.",
@@ -1564,7 +1564,7 @@
     },
     "sponsors_link": {
       "en": "here",
-      "cn": "这里",
+      "cn": "這裡",
       "de": "hier",
       "es": "aquí",
       "fr": "ici",
@@ -1582,7 +1582,7 @@
       "key": "Esc",
       "action": {
         "en": "Quit the application",
-        "cn": "退出应用程序",
+        "cn": "退出應用程式",
         "de": "Die Anwendung beenden",
         "es": "Salir de la aplicación",
         "fr": "Quitter l'application",
@@ -1598,7 +1598,7 @@
     {
       "key": {
         "en": "Alt(Option)+R or A+B+X+Y+BACK on gamepad",
-        "cn": "Alt(Option)+R 或者在游戏手柄上按 A+B+X+Y+BACK",
+        "cn": "Alt(Option)+R 或者在遊戲手柄上按 A+B+X+Y+BACK",
         "de": "Alt(Option)+R oder A+B+X+Y+BACK auf dem Gamepad",
         "es": "Alt(Option)+R o A+B+X+Y+BACK en el gamepad",
         "fr": "Alt(Option)+R ou A+B+X+Y+BACK sur la manette",
@@ -1612,7 +1612,7 @@
       },
       "action": {
         "en": "Reset the application",
-        "cn": "重置应用程序",
+        "cn": "重設應用程式",
         "de": "Die Anwendung zurücksetzen",
         "es": "Reiniciar la aplicación",
         "fr": "Réinitialiser l'application",
@@ -1629,7 +1629,7 @@
       "key": "Alt(Option)+1",
       "action": {
         "en": "Save the screenshot to the desktop",
-        "cn": "将屏幕截图保存到桌面",
+        "cn": "將螢幕截圖儲存到桌面",
         "de": "Den Screenshot auf dem Desktop speichern",
         "es": "Guardar la captura de pantalla en el escritorio",
         "fr": "Enregistrer la capture d'écran sur le bureau",
@@ -1646,7 +1646,7 @@
       "key": "Alt(Option)+2",
       "action": {
         "en": "Reset the recording start time of the screen capture video",
-        "cn": "重置屏幕录像视频的录制开始时间",
+        "cn": "重設螢幕錄影影片的錄製開始時間",
         "de": "Den Startzeitpunkt der Bildschirmaufnahme zurücksetzen",
         "es": "Reiniciar el tiempo de inicio de la grabación del video de captura de pantalla",
         "fr": "Réinitialiser le temps de début de l'enregistrement de la vidéo de capture d'écran",
@@ -1663,7 +1663,7 @@
       "key": "Alt(Option)+3",
       "action": {
         "en": "Save a screen capture video to the desktop (up to 10 seconds)",
-        "cn": "将屏幕录像视频保存到桌面 (最多 10 秒)",
+        "cn": "將螢幕錄影影片儲存到桌面 (最多 10 秒)",
         "de": "Ein Bildschirmaufnahmevideo auf dem Desktop speichern (bis zu 10 Sekunden)",
         "es": "Guardar un video de captura de pantalla en el escritorio (hasta 10 segundos)",
         "fr": "Enregistrer une vidéo de capture d'écran sur le bureau (jusqu'à 10 secondes)",
@@ -1679,7 +1679,7 @@
     {
       "key": {
         "en": "Alt(Option)+8 or A+B+X+Y+DL on gamepad",
-        "cn": "Alt(Option)+8 或者在游戏手柄上按 A+B+X+Y+DL",
+        "cn": "Alt(Option)+8 或者在遊戲手柄上按 A+B+X+Y+DL",
         "de": "Alt(Option)+8 oder A+B+X+Y+DL auf dem Gamepad",
         "es": "Alt(Option)+8 o A+B+X+Y+DL en el gamepad",
         "fr": "Alt(Option)+8 ou A+B+X+Y+DL sur la manette",
@@ -1693,7 +1693,7 @@
       },
       "action": {
         "en": "Toggle screen scaling between maximum and integer",
-        "cn": "在最大和整数倍缩放之间切换屏幕缩放",
+        "cn": "在最大和整數倍縮放之間切換螢幕縮放",
         "de": "Die Bildschirmskalierung zwischen maximal und ganzzahlig umschalten",
         "es": "Alternar el escalado de pantalla entre máximo y entero",
         "fr": "Alterner le mode de mise à l'échelle de l'écran entre maximal et entier",
@@ -1709,7 +1709,7 @@
     {
       "key": {
         "en": "Alt(Option)+9 or A+B+X+Y+DR on gamepad",
-        "cn": "Alt(Option)+9 或者在游戏手柄上按 A+B+X+Y+DR",
+        "cn": "Alt(Option)+9 或者在遊戲手柄上按 A+B+X+Y+DR",
         "de": "Alt(Option)+9 oder A+B+X+Y+DR auf dem Gamepad",
         "es": "Alt(Option)+9 o A+B+X+Y+DR en el gamepad",
         "fr": "Alt(Option)+9 ou A+B+X+Y+DR sur la manette",
@@ -1723,7 +1723,7 @@
       },
       "action": {
         "en": "Switch between screen modes (Crisp/Smooth/Retro)",
-        "cn": "在屏幕模式 (Crisp/Smooth/Retro) 之间切换",
+        "cn": "在螢幕模式 (Crisp/Smooth/Retro) 之間切換",
         "de": "Zwischen Bildschirmmodi (Crisp/Smooth/Retro) wechseln",
         "es": "Cambiar entre los modos de pantalla (Crisp/Smooth/Retro)",
         "fr": "Passer d'un mode d'écran à l'autre (Crisp/Smooth/Retro)",
@@ -1739,7 +1739,7 @@
     {
       "key": {
         "en": "Alt(Option)+0 or A+B+X+Y+DU on gamepad",
-        "cn": "Alt(Option)+0 或者在游戏手柄上按 A+B+X+Y+DU",
+        "cn": "Alt(Option)+0 或者在遊戲手柄上按 A+B+X+Y+DU",
         "de": "Alt(Option)+0 oder A+B+X+Y+DU auf dem Gamepad",
         "es": "Alt(Option)+0 o A+B+X+Y+DU en el gamepad",
         "fr": "Alt(Option)+0 ou A+B+X+Y+DU sur la manette",
@@ -1753,7 +1753,7 @@
       },
       "action": {
         "en": "Toggle the performance monitor (FPS/`update` time/`draw` time)",
-        "cn": "切换性能监视器 (FPS/`update` 时间/`draw` 时间)",
+        "cn": "切換效能監視器 (FPS/`update` 時間/`draw` 時間)",
         "de": "Den Leistungsmonitor (FPS/`update`-Zeit/`draw`-Zeit) umschalten",
         "es": "Alternar el monitor de rendimiento (FPS/tiempo de `update`/tiempo de `draw`)",
         "fr": "Basculer le moniteur de performances (FPS/temps de `update`/temps de `draw`)",
@@ -1769,7 +1769,7 @@
     {
       "key": {
         "en": "Alt(Option)+Enter or A+B+X+Y+DD on gamepad",
-        "cn": "Alt(Option)+Enter 或者在游戏手柄上按 A+B+X+Y+DD",
+        "cn": "Alt(Option)+Enter 或者在遊戲手柄上按 A+B+X+Y+DD",
         "de": "Alt(Option)+Enter oder A+B+X+Y+DD auf dem Gamepad",
         "es": "Alt(Option)+Enter o A+B+X+Y+DD en el gamepad",
         "fr": "Alt(Option)+Enter ou A+B+X+Y+DD sur la manette",
@@ -1783,7 +1783,7 @@
       },
       "action": {
         "en": "Toggle fullscreen",
-        "cn": "切换全屏",
+        "cn": "切換全螢幕",
         "de": "Den Vollbildmodus umschalten",
         "es": "Alternar pantalla completa",
         "fr": "Basculer en plein écran",
@@ -1800,7 +1800,7 @@
       "key": "Shift+Alt(Option)+1/2/3",
       "action": {
         "en": "Save image bank 0, 1, or 2 to the desktop",
-        "cn": "将图像库 0、1 或 2 保存到桌面",
+        "cn": "將圖片庫 0、1 或 2 儲存到桌面",
         "de": "Bildbank 0, 1 oder 2 auf dem Desktop speichern",
         "es": "Guardar el banco de imágenes 0, 1 o 2 en el escritorio",
         "fr": "Enregistrer la banque d'images 0, 1 ou 2 sur le bureau",
@@ -1817,7 +1817,7 @@
       "key": "Shift+Alt(Option)+0",
       "action": {
         "en": "Save the current color palette to the desktop",
-        "cn": "将当前的调色板保存到桌面",
+        "cn": "將目前的調色盤儲存到桌面",
         "de": "Die aktuelle Farbpalette auf dem Desktop speichern",
         "es": "Guardar la paleta de colores actual en el escritorio",
         "fr": "Enregistrer la palette de couleurs actuelle sur le bureau",

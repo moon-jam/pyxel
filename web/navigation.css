@@ -10,13 +10,6 @@
   line-height: 1.5;
 }
 
-.site-navigation-maker {
-  flex-shrink: 0;
-  max-width: none;
-  margin: 0;
-  padding: 6px 16px;
-}
-
 .site-navigation a {
   padding: 4px 8px;
   border-radius: 6px;

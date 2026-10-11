@@ -6,7 +6,7 @@
     },
     {
       "code": "cn",
-      "name": "中文"
+      "name": "繁體中文"
     },
     {
       "code": "de",
@@ -66,7 +66,7 @@
     },
     "subtitle": {
       "en": "Launch tool for the web version of {0}, a retro game engine for Python.",
-      "cn": "Python 复古游戏引擎 {0} 的 Web 版启动工具",
+      "cn": "Python 復古遊戲引擎 {0} 的 Web 版啟動工具",
       "de": "Launcher-Tool für die Web-Version von {0}, einer Retro-Spielengine für Python.",
       "es": "Herramienta de lanzamiento para la versión web de {0}, un motor de juegos retro para Python.",
       "fr": "Outil de lancement pour la version web de {0}, un moteur de jeux rétro pour Python.",
@@ -80,7 +80,7 @@
     },
     "label_startup_file": {
       "en": "Startup File URL on GitHub",
-      "cn": "GitHub 上的启动文件 URL",
+      "cn": "GitHub 上的啟動檔案 URL",
       "de": "Startdatei-URL auf GitHub",
       "es": "URL del archivo de inicio en GitHub",
       "fr": "URL du fichier de démarrage sur GitHub",
@@ -94,7 +94,7 @@
     },
     "label_virtual_gamepad": {
       "en": "Enable Virtual Gamepad",
-      "cn": "启用虚拟游戏手柄",
+      "cn": "啟用虛擬遊戲手柄",
       "de": "Virtuelles Gamepad aktivieren",
       "es": "Activar gamepad virtual",
       "fr": "Activer la manette virtuelle",
@@ -108,7 +108,7 @@
     },
     "label_launch_url": {
       "en": "Application Launch URL",
-      "cn": "应用程序启动 URL",
+      "cn": "應用程式啟動 URL",
       "de": "Anwendungs-Start-URL",
       "es": "URL de lanzamiento de la aplicación",
       "fr": "URL de lancement de l'application",
@@ -122,7 +122,7 @@
     },
     "help_file_type": {
       "en": "Startup file type should be {0}, {1}, or {2}.",
-      "cn": "启动文件类型应为 {0}、{1} 或 {2}。",
+      "cn": "啟動檔案格式應為 {0}、{1} 或 {2}。",
       "de": "Der Startdateityp sollte {0}, {1} oder {2} sein.",
       "es": "El tipo de archivo de inicio debe ser {0}, {1} o {2}.",
       "fr": "Le type du fichier de démarrage doit être {0}, {1} ou {2}.",
@@ -150,7 +150,7 @@
     },
     "label_editor_screen": {
       "en": "Startup Screen",
-      "cn": "启动画面",
+      "cn": "啟動畫面",
       "de": "Startbildschirm",
       "es": "Pantalla de inicio",
       "fr": "Écran de démarrage",
@@ -164,7 +164,7 @@
     },
     "editor_screen_image": {
       "en": "Image Editor",
-      "cn": "图像编辑器",
+      "cn": "圖片編輯器",
       "de": "Bildeditor",
       "es": "Editor de imágenes",
       "fr": "Éditeur d'images",
@@ -178,7 +178,7 @@
     },
     "editor_screen_tilemap": {
       "en": "Tilemap Editor",
-      "cn": "瓦片地图编辑器",
+      "cn": "瓦片地圖編輯器",
       "de": "Tilemap-Editor",
       "es": "Editor de tilemaps",
       "fr": "Éditeur de tilemap",
@@ -192,7 +192,7 @@
     },
     "editor_screen_sound": {
       "en": "Sound Editor",
-      "cn": "音效编辑器",
+      "cn": "音效編輯器",
       "de": "Soundeditor",
       "es": "Editor de sonido",
       "fr": "Éditeur de sons",
@@ -206,7 +206,7 @@
     },
     "editor_screen_music": {
       "en": "Music Editor",
-      "cn": "音乐编辑器",
+      "cn": "音樂編輯器",
       "de": "Musikeditor",
       "es": "Editor de música",
       "fr": "Éditeur de musique",
@@ -220,7 +220,7 @@
     },
     "footer": {
       "en": "For detailed instructions, see {0}.",
-      "cn": "详细说明请参考 {0}。",
+      "cn": "詳細說明請參考 {0}。",
       "de": "Für detaillierte Anweisungen siehe {0}.",
       "es": "Para instrucciones detalladas, consulte {0}.",
       "fr": "Pour des instructions détaillées, veuillez consulter {0}.",
@@ -234,7 +234,7 @@
     },
     "footer_link": {
       "en": "here",
-      "cn": "这里",
+      "cn": "這裡",
       "de": "hier",
       "es": "aquí",
       "fr": "ici",
