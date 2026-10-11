@@ -6,7 +6,7 @@
     <meta name="referrer" content="no-referrer" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; frame-src 'self'; script-src 'self' 'sha256-E0DUxSETDfU+F2uXTAJmvW1+VbTjFfdBv7HsxHdq2dU=' 'unsafe-eval' 'wasm-unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https:; media-src 'self' blob:; worker-src 'self' blob:"
+      content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; frame-src 'self'; script-src 'self' 'sha256-Jw3V+qBQVr5k/bZsRpSLiZHxHsG08PPoUfHuBNK5J2o=' 'unsafe-eval' 'wasm-unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https:; media-src 'self' blob:; worker-src 'self' blob:"
     />
     <title>Pyxel Code Maker</title>
     <link rel="icon" href="../../wasm/images/pyxel_icon_64x64.ico" />
@@ -33,6 +33,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="../shared.js?v=34dd9100d504"></script>
+    <script src="html-export.js?v=1"></script>
     <style>
       #left-pane.res-mode {
         background-color: var(--pyxel-bg);
@@ -136,6 +137,14 @@
                 <button
                   class="dropdown-item"
                   tabindex="-1"
+                  data-action="save-html"
+                  title="Download a playable HTML with your code and resources. Internet access is required to play."
+                >
+                  HTML (share)
+                </button>
+                <button
+                  class="dropdown-item"
+                  tabindex="-1"
                   data-action="save-gist"
                 >
                   Gist
@@ -143,6 +152,7 @@
               </div>
             </div>
           </div>
+          <span id="html-export-status" role="status" class="text-sm"></span>
           <!-- Code / Res toggle -->
           <div class="flex items-center shrink-0">
             <div class="seg" role="group">
@@ -521,8 +531,10 @@
           throw new Error("Use an HTTPS URL without embedded credentials");
         }
         const name =
-          decodeURIComponent(url.pathname.split("/").pop())
-            .replace(/\.zip$/i, "") || "untitled";
+          decodeURIComponent(url.pathname.split("/").pop()).replace(
+            /\.zip$/i,
+            "",
+          ) || "untitled";
         const res = await fetch(url.href, {
           credentials: "omit",
           referrerPolicy: "no-referrer",
@@ -591,6 +603,52 @@
         a.click();
         document.body.removeChild(a);
         setTimeout(() => URL.revokeObjectURL(a.href), 3000);
+      }
+
+      let exportingHtml = false;
+      async function saveToHtml() {
+        const status = document.getElementById("html-export-status");
+        if (exportingHtml) return;
+        if (window._isCopyingResource) {
+          status.textContent =
+            "Resources are being saved. Please try again shortly.";
+          return;
+        }
+        exportingHtml = true;
+        const button = document.querySelector('[data-action="save-html"]');
+        button.disabled = true;
+        status.textContent = "Preparing HTML…";
+        try {
+          copyCodeToProject();
+          await copyResourceToProject();
+          // Snapshot edits before asynchronous compression begins.
+          const project = {
+            ...window._project,
+            files: { ...window._project.files },
+          };
+          const { html, filename } = await PyxelHtmlExport.build(project);
+          const url = URL.createObjectURL(
+            new Blob([html], { type: "text/html;charset=utf-8" }),
+          );
+          const link = document.createElement("a");
+          link.href = url;
+          link.download = filename;
+          link.className = "link";
+          link.textContent = "Download HTML";
+          status.textContent = "HTML ready: ";
+          status.appendChild(link);
+          link.click();
+          // Retain a retry link if the browser does not start the download.
+          // Revoke its URL when a new export replaces it or the page closes.
+          if (status.dataset.downloadUrl)
+            URL.revokeObjectURL(status.dataset.downloadUrl);
+          status.dataset.downloadUrl = url;
+        } catch (error) {
+          status.textContent = `HTML export failed: ${error.message}`;
+        } finally {
+          exportingHtml = false;
+          button.disabled = false;
+        }
       }
 
       async function saveToGist() {
@@ -774,6 +832,9 @@
                 break;
               case "save-gist":
                 saveToGist();
+                break;
+              case "save-html":
+                saveToHtml();
                 break;
             }
           });

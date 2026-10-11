@@ -6,7 +6,7 @@
     <meta name="referrer" content="no-referrer" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; script-src 'self' 'sha256-UjDm3jugdj8WJbE7gK6/iCUyuLnlFHA83wGBT9QjVVs='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'"
+      content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; script-src 'self' 'sha256-9yI32TgRrTiY2MaAwOdg0r74LQ/OJfn/YWDgRYRdffk='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self'"
     />
     <title>Pyxel Code Maker Manual</title>
     <link rel="icon" href="../../wasm/images/pyxel_icon_64x64.ico" />
@@ -191,9 +191,15 @@
           <p class="body">${esc(t("drag_drop_body")).replace("{0}", chip(".py")).replace("{1}", chip(".pyxres"))}</p>`;
 
         // URL sharing description
+        const exportHelp = {
+          en: "Save → HTML (share) downloads a playable HTML file containing your current code, resources, and other project files. Send it to someone, then open it in a browser and click the game screen. Internet access is required to load the fixed Pyxel 2.9.9 runtime. Nothing is uploaded automatically. Keep Save → File for an editable project backup.",
+          cn: "Save → HTML (share) 會下載可遊玩的 HTML 網頁，包含目前的程式、資源與其他專案檔案。將檔案傳給別人，用瀏覽器開啟後點擊遊戲畫面即可遊玩。需要連網載入固定版本的 Pyxel 2.9.9 引擎。匯出不會自動上傳檔案；可編輯的專案備份仍使用 Save → File。",
+          ja: "Save → HTML (share) で現在のコード、リソース、プロジェクト内のファイルを含む HTML をダウンロードできます。ファイルを共有し、ブラウザーで開いてゲーム画面をクリックしてください。固定バージョンの Pyxel 2.9.9 を読み込むため、インターネット接続が必要です。ファイルは自動アップロードされません。編集用のバックアップには Save → File を使ってください。",
+        };
         document.getElementById("s-sharing").innerHTML = `
           <h2 class="section-title">${esc(t("sharing_title"))}</h2>
-          <p class="body">${esc(t("sharing_body"))}</p>`;
+          <p class="body">${esc(t("sharing_body"))}</p>
+          <p class="body mt-3">${esc(exportHelp[lang] || exportHelp.en)}</p>`;
 
         // Keyboard shortcut table
         const shortcutRows = data.shortcuts

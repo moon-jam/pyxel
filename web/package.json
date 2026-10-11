@@ -5,6 +5,7 @@
   },
   "devDependencies": {
     "@tailwindcss/cli": "^4",
+    "jszip": "3.10.1",
     "prettier": "^3.8.4"
   }
 }

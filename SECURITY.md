@@ -11,4 +11,6 @@ This fork publishes Pyxel Code Maker and its static documentation: the Maker Man
 
 The browser app still executes user-entered Python inside Pyodide. Treat imported projects as untrusted and use this personal instance only for projects you trust.
 
+Save > HTML embeds the current project in a Pyxel app archive without executing or uploading it. Shared HTML uses Pyxel 2.9.9 from the audited fork commit `16b09cc63731a9456704cff23ef0882cdd4edb2c`, with an integrity-checked loader and a content security policy limiting runtime requests to jsDelivr. It requires internet access. Imported archive paths are validated before export; startup code and resources are replaced with the current editor contents. This does not make untrusted game code safe to play.
+
 Code Maker supports loading ZIP projects through `?url=` and the Load > URL menu. These requests accept only HTTPS URLs, omit cookies and other browser credentials, and send no referrer. The ZIP host must allow browser requests from this site's origin. Importing a project does not automatically run its Python code.
