@@ -29,7 +29,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="vim-mode.js?v=1"></script>
+    <link rel="stylesheet" href="vim-mode.css?v=2" />
+    <script src="easy-motion.js?v=1"></script>
+    <script src="vim-mode.js?v=2"></script>
     <script src="../../wasm/pyxel.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"
@@ -196,17 +198,43 @@
               </button>
             </div>
           </div>
-          <label
-            class="flex items-center gap-1 text-xs text-gray-400 shrink-0 cursor-pointer"
-            title="Vim mode: i to insert, Esc for normal mode. Saved on this browser."
-          >
+          <div class="vim-controls">
             <input
               id="vim-mode-toggle"
               type="checkbox"
               class="accent-indigo-500"
+              aria-label="Vim"
+              title="Vim mode: i to insert, Esc for normal mode. Saved on this browser."
             />
-            Vim
-          </label>
+            <button
+              id="vim-settings-button"
+              type="button"
+              aria-expanded="false"
+              aria-controls="vim-settings"
+              disabled
+            >
+              Vim <span id="vim-settings-arrow" hidden>▾</span>
+            </button>
+            <div
+              id="vim-settings"
+              role="group"
+              aria-label="Vim settings"
+              hidden
+            >
+              <label
+                ><input
+                  id="easy-motion-toggle"
+                  type="checkbox"
+                  class="accent-indigo-500"
+                />
+                EasyMotion</label
+              >
+              <p>
+                Space → Space → w: jump to a word<br />Type its label · Esc:
+                cancel
+              </p>
+            </div>
+          </div>
           <!-- Run -->
           <div class="flex items-center gap-2 shrink-0">
             <button

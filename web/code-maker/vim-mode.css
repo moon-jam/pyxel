@@ -1,0 +1,83 @@
+.vim-controls {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+#vim-settings-button {
+  padding: 2px 0;
+  color: inherit;
+  background: none;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+#vim-settings-button:disabled {
+  cursor: default;
+}
+#vim-settings-button:hover:enabled {
+  color: #fff;
+}
+#vim-settings-button:focus-visible {
+  outline: 1px solid #a5b4fc;
+}
+
+#vim-settings {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 60;
+  width: 240px;
+  margin-top: 6px;
+  padding: 12px;
+  border: 1px solid #4b5563;
+  border-radius: 6px;
+  background: #1f2937;
+  box-shadow: 0 8px 20px #0006;
+}
+
+#vim-settings label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #d1d5db;
+  cursor: pointer;
+}
+#vim-settings p {
+  margin: 8px 0 0;
+  line-height: 1.6;
+  font-size: 11px;
+}
+
+.easy-motion-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  pointer-events: none;
+  overflow: hidden;
+}
+.easy-motion-label {
+  position: absolute;
+  padding: 0 2px;
+  border-radius: 2px;
+  background: #fff;
+  color: #111827;
+  font: bold 12px monospace;
+  line-height: 16px;
+  box-shadow: 0 0 0 1px #111827;
+}
+.easy-motion-status {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: #1f2937;
+  color: #fff;
+  font-size: 11px;
+}

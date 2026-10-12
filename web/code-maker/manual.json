@@ -714,6 +714,13 @@
       }
     },
     {
+      "label": "Vim / EasyMotion",
+      "desc": {
+        "en": "Enable Vim using the small checkbox beside Code/Res. Click Vim to open its settings and enable EasyMotion. In normal mode, press Space, Space, then w to label visible words; type a label to jump, or Esc to cancel. Settings are saved on this browser.",
+        "cn": "勾選 Code/Res 旁的小型開關以啟用 Vim，再點擊 Vim 開啟設定並勾選 EasyMotion。在指令模式依序按空白鍵、空白鍵、w，畫面上的單字會顯示字母標記；輸入標記即可跳轉，按 Esc 取消。設定會保留在目前的瀏覽器。"
+      }
+    },
+    {
       "label": "Run",
       "desc": {
         "en": "Run the application. The current code and resources are applied, and the result is displayed on the runtime screen.",

@@ -11,6 +11,7 @@ const source = fs.readFileSync(
 
 function setup({
   saved = null,
+  motionSaved = null,
   unavailable = false,
   blockedStorage = false,
 } = {}) {
@@ -20,6 +21,30 @@ function setup({
     addEventListener: (event, fn) => (handlers[event] = fn),
   };
   const vim = {};
+  const motionToggle = {
+    checked: false,
+    addEventListener: (event, fn) => (handlers[`motion-${event}`] = fn),
+  };
+  const settingsButton = {
+    disabled: true,
+    setAttribute() {},
+    addEventListener() {},
+  };
+  const settings = { hidden: true };
+  const arrow = { hidden: true };
+  const motion = {
+    cancel() {},
+    setEnabled(value) {
+      this.enabled = value;
+    },
+  };
+  const elements = {
+    "vim-mode-toggle": toggle,
+    "vim-settings-button": settingsButton,
+    "vim-settings": settings,
+    "vim-settings-arrow": arrow,
+    "easy-motion-toggle": motionToggle,
+  };
   const editor = {
     text: "print('unchanged')",
     live: true,
@@ -37,17 +62,20 @@ function setup({
     },
   };
   const storage = {
-    getItem() {
+    getItem(key) {
       if (blockedStorage) throw new Error("blocked");
-      return saved;
+      return key === "pyxel-code-maker-vim" ? saved : motionSaved;
     },
     setItem(key, value) {
       if (blockedStorage) throw new Error("blocked");
-      saved = value;
+      if (key === "pyxel-code-maker-vim") saved = value;
+      else motionSaved = value;
     },
   };
   const context = {
-    document: { getElementById: () => toggle },
+    document: { getElementById: (id) => elements[id], addEventListener() {} },
+    window: { addEventListener() {} },
+    setupEasyMotion: () => motion,
     ace: { require: () => (unavailable ? null : { handler: vim }) },
     localStorage: storage,
   };
@@ -57,6 +85,12 @@ function setup({
     toggle,
     editor,
     vim,
+    motion,
+    motionToggle,
+    settingsButton,
+    settings,
+    arrow,
+    changeMotion: () => handlers["motion-change"](),
     change: () => handlers.change(),
     saved: () => saved,
   };
@@ -74,6 +108,27 @@ test("restoring and toggling Vim preserves code and restores ordinary completion
   assert.equal(state.saved(), "0");
   assert.equal(state.editor.text, "print('unchanged')");
   assert.equal(state.editor.focused, true);
+});
+
+test("EasyMotion preference is gated by Vim and survives turning Vim off", () => {
+  const state = setup({ saved: "1", motionSaved: "1" });
+  assert.equal(state.motion.enabled, true);
+  assert.equal(state.settingsButton.disabled, false);
+  assert.equal(state.arrow.hidden, false);
+  state.settings.hidden = false;
+  state.toggle.checked = false;
+  state.change();
+  assert.equal(state.motion.enabled, false);
+  assert.equal(state.settings.hidden, true);
+  assert.equal(state.settingsButton.disabled, true);
+  assert.equal(state.motionToggle.checked, true);
+  state.toggle.checked = true;
+  state.change();
+  assert.equal(state.motion.enabled, true);
+  state.motionToggle.checked = false;
+  state.changeMotion();
+  assert.equal(state.motion.enabled, false);
+  assert.equal(state.editor.handler, state.vim);
 });
 
 test("Vim is off by default and works even when browser storage is blocked", () => {
