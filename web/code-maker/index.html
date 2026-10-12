@@ -6,7 +6,7 @@
     <meta name="referrer" content="no-referrer" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; frame-src 'self'; script-src 'self' 'sha256-1i++BWLviU+hVaUmqxRV2pIrWYRD5LL0iIaRatBRxsE=' 'unsafe-eval' 'wasm-unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https:; media-src 'self' blob:; worker-src 'self' blob:"
+      content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; frame-src 'self'; script-src 'self' 'sha256-9BP/jvnjf7bY+2TYa2eKHAuQDJDuMJjMdrOxXyiokV0=' 'unsafe-eval' 'wasm-unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https:; media-src 'self' blob:; worker-src 'self' blob:"
     />
     <title>Pyxel Code Maker</title>
     <link rel="icon" href="../../wasm/images/pyxel_icon_64x64.ico" />
@@ -30,7 +30,8 @@
       referrerpolicy="no-referrer"
     ></script>
     <link rel="stylesheet" href="vim-mode.css?v=2" />
-    <script src="easy-motion.js?v=1"></script>
+    <script src="easy-motion.js?v=2"></script>
+    <script src="pane-shortcuts.js?v=1"></script>
     <script src="vim-mode.js?v=2"></script>
     <script src="../../wasm/pyxel.js"></script>
     <script
@@ -230,8 +231,10 @@
                 EasyMotion</label
               >
               <p>
-                Space → Space → w: jump to a word<br />Type its label · Esc:
-                cancel
+                Space → Space → w: word jump<br />
+                Space → Space → s: character search<br />
+                Type its label · Esc: cancel<br />
+                Ctrl+W → L / R: focus left / right
               </p>
             </div>
           </div>
@@ -1217,6 +1220,27 @@
 
       // Bind global keyboard shortcuts across the window and embedded panes.
       function setupShortcuts() {
+        function focusPane(side) {
+          if (side === "left") {
+            if (
+              document
+                .getElementById("code-tab-button")
+                .classList.contains("seg-active")
+            )
+              window._codeEditor?.focus();
+            else resourceEditor.contentWindow?.focus();
+          } else runtimeScreen.contentWindow?.focus();
+          updateFocusLine(side);
+        }
+        setupVimPaneShortcuts({
+          targets: [
+            window,
+            runtimeScreen.contentWindow,
+            resourceEditor.contentWindow,
+          ],
+          isEnabled: () => document.getElementById("vim-mode-toggle").checked,
+          focusPane,
+        });
         // Dispatch command shortcuts to load, save, focus, tab, and run actions.
         function handleShortcutKeydown(e) {
           // Ctrl(Cmd)+L: Load file
@@ -1261,11 +1285,6 @@
             e.preventDefault();
             e.stopPropagation();
 
-            const codeTabButton = document.getElementById("code-tab-button");
-            const resourceTabButton = document.getElementById(
-              "resource-tab-button",
-            );
-
             const leftActive = focusLineLeft.classList.contains(
               "focus-line-segment-active",
             );
@@ -1276,23 +1295,7 @@
             // Decide next target: if right is active, move to left, otherwise to right.
             const moveToLeft = rightActive || (!leftActive && !rightActive);
 
-            if (moveToLeft) {
-              if (codeTabButton?.classList.contains("seg-active")) {
-                if (window._codeEditor) {
-                  window._codeEditor.focus();
-                }
-              } else if (resourceTabButton?.classList.contains("seg-active")) {
-                if (resourceEditor.contentWindow) {
-                  resourceEditor.contentWindow.focus();
-                }
-              }
-              updateFocusLine("left");
-            } else {
-              if (runtimeScreen.contentWindow) {
-                runtimeScreen.contentWindow.focus();
-              }
-              updateFocusLine("right");
-            }
+            focusPane(moveToLeft ? "left" : "right");
 
             return;
           }

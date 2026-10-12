@@ -20,13 +20,12 @@ test("EasyMotion labels are unique and prefix-free beyond one and two letters", 
   }
 });
 
-function fixture({ defer = false } = {}) {
+function fixture({ defer = false, line = "first second third" } = {}) {
   const listeners = {};
   let overlay = null;
   let action;
   let moved;
   let frame;
-  const line = "first second third";
   const element = () => ({
     style: {},
     dataset: {},
@@ -76,7 +75,8 @@ function fixture({ defer = false } = {}) {
     defineAction: (name, fn) => (action = fn),
     mapCommand: (...args) => mappings.push(args[0]),
     unmap: (key) => {
-      if (key === "<Space><Space>w") mappings.push(`remove:${key}`);
+      if (key === "<Space><Space>w" || key === "<Space><Space>s")
+        mappings.push(`remove:${key}`);
     },
   };
   const context = {
@@ -93,7 +93,7 @@ function fixture({ defer = false } = {}) {
     editor,
     motion,
     mappings,
-    start: () => action(),
+    start: (search = false) => action(null, { search }),
     overlay: () => overlay,
     moved: () => moved,
     frame: () => frame(),
@@ -126,7 +126,11 @@ test("a label jumps to the exact word column without changing document text", ()
   const state = fixture();
   state.motion.setEnabled(true);
   state.start();
-  assert.equal(state.overlay().children[1].textContent, "s");
+  assert.equal(
+    state.overlay().children.find((child) => child.dataset.column === 6)
+      .textContent,
+    "s",
+  );
   assert.equal(state.key("s").prevented, true);
   assert.deepEqual(state.moved(), { row: 0, column: 6 });
   assert.equal(state.overlay(), null);
@@ -150,10 +154,73 @@ test("cancel, scroll, blur and disabling remove hints; insert mode never starts 
   assert.equal(state.overlay(), null);
   assert.deepEqual(state.mappings, [
     "<Space><Space>w",
+    "<Space><Space>s",
     "remove:<Space><Space>w",
+    "remove:<Space><Space>s",
   ]);
   state.motion.setEnabled(true);
   state.editor.state.cm.state.vim.insertMode = true;
   state.start();
+  assert.equal(state.overlay(), null);
+});
+
+test("search finds matching characters inside words and jumps to their exact columns", () => {
+  const state = fixture();
+  state.motion.setEnabled(true);
+  state.start(true);
+  assert.match(state.overlay().children[0].textContent, /type a character/);
+  state.key("r");
+  const tags = state
+    .overlay()
+    .children.filter((child) => child.dataset.column !== undefined);
+  assert.deepEqual(
+    tags.map((tag) => tag.dataset.column),
+    [2, 16],
+  );
+  state.key("s");
+  assert.deepEqual(state.moved(), { row: 0, column: 16 });
+  assert.equal(state.editor.session.getLine(0), "first second third");
+});
+
+test("search treats punctuation literally and supports Unicode characters", () => {
+  for (const [line, char, columns] of [
+    ["a.b.c", ".", [1, 3]],
+    ["雪x雪", "雪", [0, 2]],
+  ]) {
+    const state = fixture({ line });
+    state.motion.setEnabled(true);
+    state.start(true);
+    state.key(char);
+    assert.deepEqual(
+      state
+        .overlay()
+        .children.filter((child) => child.dataset.column !== undefined)
+        .map((tag) => tag.dataset.column),
+      columns,
+    );
+  }
+});
+
+test("unmatched search can be retried or cancelled without editing code", () => {
+  const state = fixture();
+  state.motion.setEnabled(true);
+  state.start(true);
+  state.key("z");
+  assert.match(state.overlay().children[0].textContent, /no matches/);
+  state.key("r");
+  assert.equal(state.overlay().children.length, 3);
+  state.key("Escape");
+  assert.equal(state.overlay(), null);
+  assert.equal(state.moved(), undefined);
+});
+
+test("fast character and label input is buffered until the activation frame", () => {
+  const state = fixture({ defer: true });
+  state.motion.setEnabled(true);
+  state.start(true);
+  state.key("r");
+  state.key("s");
+  state.frame();
+  assert.deepEqual(state.moved(), { row: 0, column: 16 });
   assert.equal(state.overlay(), null);
 });
