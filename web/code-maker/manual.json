@@ -714,6 +714,13 @@
       }
     },
     {
+      "label": "Console",
+      "desc": {
+        "en": "The panel below the game shows print() output and Python errors. Collapse it with Console, drag its top edge to resize, or use Clear to empty it. Run clears the previous output. The newest 1,000 lines are retained; long output is truncated. Output does not move keyboard focus.",
+        "cn": "遊戲下方的面板會顯示 print() 輸出與 Python 錯誤。點擊 Console 可收合，拖曳上緣可調整高度，Clear 可清除內容。按 Run 會清除上次輸出。最多保留最近 1,000 行，過長內容會截斷。收到輸出時不會移動鍵盤焦點。"
+      }
+    },
+    {
       "label": "Vim / EasyMotion",
       "desc": {
         "en": "Enable Vim using the small checkbox beside Code/Res. Click Vim to open its settings and enable EasyMotion. In normal mode, press Space, Space, then w to label visible words, or Space, Space, then s followed by a character to label its visible matches. Type a label to jump, or Esc to cancel. With Vim enabled, press Ctrl+W followed by L/R to focus the left/right pane. Settings are saved on this browser.",

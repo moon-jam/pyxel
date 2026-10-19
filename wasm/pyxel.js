@@ -289,7 +289,7 @@ const _initialize = () => {
 
 const _scriptDir = (() => {
   for (const script of document.getElementsByTagName("script")) {
-    const match = script.src.match(/(^|.*\/)pyxel\.js$/);
+    const match = script.src.match(/(^|.*\/)pyxel\.js(?:[?#].*)?$/);
     if (match) return match[1];
   }
   return "";
@@ -511,13 +511,32 @@ const _loadPyodideAndPyxel = async (canvas) => {
 
 // Error handling
 
+// Only Maker installs this local output sink; standalone games keep their streams.
+const _emitMakerOutput = (stream, text) => {
+  try {
+    window.pyxelMakerOutput?.(stream, text);
+  } catch {
+    // A failed UI update must not interrupt Python or its error reporting.
+  }
+};
+
 const _hookPythonError = (pyodide) => {
+  if (typeof window.pyxelMakerOutput === "function") {
+    const decoder = new TextDecoder();
+    pyodide.setStdout({
+      write(buffer) {
+        _emitMakerOutput("stdout", decoder.decode(buffer, { stream: true }));
+        return buffer.length;
+      },
+    });
+  }
   pyodide.setStderr({
     batched: (() => {
       let errorText = "";
       let flushTimer = null;
 
       return (msg) => {
+        _emitMakerOutput("stderr", `${msg}\n`);
         if (!flushTimer && !msg.startsWith("Traceback")) {
           return;
         }
@@ -528,7 +547,7 @@ const _hookPythonError = (pyodide) => {
         if (!flushTimer) {
           // Batch stderr lines for 100 ms so a multi-line traceback shows as one overlay.
           flushTimer = setTimeout(() => {
-            _displayErrorOverlay(errorText);
+            _displayErrorOverlay(errorText, false);
             errorText = "";
             flushTimer = null;
           }, 100);
@@ -539,7 +558,8 @@ const _hookPythonError = (pyodide) => {
 };
 
 // Render Python exceptions over the canvas without replacing the page.
-const _displayErrorOverlay = (message) => {
+const _displayErrorOverlay = (message, forwardToConsole = true) => {
+  if (forwardToConsole) _emitMakerOutput("stderr", `${message}\n`);
   console.error(message);
   const pyxelScreen = document.getElementById("pyxel-screen");
   let overlay = document.getElementById("pyxel-error-overlay");
@@ -582,7 +602,8 @@ const _formatUnknownError = (error) => {
 
 const _displayFatalErrorOverlay = (error) => {
   window.pyxelContext.hasFatalError = true;
-  _displayErrorOverlay(_formatUnknownError(error));
+  const message = _formatUnknownError(error);
+  _displayErrorOverlay(message);
 };
 
 // File operations

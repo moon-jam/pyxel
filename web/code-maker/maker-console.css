@@ -1,0 +1,76 @@
+#maker-console {
+  flex: 0 0 var(--console-height, 180px);
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: #111827;
+  color: #e5e7eb;
+  border-top: 1px solid #374151;
+  font-size: 12px;
+}
+#maker-console.console-collapsed {
+  flex-basis: 34px;
+}
+.console-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 32px;
+  padding: 0 10px;
+}
+.console-header button {
+  color: #d1d5db;
+  background: none;
+  border: 0;
+  padding: 3px;
+  font: inherit;
+  cursor: pointer;
+}
+.console-header button:hover {
+  color: #fff;
+}
+.console-header button:focus-visible,
+#console-resize:focus-visible {
+  outline: 1px solid #a5b4fc;
+}
+#console-count {
+  flex: 1;
+  color: #9ca3af;
+  font-size: 11px;
+}
+#console-output {
+  flex: 1;
+  overflow: auto;
+  padding: 4px 12px 10px;
+  font: 12px/1.5 monospace;
+}
+.console-line {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.console-stderr {
+  color: #fca5a5;
+}
+.console-empty {
+  color: #6b7280;
+}
+#console-resize {
+  flex: 0 0 5px;
+  cursor: row-resize;
+  touch-action: none;
+}
+#console-resize:hover {
+  background: #4b5563;
+}
+.console-resizing,
+.console-resizing * {
+  cursor: row-resize !important;
+  user-select: none;
+}
+.console-resizing iframe {
+  pointer-events: none;
+}
+#console-output[hidden],
+#console-resize[hidden] {
+  display: none;
+}

@@ -6,7 +6,7 @@
     <meta name="referrer" content="no-referrer" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; frame-src 'self'; script-src 'self' 'sha256-9BP/jvnjf7bY+2TYa2eKHAuQDJDuMJjMdrOxXyiokV0=' 'unsafe-eval' 'wasm-unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https:; media-src 'self' blob:; worker-src 'self' blob:"
+      content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; frame-src 'self'; script-src 'self' 'sha256-fSP6Veog/WxwI9efGv5rVsX4137QMsWHFt82phgK/J4=' 'unsafe-eval' 'wasm-unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https:; media-src 'self' blob:; worker-src 'self' blob:"
     />
     <title>Pyxel Code Maker</title>
     <link rel="icon" href="../../wasm/images/pyxel_icon_64x64.ico" />
@@ -33,6 +33,8 @@
     <script src="easy-motion.js?v=2"></script>
     <script src="pane-shortcuts.js?v=1"></script>
     <script src="vim-mode.js?v=2"></script>
+    <link rel="stylesheet" href="maker-console.css?v=1" />
+    <script src="maker-console.js?v=1"></script>
     <script src="../../wasm/pyxel.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"
@@ -305,6 +307,36 @@
             style="background-color: var(--pyxel-bg)"
             title="Pyxel Runtime"
           ></iframe>
+          <section id="maker-console" aria-label="Python console">
+            <div
+              id="console-resize"
+              role="separator"
+              aria-label="Console height"
+              aria-orientation="horizontal"
+              aria-valuemin="80"
+              aria-valuenow="180"
+              tabindex="0"
+            ></div>
+            <div class="console-header">
+              <button
+                id="console-toggle"
+                type="button"
+                aria-expanded="true"
+                aria-controls="console-output"
+              >
+                ▾ Console
+              </button>
+              <span id="console-count"></span>
+              <button id="console-clear" type="button">Clear</button>
+            </div>
+            <div
+              id="console-output"
+              role="log"
+              aria-label="Python output"
+              aria-live="off"
+              tabindex="0"
+            ></div>
+          </section>
         </div>
       </div>
     </div>
@@ -477,6 +509,7 @@
 
       // Pane reset helpers for embedded Pyxel runtimes
       function resetRuntimeScreen() {
+        window._makerConsole?.clear();
         runtimeScreen.contentWindow?.resetPyxel?.();
       }
 
@@ -1376,6 +1409,7 @@
       }
 
       window.addEventListener("DOMContentLoaded", async () => {
+        window._makerConsole = setupMakerConsole();
         // Initialize editor widgets and toolbar interactions.
         initAceEditor();
         setupButtonHandlers();
