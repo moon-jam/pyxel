@@ -730,8 +730,8 @@
     {
       "label": "Run",
       "desc": {
-        "en": "Run the application. The current code and resources are applied, and the result is displayed on the runtime screen.",
-        "cn": "執行應用程式。目前程式碼和資源將被應用，結果顯示在執行畫面上。",
+        "en": "Run the application with the current code and resources. Keyboard focus moves directly to the game, including when using Ctrl(Cmd)+Enter, so no extra click is needed.",
+        "cn": "使用目前的程式碼與資源執行應用程式。執行後鍵盤焦點會直接移到遊戲畫面，使用 Ctrl(Cmd)+Enter 時也一樣，不需要再點擊畫面。",
         "de": "Die Anwendung ausführen. Der aktuelle Code und die Ressourcen werden angewendet und das Ergebnis auf dem Ausführungsbildschirm angezeigt.",
         "es": "Ejecutar la aplicación. Se aplican el código y los recursos actuales, y el resultado se muestra en la pantalla de ejecución.",
         "fr": "Exécuter l'application. Le code et les ressources actuels sont appliqués et le résultat s'affiche sur l'écran d'exécution.",

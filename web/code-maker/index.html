@@ -6,7 +6,7 @@
     <meta name="referrer" content="no-referrer" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; frame-src 'self'; script-src 'self' 'sha256-fSP6Veog/WxwI9efGv5rVsX4137QMsWHFt82phgK/J4=' 'unsafe-eval' 'wasm-unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https:; media-src 'self' blob:; worker-src 'self' blob:"
+      content="default-src 'self'; base-uri 'self'; object-src 'none'; form-action 'none'; frame-src 'self'; script-src 'self' 'sha256-McXun5/5NXu6sM6LDhSvDnFdvl8zQckkbIIh9fxpMKI=' 'unsafe-eval' 'wasm-unsafe-eval' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self' https:; media-src 'self' blob:; worker-src 'self' blob:"
     />
     <title>Pyxel Code Maker</title>
     <link rel="icon" href="../../wasm/images/pyxel_icon_64x64.ico" />
@@ -35,6 +35,7 @@
     <script src="vim-mode.js?v=2"></script>
     <link rel="stylesheet" href="maker-console.css?v=1" />
     <script src="maker-console.js?v=1"></script>
+    <script src="runtime-focus.js?v=1"></script>
     <script src="../../wasm/pyxel.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"
@@ -1039,6 +1040,7 @@
           copyCodeToProject();
           await copyResourceToProject();
           resetRuntimeScreen();
+          focusMakerRuntime(runtimeScreen, updateFocusLine);
         });
       }
 
